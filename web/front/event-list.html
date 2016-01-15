@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>D.CAMP &#8211; &#039;드림뱅크&#039; 은행권청년창업재단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/site.css" >
+<link rel="stylesheet" href="../css/bootstrap-formhelpers.css" >
+<link rel="stylesheet" href="../css/bootstrap-select.min.css" >
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css" >
+<!--[if IE 7]>
+<link rel="stylesheet" href="../font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--> 
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" > 
+
+
+
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]--> 
+</head>
+
+<body>
+<div class="wrap"> 
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">  
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index_new.html"><img src="../images/logo.png" alt="D.CAMP" class="img-responsive"></a> 
+            </div>
+            <!-- /navbar-header -->
+             
+            <div class="collapse navbar-collapse" id="navbar-collapse" > 
+                <div class="nav navbar-nav navbar-right navbar-language"> 
+                    <a href="#">English</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right navbar-sign" id="signoff" style="display:none;">
+                    <li class="gosignin">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span> 
+                            로그인
+                        </a>
+                    </li>
+                    <li class="gosignup">
+                        <a href="#">
+                            회원가입
+                        </a>
+                    </li>
+                </ul> 
+ 
+                <ul class="nav navbar-nav navbar-right navbar-sign" id="signon">
+                    <li class="signUser"> 
+                        <a href="/member/dcamp" data-toggle="tooltip" data-placement="bottom" title="dcamp"> 
+                            <img class="img-circle" src="../images/img_default.png"> <span class="sr-only">사용자이름</span> 
+                        </a> 
+                    </li>
+                    <li class="userbell">
+                        <a href="/member/activity">
+                            <span class="fa fa-fw fa-bell"></span><span class="sr-only"> 액티비티</span> <span class="badge">99+</span> 
+                        </a> 
+                    </li>
+                    <li class="dropdown"> 
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="fa fa-fw fa-cog"></span><span class="sr-only"> 설정 </span> 
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li style="border-bottom: 1px dashed #ddd;">
+                                <a href="contents-edit.html"><span class="fa fa-fw fa-file-text"></span> 컨텐츠 글쓰기</a>
+                            </li>
+                            <li style="border-bottom: 1px dashed #ddd;">
+                                <a href="officehours-manage.html"><span class="fa fa-fw fa-file-text"></span> Office Hours 관리 </a>
+                            </li>
+                            <li><a href="mypage-contents.html"> 콘텐츠관리</a></li>
+                            <li><a href="mypage-event.html"> 이벤트관리</a></li>
+                            <li><a href="mypage-roomsharing.html"> 공간공유 신청내역</a></li>
+                            <li><a href="mypage-competition.html"> 경진대회 관리</a></li>
+                            <li><a href="mypage-officehours.html">Office Hours 신청내 </a></li>
+                            <li><a href="#"> 레퍼런스 내역</a></li>
+                            <li><a href="mypage-profile.html"> 개인정보 수정</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="#"> <span class="fa fa-fw fa-sign-out"></span> 로그아웃</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="../admin/index.html"><span class="fa fa-fw fa-cog"></span> 관리자</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control input-sm" placeholder="Search">
+                    </div>
+                </form> 
+                <ul class="nav navbar-nav navbar-left navbar-site">
+                    <li><a href="event-list.html">Event</a></li>
+                    <li><a href="competition-list.html">Challenge</a></li>
+                    <li><a href="officehours.html">Office Hours</a></li>
+                    <li><a href="recruit-list.html">Recruit</a></li>
+                    <li><a href="benefit-list.html">Benefit</a></li>
+                    <li><a href="contents-list.html">Blog</a></li>
+                    <li><a href="product.html">Showcase</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Network</a>
+                        <ul class="dropdown-menu"> 
+                            <li><a href="network-startup.html">Startup</a></li>
+                            <li><a href="network-people.html">People</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about-dcamp.html">About</a></li>
+                </ul>
+            </div>
+            <!-- /navbar-collapse -->
+        </div> 
+    </nav>
+    <!-- /navbar -->
+    
+    <!-- rowContent -->
+    <div class="rowContent"  id="event">
+        <div class="page-header">
+            <div class="container">
+                <h2><a href="event-list.html">Event</a></h2>
+                <button  class="btn btn-primary pull-right" onclick=location.href='event-edit.html'><span class="icon-pencil"></span> 이벤트 만들기</button>
+                <select data-width="auto" class="selectpicker sort-options pull-right" >
+                    <optgroup label="진행상태별 보기">
+                    <option>전체</option>
+                    <option value="ing">진행중인 이벤트</option>
+                    <option value="end">종료된 이벤트</option>
+                    </optgroup>
+                </select>
+                <select data-width="auto" class="selectpicker sort-category pull-right" >
+                    <optgroup label="카테고리별 보기">
+                     <option>전체</option>
+                    <option>컨퍼런스</option>
+                    <option>회의</option>
+                    <option>세미나</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+        <!-- /page-header --> 
+        
+        <!-- page-content -->
+        <div class="page-content"> 
+            <!-- container -->
+            <div class="container"> 
+                <div class="row">
+
+                    <div class="item card col-xs-12 col-sm-4 col-md-3">  
+                        <div class="inner">
+                            <a href="event-read.html" class="featured-img">
+                                <span style="background-image:url(http://dcamp.kr/media/event/647.jpg);">
+                                    <img class="img-responsive" src="../images/img_trans.png" >
+                                </span>
+                                <img class="sr-only" src="http://dcamp.kr/media/editor_temp/31920_EC8898ECA095.jpg" >
+                            </a> 
+                            <div class="caption">
+                                <h3>
+                                    <a href="event-read.html" class="mulitple">
+                                    [NAVER D2 Startup Factory] Edu Pac-이동형 대표의 '창업하기 전엔 몰랐던 것들' 
+                                    </a>
+                                </h3>
+                                <dl class="dl-horizontal">
+                                    <dt>신청기한</dt>
+                                    <dd>2015.08.10 18:30 ~ 2015.08.17 18:00 </dd>
+                                    <dt>신청현황</dt>
+                                    <dd>정원 <span class="badge badge-info">130</span></dd>
+                                </dl>
+                            </div>
+                            <div class="footer">
+                                <span class="author">
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Sihoon Choi(최시훈)">
+                                        <img src="../images/img_default.png" class="img-circle"> <span class="ellipsis">김양하</span>
+                                    </a>
+                                </span>
+                                <span class="date">2015.01.19</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /item --> 
+
+                    <div class="item card col-xs-12 col-sm-4 col-md-3"> 
+                        <div class="inner">
+                            <a href="event-read.html" class="featured-img">
+                                <span style="background-image:url(http://dcamp.kr/media/event/644.jpg);">
+                                    <img class="img-responsive" src="../images/img_trans.png" >
+                                </span>
+                                <img class="sr-only" src="http://dcamp.kr/media/event/644.jpg" >
+                            </a> 
+                            <div class="caption">
+                                <h3>
+                                    <a href="event-read.html" class="mulitple">
+                                    다음카카오와 함께하는 임팩트 비즈니스 개발 워크숍
+                                    </a>
+                                </h3>
+                                <dl class="dl-horizontal">
+                                    <dt>신청기한</dt>
+                                    <dd>2015.08.10 18:30 ~ 2015.08.17 18:00 </dd>
+                                    <dt>신청현황</dt>
+                                    <dd>정원 <span class="badge badge-info">130</span></dd>
+                                </dl>
+                            </div>
+                            <div class="footer">
+                                <span class="author">
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Sihoon Choi(최시훈)">
+                                        <img src="../images/img_default.png" class="img-circle"> <span class="ellipsis">김양하</span>
+                                    </a>
+                                </span>
+                                <span class="date">2015.01.19</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /item --> 
+
+                    <div class="item card col-xs-12 col-sm-4 col-md-3">  
+                        <div class="inner">
+                            <a href="event-read.html" class="featured-img">
+                                <span style="background-image:url(http://dcamp.kr/media/event/622.jpg);">
+                                    <img class="img-responsive" src="../images/img_trans.png" >
+                                </span>
+                                <img class="sr-only" src="http://dcamp.kr/media/event/622.jpg" >
+                            </a> 
+                            <div class="caption">
+                                <h3>
+                                    <a href="event-read.html" class="mulitple">
+                                    [경기 콘텐츠코리아 랩] '아이디어 용광로' 4, 5, 6기 동시 모집! (~8/4)
+                                    </a>
+                                </h3>
+                                <dl class="dl-horizontal">
+                                    <dt>신청기한</dt>
+                                    <dd>2015.08.10 ~ 2015.08.17</dd>
+                                    <dt>신청현황</dt>
+                                    <dd>정원 <span class="badge badge-info">130</span></dd>
+                                </dl>
+                            </div>
+                            <div class="footer">
+                                <span class="author">
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Sihoon Choi(최시훈)">
+                                        <img src="../images/img_default.png" class="img-circle"> <span class="ellipsis">김양하</span>
+                                    </a>
+                                </span>
+                                <span class="date">2015.01.19</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /item --> 
+
+                    <div class="item card col-xs-12 col-sm-4 col-md-3">  
+                        <div class="inner">
+                            <a href="event-read.html" class="featured-img">
+                                <span style="background-image:url(http://dcamp.kr/media/event/580.jpg);">
+                                    <img class="img-responsive" src="../images/img_trans.png" >
+                                </span>
+                                <img class="sr-only" src="http://dcamp.kr/media/event/580.jpg" >
+                            </a> 
+                            <div class="caption">
+                                <h3>
+                                    <a href="event-read.html" class="mulitple">
+                                    창업 지원 프로그램 <슈퍼끼어로 시즌 2>
+                                    </a>
+                                </h3>
+                                <dl class="dl-horizontal">
+                                    <dt>신청기한</dt>
+                                    <dd>2015.08.10 ~ 2015.08.17</dd>
+                                    <dt>신청현황</dt>
+                                    <dd>정원 <span class="badge badge-info">130</span></dd>
+                                </dl>
+                            </div>
+                            <div class="footer">
+                                <span class="author">
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Sihoon Choi(최시훈)">
+                                        <img src="../images/img_default.png" class="img-circle"> <span class="ellipsis">김양하</span>
+                                    </a>
+                                </span>
+                                <span class="date">2015.01.19</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /item --> 
+
+                </div>
+            </div>
+            <!-- /container -->             
+        </div>
+        <!-- /page-content --> 
+    </div>
+    <!-- /rowContent -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="footer-navbar list-inline">
+                <li><a href="#">D.CAMP 소개</a></li>
+                <li><a href="#">멤버쉽 안내</a></li>
+                <li><a href="#">공간공유</a></li>
+                <li><a href="#">서비스약관</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+            </ul>
+            <address>
+                서울시 강남구 역삼동 683-34 새롬빌딩 4~6층 &nbsp;
+                <span><i class="fa fa-phone"></i> (02) 2030-9300</span> &nbsp;
+                <span><i class="fa fa-envelope-o"></i> <a href="mailto:contact@dcamp.kr">contact@dcamp.kr</a></span>
+            </address>
+            <p>Copyright &copy;D.CAMP. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- /footer -->
+</div>
+<!-- /wrapper -->
+
+
+
+<!-- Javascript  -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/holder.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.language.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.js"></script>
+<script src="../js/bootstrap-formhelpers-timepicker.js"></script>
+<script src="../js/bootstrap-select.min.js"></script> 
+<script src="../js/jquery.ellipsis.js"></script> 
+
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    
+
+        $('.ellipsis').ellipsis({
+            row: 1
+        }); 
+        $('.mulitple').ellipsis({
+            row: 2
+        });  
+
+    });      
+</script> 
+
+
+
+
+
+</body>
+</html>

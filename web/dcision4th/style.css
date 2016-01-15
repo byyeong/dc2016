@@ -1,0 +1,152 @@
+
+body{
+    color: #293a46;
+    font-family:'Nanum Gothic' ,  'Malgun Gothic';
+    font-weight: 100;
+    line-height: 1.5;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:focus,a:hover{color:white; text-decoration:none;}
+
+.top-header{
+    background-image: url(images/visual.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    color: white;
+    background-attachment: fixed;
+
+}
+
+.main-img img{ margin: 150px auto 0 auto;}
+
+
+.row-padded {
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+
+.btn-danger {
+    color: #fff;
+    background-color: #ff832a;
+    border-color: #de6108;
+    margin-top: 50px;
+}
+
+
+
+.btn-danger:hover, .btn-danger:active:hover, .btn-danger:focus, .btn-danger:active, .btn-danger:visited, .btn-danger:link{background-color:black; border-color:black;}
+
+.rightnow{
+    padding: 15px 25px 15px 25px;
+    font-size: 23px;
+}
+
+.support{
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+    text-align: center;
+    padding: 14px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 14px;
+}
+
+
+
+.top-header02{
+    background-image: url(images/resort.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    color: white;
+    background-attachment: fixed;
+
+}
+
+.explain{ margin: 100px 0 30px 0; text-align: center; font-size: 18px;}
+
+.sub-img img{margin:0 auto;}
+
+.top-header03{
+
+    color: white;
+    background-attachment: fixed;
+
+}
+
+.top-header03 img{margin: 100px auto;}
+
+
+.with img{ margin: 60px auto 20px auto; }
+
+.bottom{  background-color:  #363f45; padding: 50px 0;}
+.bottom img{ padding-bottom: 20px;}
+
+.btn-bottom{ margin-bottom: 30px; padding: 20px 40px 20px 40px;}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+
+    .top-header{
+        background-image: url(images/visual.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: auto;
+        color: white;
+        background-attachment: fixed;
+
+    }
+
+    .main-img img{ margin: 50px auto 0 auto;}
+
+    .top-header02 br{display: none;}
+
+
+
+
+    .btn-danger {
+        color: #fff;
+        background-color: #ff832a;
+        border-color: #de6108;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+
+    .rightnow{
+        padding: 15px 25px 15px 25px;
+        font-size: 18px;
+    }
+
+
+    .top-header02{
+        background-image: url(images/resort.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: auto;
+        color: white;
+        background-attachment: fixed;
+
+    }
+
+    .top-header02 img{margin-bottom: 30px;}
+    .top-header03 img{margin-bottom: 30px;}
+
+    .explain{ margin: 30px 0 30px 0; text-align: center; font-size: 15px;}
+
+}

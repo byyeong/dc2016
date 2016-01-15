@@ -1,0 +1,112 @@
+//
+// D.CAMP Common Use Style LESS ----- 2015/01/29
+// --------------------------------------------------
+
+@import "bootstrap/bootstrap";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600); 
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);  
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+@white : #FFF;
+@black : #000;
+@gray : #bdc3c7; 
+
+@color-point : #ff7800; //dcamp orange color
+@color-base : #555; // default text color
+@color-sub : #999; // sub text color 
+
+@a-link : @color-base;
+@a-hover : @color-point;
+
+@bg-base : #f4f4f4;
+
+@facebook : #425f9c;  // facebook color
+
+@font-family-base : 'Open Sans', 'Nanum Gothic', sans-serif;
+@font-family-point : "Lato", sans-serif;
+@line-height : 1.6;
+
+@font-size-xxl : 24px;
+@font-size-xl : 18px;
+@font-size-lg : 16px;
+@font-size-base : 14px;
+@font-size-sm : 12px;
+@font-size-xs : 11px;
+@font-size-xxs : 10px;
+
+@radius-none : 0;
+@radius-base : 4px; 
+@border-color-light : #eee;
+@border-color-base : #ddd;
+@border-color-dark : @black;
+
+
+
+body { font-family:@font-family-base; font-size:@font-size-base; color:@color-base;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 { line-height:@line-height; }
+
+ 
+a {
+	&:link,
+	&:visited,
+	&:active { color:@a-link;}
+	&:hover { color:@a-hover;}
+}
+
+a.btn-warning,
+a.btn-danger,
+a.btn-success,
+a.btn-info,
+a.btn-primary {
+	&:link,
+	&:visited,
+	&:active,
+	&:hover { color:@white;}
+}
+
+ 
+.ellipsis-sm { text-overflow:ellipsis; overflow:hidden;}
+
+
+
+.featured-img,
+.featured-logo { display:block;
+	span { display:block; background-repeat:no-repeat; background-position:center; background-size:cover;
+		.img-responsive { width:100%;}
+	}
+}
+
+
+.featured-img,
+.vimg { 
+	span { display:inline-block; width:100%; background-position:center; background-repeat:no-repeat; background-size:cover;
+		img { width:100%;}
+	}
+}
+
+.vimg {
+	span {
+		border-radius: 50%;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+	}
+}
+
+
+header {
+	h3 { font-size:@font-size-xxl; font-weight:bold; margin-top:0;}
+	h4 { font-size:@font-size-base; font-weight:bold; margin-top:0;}
+}
+
+
+
+
+
+
+ 

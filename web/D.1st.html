@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>D.1st</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="/amootoon/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/amootoon/css/view.css">
+	
+	<script src="/amootoon/js/amootoon.js"></script>
+	
+	<link rel="shortcut icon" href="favicon.ico">
+	
+</head>
+
+<body>
+	<div class="scrollBar_container">
+		<div class="scrollBar_item"></div>
+	</div>
+
+	<div class="header">
+		<div class="headercon viewer">
+			<a class="logo button" href="http://amootoon.com/"></a>   
+			<div class="title">
+				<a class="title">D.CAMP - <a class="subtitle">D.1st</a>
+			</div>
+			<div class="play button" onClick="autoPlay(this)"></div> 
+		</div>
+	</div>
+
+	<canvas id="viewCanvas"></canvas>
+	
+	<script type="text/javascript">
+				global.webtoonId = 18;
+				global.viewId = 88;
+				global.data = { "resizeOverMax":true, "scrollActivatePercent":50, "scrollType":"vertical", "autoScrollTime":10, "height":5000, "scrollSpeed":30, "ratio":0, "idsequence":8, "width":1920, "resource":[ { "index":0, "visible":true, "parentLayer":0, "width":0, "lock":false, "type":0, "fixed":0, "id":0, "height":0, "source":"", "effect":{ "Document":{ "name":"Document", "data":{ "position":{ "append":"px", "def":[ 0, 0 ], "name":"position", "value":[ 0, 0 ], "length":2, "fcut":1, "type":"number" }, "scrollSpeed":{ "min":1, "append":"px", "bef":30, "def":30, "name":"scrollSpeed", "length":0, "fcut":1, "type":"number" }, "background":{ "min":0, "max":255, "correct":false, "ani":true, "def":[ 255, 255, 255 ], "addon":"color", "name":"background", "value":[ { "val":[ 255, 255, 255 ], "rate":0, "scroll":420 }, { "val":[ 25, 174, 255 ], "rate":0, "scroll":780 }, { "val":[ 25, 174, 255 ], "rate":0, "scroll":1170 }, { "val":[ 88, 234, 222 ], "rate":0, "scroll":1410 }, { "val":[ 88, 234, 222 ], "rate":0, "scroll":1830 }, { "val":[ 151, 200, 78 ], "rate":0, "scroll":2160 }, { "val":[ 151, 200, 78 ], "rate":0, "scroll":2490 }, { "val":[ 199, 128, 78 ], "rate":0, "scroll":2760 }, { "val":[ 199, 128, 78 ], "rate":0, "scroll":3150 }, { "val":[ 218, 121, 218 ], "rate":0, "scroll":3528 }, { "val":[ 218, 121, 218 ], "rate":0, "scroll":4008 }, { "val":[ 255, 255, 255 ], "rate":0, "scroll":4398 } ], "length":3, "fcut":1, "type":"number" }, "moveIniter":{ "append":"px", "bef":0, "def":0, "name":"moveIniter", "value":0, "length":0, "fcut":1, "type":"number" }, "scrollBarView":{ "bef":true, "def":true, "name":"scrollBarView", "value":true, "length":0, "type":"boolean" }, "moveTarget":{ "append":"px", "bef":0, "def":0, "name":"moveTarget", "value":0, "length":0, "fcut":1, "type":"number" }, "documentHeight":{ "min":100, "append":"px", "bef":5000, "def":100, "name":"documentHeight", "value":5000, "length":0, "fcut":1, "type":"number", "noAni":true } } } }, "name":"Document", "onBody":true, "overflow":false }, { "index":1, "visible":true, "parentLayer":0, "width":1920, "lock":false, "type":1, "fixed":1, "id":3, "height":1102, "source":"18/88/48b3f251-8fe1-4b36-a1a8-5b18f712b0ae.png", "effect":{ "Transform":{ "name":"Transform", "data":{ "position":{ "append":"px", "def":[ 0, 0 ], "name":"position", "value":[ 0, 0 ], "length":2, "fcut":10, "type":"number" }, "scale":{ "append":"%", "def":[ 100, 100 ], "chain":true, "name":"scale", "length":2, "fcut":1000, "type":"number" }, "rotate":{ "append":"━", "bef":0, "def":0, "name":"rotate", "length":0, "fcut":1, "type":"number" }, "opacity":{ "min":0, "append":"%", "max":100, "bef":100, "def":100, "name":"opacity", "length":0, "fcut":1, "type":"number" }, "margin":{ "min":0, "append":"px", "bef":0, "def":0, "name":"margin", "length":0, "fcut":1, "type":"number" }, "anchorpoint":{ "append":"px", "def":[ 0, 0 ], "name":"anchorpoint", "length":2, "fcut":1000, "type":"number" } } } }, "name":"logo.png", "onBody":false, "overflow":false }, { "index":2, "parentLayer":0, "visible":true, "width":840, "lock":false, "type":1, "fixed":0, "id":5, "height":3704, "effect":{ "Transform":{ "name":"Transform", "data":{ "position":{ "append":"px", "def":[ 0, 0 ], "name":"position", "length":2, "fcut":10, "type":"number" }, "scale":{ "append":"%", "def":[ 100, 100 ], "chain":true, "name":"scale", "length":2, "fcut":1000, "type":"number" }, "rotate":{ "append":"━", "bef":0, "def":0, "name":"rotate", "length":0, "fcut":1, "type":"number" }, "opacity":{ "min":0, "append":"%", "max":100, "bef":100, "def":100, "name":"opacity", "length":0, "fcut":1, "type":"number" }, "margin":{ "min":0, "append":"px", "bef":0, "def":0, "name":"margin", "length":0, "fcut":1, "type":"number" }, "anchorpoint":{ "append":"px", "def":[ 0, 0 ], "name":"anchorpoint", "value":[ 0, -663 ], "length":2, "fcut":1000, "type":"number" } } } }, "source":"18/88/17ade254-fe19-488f-8e11-65b90fcd7eda.png", "name":"typo1.png", "onBody":true, "overflow":false }, { "index":3, "parentLayer":0, "visible":true, "width":355, "lock":false, "type":1, "fixed":0, "id":6, "height":291, "effect":{ "Transform":{ "name":"Transform", "data":{ "position":{ "append":"px", "def":[ 0, 0 ], "name":"position", "value":[ 0, 4740 ], "length":2, "fcut":10, "type":"number" }, "scale":{ "append":"%", "def":[ 100, 100 ], "chain":true, "name":"scale", "length":2, "fcut":1000, "type":"number" }, "rotate":{ "append":"━", "bef":0, "def":0, "name":"rotate", "length":0, "fcut":1, "type":"number" }, "opacity":{ "min":0, "append":"%", "max":100, "correct":false, "ani":true, "bef":100, "def":100, "name":"opacity", "value":[ { "val":0, "rate":0, "scroll":4636 }, { "val":100, "rate":0, "scroll":4906 } ], "length":0, "fcut":1, "type":"number" }, "margin":{ "min":0, "append":"px", "bef":0, "def":0, "name":"margin", "length":0, "fcut":1, "type":"number" }, "anchorpoint":{ "append":"px", "def":[ 0, 0 ], "name":"anchorpoint", "value":[ 0, -292 ], "length":2, "fcut":1000, "type":"number" } } } }, "source":"18/88/7f2c12ea-d296-4480-a73d-d80eb81713d4.png", "name":"human.png", "onBody":false, "overflow":false }, { "index":4, "parentLayer":0, "visible":true, "width":1920, "lock":false, "type":1, "fixed":0, "id":7, "height":1102, "effect":{ "Transform":{ "name":"Transform", "data":{ "position":{ "append":"px", "def":[ 0, 0 ], "name":"position", "value":[ 0, 0 ], "length":2, "fcut":10, "type":"number" }, "scale":{ "append":"%", "def":[ 100, 100 ], "chain":true, "name":"scale", "length":2, "fcut":1000, "type":"number" }, "rotate":{ "append":"━", "bef":0, "def":0, "name":"rotate", "length":0, "fcut":1, "type":"number" }, "opacity":{ "min":0, "append":"%", "max":100, "bef":100, "def":100, "name":"opacity", "length":0, "fcut":1, "type":"number" }, "margin":{ "min":0, "append":"px", "bef":0, "def":0, "name":"margin", "length":0, "fcut":1, "type":"number" }, "anchorpoint":{ "append":"px", "def":[ 0, 0 ], "name":"anchorpoint", "length":2, "fcut":1000, "type":"number" } } } }, "source":"18/88/e067e515-a22c-4918-975c-1ab859bde63c.jpg", "name":"111.jpg", "onBody":false, "overflow":false } ], "scrollAnimationTime":200, "scrollSplit":20, "scrollAnimation":10, "mover":{ 	"type":"scene", 	"current":0, 	"duration":1500, 	"easing":"easeInOutQuart", 	"scene":[0,1200,2270,3323,4307,5000] } };
+	</script>
+</body>
+</html>

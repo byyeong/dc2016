@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>D.CAMP</title>
+
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-formhelpers.css" >
+    <link rel="stylesheet" href="../css/bootstrap-select.min.css" >
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.css" >
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    
+    <link rel="stylesheet" href="../css/site.css">  
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >  
+
+    <!-- Javascript  -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/holder.js"></script>
+    <script src="../js/bootstrap-formhelpers-datepicker.language.js"></script>
+    <script src="../js/bootstrap-formhelpers-datepicker.js"></script>
+    <script src="../js/bootstrap-formhelpers-timepicker.js"></script>
+    <script src="../js/bootstrap-select.min.js"></script>
+    <script src="../js/script.js"></script>
+
+</head>
+
+<body>
+<div class="wrap"> 
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">  
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index_new.html"><img src="../images/logo.png" alt="D.CAMP" class="img-responsive"></a> 
+            </div>
+            <!-- /navbar-header -->
+             
+            <div class="collapse navbar-collapse" id="navbar-collapse" > 
+                <ul class="nav navbar-nav navbar-right navbar-sign" id="signoff" style="display:none;">
+                    <li class="gosignin">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span> 
+                            로그인
+                        </a>
+                    </li>
+                    <li class="gosignup">
+                        <a href="#">
+                            회원가입
+                        </a>
+                    </li>
+                </ul>
+ 
+                <ul class="nav navbar-nav navbar-right navbar-sign" id="signon">
+                    <li class="signUser"> 
+                        <a href="/member/dcamp" data-toggle="tooltip" data-placement="bottom" title="dcamp"> 
+                            <img class="img-circle" src="../images/img_default.png"> <span class="sr-only">사용자이름</span> 
+                        </a> 
+                    </li>
+                    <li class="userbell">
+                        <a href="/member/activity">
+                            <span class="fa fa-fw fa-bell"></span><span class="sr-only"> 액티비티</span> <span class="badge">99+</span> 
+                        </a> 
+                    </li>
+                    <li class="dropdown"> 
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="fa fa-fw fa-cog"></span><span class="sr-only"> 설정 </span> 
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li style="border-bottom: 1px dashed #ddd;">
+                                <a href="/contents/edit"><span class="fa fa-fw fa-file-text"></span> 컨텐츠 글쓰기</a>
+                            </li>
+                            <li style="border-bottom: 1px dashed #ddd;">
+                                <a href="officehours-manage.html"><span class="fa fa-fw fa-file-text"></span> Office Hours 관리 </a>
+                            </li>
+                            <li><a href="../front_old/mypage-contents.html"> 콘텐츠관리</a></li>
+                            <li><a href="../front_old/mypage-event.html"> 이벤트관리</a></li>
+                            <li><a href="../front_old/mypage-roomsharing.html"> 공간공유 신청내역</a></li>
+                            <li><a href="../front_old/mypage-competition.html"> 경진대회 관리</a></li>
+                            <li><a href="mypage-officehours.html">Office Hours 신청내 </a></li>
+                            <li><a href="#"> 레퍼런스 내역</a></li>
+                            <li><a href="../front_old/mypage-profile.html"> 개인정보 수정</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="#"> <span class="fa fa-fw fa-sign-out"></span> 로그아웃</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="../admin/index.html"><span class="fa fa-fw fa-cog"></span> 관리자</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control input-sm" placeholder="Search">
+                    </div>
+                </form> 
+                
+                <ul class="nav navbar-nav navbar-left navbar-site">
+                    <li><a href="../front_old/event-list.html">Event</a></li>
+                    <li><a href="../front_old/competition-list.html">Competition</a></li>
+                    <li><a href="officehours.html">Office Hours</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contents</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../front_old/contents-list.html">D.MENTOR</a></li>
+                            <li><a href="#">D.DAY</a></li>
+                            <li><a href="#">D.CREW</a></li>
+                            <li><a href="#">Startup Nations Summit 2014</a></li>
+                            <li><a href="#">D.Class</a></li>
+                            <li><a href="#">Global D.MATCH 2014</a></li>
+                        </ul>
+                    </li>
+                    <!--li><a href="#">Notice</a></li-->
+                    <!--li><a href="#">News</a></li-->
+                    <li><a href="../front_old/recruit-list.html">Recruit</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Network</a>
+                        <ul class="dropdown-menu"> 
+                            <li><a href="../front_old/startup-list.html">Startup</a></li>
+                            <li><a href="../front_old/people-list.html">People</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../front_old/about-dcamp.html">About</a></li>
+                </ul>
+            </div>
+            <!-- /navbar-collapse -->
+        </div> 
+    </nav>
+    <!-- /navbar --> 
+
+    <!-- rowContent -->
+    <div class="rowContent"  id="userProfile"> 
+        
+        <!-- page-header -->
+        <div class="page-header">
+            <div class="container">
+                <h2><a href="officehours.html">Office Hours</a></h2>
+
+                <a href="officehours-mentor.html" class="btn btn-default btn-sm pull-right">
+                    <span class="icon-fixed-width icon-large icon-user"></span> 멘토정보 수정하기 
+                </a>
+                <a href="officehours-edit.html" class="btn btn-primary btn-sm pull-right">
+                    <span class="icon-fixed-width icon-large icon-edit"></span> Office Hours 추가하기
+                </a>
+            </div>
+        </div>
+        <!-- /page-header --> 
+        
+        <!-- page-content -->
+        <div class="page-content"> 
+            <!-- container -->
+            <div class="container">
+                <div class="row">
+
+                    <!-- content -->
+                    <div class="col-xs-12 col-sm-12 col-sm-9 content">
+                        <div class="content-header">
+                            <h3 class="content-heading"><span class="icon-trophy"></span> 참가자 내용보기</h3>
+                        </div>
+
+                        <div class="well applied-item">
+                            <div class="media">
+                                <a href="#" class="pull-left media-object">
+                                    <span style="background-image:url(http://dcamp.kr/media/comp/78.jpg);">
+                                        <img class="img-responsive" src="../images/img_trans.png">
+                                    </span>
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading">
+                                        <a href="#">
+                                            Office Hours : with ID Ventures 강훈모 투자 심사역(변리사) @ D.CAMP (2월 3일)
+                                        </a>
+                                    </h4>
+                                    <div class="item-status">
+                                        <dl class="dl-horizontal">
+                                            <dt>주최·주관</dt>
+                                            <dd>D.CAMP &amp; ID Ventures</dd>
+                                            <dt>참가 장소</dt>
+                                            <dd>D.CAMP 4층 회의실</dd>
+                                            <dt>참가 일자 </dt>
+                                            <dd>10월 23일 (목) 오후 1시 ~ 6시 / 팀당 1시간</dd>
+                                            <dt>접수 기간</dt>
+                                            <dd>2014.09.23 (화) 10:00 ~ 2014.10.06 (월) 13:00 <span class="badge">D-3</span></dd>
+                                            <dt>발표 일자</dt>
+                                            <dd>2014.10.07 (화) 18:00 / 메일을 통해 개별 안내 <span class="badge">D-16</span></dd>
+                                        </dl> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /applied-item -->
+
+                        <div class="applied-view panel panel-default">
+                            <div class="panel-heading"> 
+                                <a class="btn btn-default btn-xs pull-right" href="officehours-apply-list.html">참가자 목록보기</a>
+                                <h3 class="panel-title"><span class="icon-fixed-width  icon-check "></span>참가자 내용 - 정윤호 </h3>
+                            </div>
+                            <div class="panel-body">
+                                <dl class="dl-horizontal">
+                                    <dt>참가자 이름</dt>
+                                    <dd>정윤호</dd>
+                                </dl>
+
+                                <dl class="dl-horizontal">
+                                    <dt>휴대폰 번호</dt>
+                                    <dd>010-2345-6789</dd>
+                                </dl>
+
+                                <dl class="dl-horizontal">
+                                    <dt>이메일 주소</dt>
+                                    <dd>emailid@compnay.com</dd>
+                                </dl>
+
+                                <dl class="dl-horizontal">
+                                    <dt>참가회사/팀명</dt>
+                                    <dd>나다니는회사명</dd>
+                                </dl>
+
+                                <dl class="dl-horizontal">
+                                    <dt>D.CAMP기업프로필 주소</dt>
+                                    <dd><a href="#">http://dcamp.kr/startup/1241</a></dd>
+                                </dl>
+
+                                <dl class="dl-horizontal">
+                                    <dt>제품/서비스명</dt>
+                                    <dd>내가만든서비</dd>
+                                </dl>
+                            </div>
+                            <!-- /panel-body -->
+                            <div class="panel-body">
+                                <dl>
+                                    <dt>제품/서비스 한 줄 소개 </dt>
+                                    <dd>우하하하하하하하 메</dd>
+                                </dl>
+
+                                <dl>
+                                    <dt>간단한 자기소개</dt>
+                                    <dd>몇자 적어 봅시다 몇자 적어 봅시다</dd>
+                                </dl>
+
+                                <dl>
+                                    <dt>팀소개</dt>
+                                    <dd>팀소개글이 입력됩니다. </dd>
+                                </dl>
+
+                                <dl>
+                                    <dt>이야기 나누고 싶은 상담 주제</dt>
+                                    <dd>---- 없어 </dd>
+                                </dl>
+                                <dl>
+                                    <dt>첨부파일</dt>
+                                    <dd><a href="#">filename.pdf</a></dd>
+                                </dl>
+                            </div>
+                            <!-- /panel-body -->
+                            <div class="panel-footer">
+                                <form class="form-horizontal" role="form">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <span class="col-xs-12 col-sm-2 col-md-2 control-label ">심사하기</span>
+                                            <div class="col-xs-12 col-sm-10 col-md-10">
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="select-inspect" checked="checked"> 심사중
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="select-inspect"> 선정
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="select-inspect"> 미선정
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <span class="col-xs-12 col-sm-2 col-md-2 control-label ">상담시간 </span>
+                                            <div class="col-xs-12 col-sm-10 col-md-10">
+                                                <div class="form-inline">
+                                                    <span class="form-control-static">2015년 3월 30일 </span>
+                                                    <select class="form-control">
+                                                        <optgroup label="시간선택">
+                                                            <option>10:00</option>
+                                                            <option>11:00</option>
+                                                            <option>12:00</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group form-submit">
+                                            <div class="col-xs-12 col-sm-offset-2 col-sm-10 col-md-offset-2 col-md-10">
+                                                <button class="btn btn-default btn-sm">취소</button>
+                                                <button class="btn btn-primary btn-sm">확인</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <!-- /panel-footer -->
+                        </div>
+                        <!-- /applied-view -->
+                    </div>
+                    <!-- /content -->
+                    
+                    <!-- sidebar -->
+                    <div class="col-xs-12 col-sm-12 col-sm-3 sidebar">
+
+
+                        <div class="panel competitor-list"  id="markedList">
+                            <h3 class="panel-title">심사 목록</h3>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#mark-total" data-toggle="tab">전체 </a><span class="badge badge-info">250</span></li>
+                                <li><a href="#mark-complete" data-toggle="tab">심사완료 </a><span class="badge badge-primary"> 158</span></li>
+                                <li><a href="#mark-none" data-toggle="tab">남은심사 </a><span class="badge badge-warning">30</span></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="mark-total">
+                                    <ul class="media-list">
+                                        <!-- todo : normal -->
+                                        <li class="media"> <a href="#"> <span class="media-object pull-left"><img src="../img/default-img-member.png" class="img-responsive"></span>
+                                            <div class="media-content">
+                                                <h4 class="media-heading">참가자명 </h4>
+                                                <small class="group"> 회사/팀</small> </div>
+                                            </a> </li>
+                                        <!-- todo : active - now view item -->
+                                        <li class="media active"> <a href="#"> <span class="media-object pull-left"><img src="../img/default-img-member.png" class="img-responsive"></span>
+                                            <div class="media-content">
+                                                <h4 class="media-heading">참가자명 </h4>
+                                                <small class="group"> 회사/팀</small> </div>
+                                            </a> </li>
+                                        <!-- todo : marking finish -->
+                                        <li class="media marked"> <a href="#"> <span class="score pull-right"><span class="sr-only">심사점수</span><span class="badge badge-primary">658</span></span> <span class="media-object pull-left"><img src="../img/default-img-member.png" class="img-responsive"></span>
+                                            <div class="media-content">
+                                                <h4 class="media-heading">Dannaeyang minjeon Han </h4>
+                                                <small class="group">테마여행신문 Theme Travel News</small> </div>
+                                            </a> </li>
+                                    </ul>
+                                    <div class="paging text-center">
+                                        <ul class="pagination pagination-sm">
+                                            <li class="disabled"><a href="#">«</a></li>
+                                            <li class="active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li> 
+                                            <li class="disabled"><a href="#">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- /tab-pane -->
+                                
+                                <div class="tab-pane" id="mark-complete">
+                                    <ul class="media-list">
+                                        <!-- todo : normal -->
+                                        <li class="media"> <a href="#"> <span class="media-object pull-left"><img src="../img/default-img-member.png" class="img-responsive"></span>
+                                            <div class="media-content">
+                                                <h4 class="media-heading">참가자명 </h4>
+                                                <small class="group"> 회사/팀</small> </div>
+                                            </a> </li>
+                                    </ul>
+                                    <div class="paging text-center">
+                                        <ul class="pagination pagination-sm">
+                                            <li class="disabled"><a href="#">«</a></li>
+                                            <li class="active"><a href="/competition/applied_list/1/1">1</a></li>
+                                            <li><a href="/competition/applied_list/1/1">2</a></li>
+                                            <li><a href="/competition/applied_list/1/1">3</a></li>
+                                            <li><a href="/competition/applied_list/1/1">4</a></li>
+                                            <li><a href="/competition/applied_list/1/1">5</a></li>
+                                            <li class="disabled"><a href="#">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- /tab-pane -->
+                                <div class="tab-pane" id="mark-none">
+                                    <ul class="media-list">
+                                        <!-- todo : normal -->
+                                        <li class="media"> <a href="#"> <span class="media-object pull-left"><img src="../img/default-img-member.png" class="img-responsive"></span>
+                                            <div class="media-content">
+                                                <h4 class="media-heading">참가자명 2</h4>
+                                                <small class="group"> 회사/팀</small> </div>
+                                            </a> </li>
+                                    </ul>
+                                    <div class="paging text-center">
+                                        <ul class="pagination pagination-sm">
+                                            <li class="disabled"><a href="#">«</a></li>
+                                            <li class="active"><a href="/competition/applied_list/1/1">1</a></li>
+                                            <li><a href="/competition/applied_list/1/1">2</a></li>
+                                            <li><a href="/competition/applied_list/1/1">3</a></li>
+                                            <li><a href="/competition/applied_list/1/1">4</a></li>
+                                            <li><a href="/competition/applied_list/1/1">5</a></li>
+                                            <li class="disabled"><a href="#">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- /tab-pane --> 
+                                
+                            </div>
+                            <!-- /tab-content --> 
+                        </div>
+                        <!-- panel --> 
+
+                    </div>
+                    <!-- /sidebar -->
+                </div>
+            </div>
+            <!-- /container --> 
+        </div>
+        <!-- /page-content --> 
+
+        <!-- layer  
+        <div id="inspector" class="boxLayer fixed-bottom">
+            <div class="container">
+
+                <div class="item-info">
+                    <h3>
+                        <a href="officehours-apply-list.html">
+                            <span class="icon-align-justify"></span> 
+                            강훈모 멘토 ID Ventures : 2015.01.20 12시~56시 
+                        </a>
+                    </h3>
+                    <p class="status">
+                        전체 신청자 <span class="badge badge-default">00</span>명 / 
+                        <span class="badge badge-success">3</span>명 선정 / 
+                        <span class="badge badge-warning">9</span>명 미선정 / 
+                        <span class="badge badge-primary">20</span>명 심사중
+                    </p>
+                    <p class="help-block">모두 심사 후, 목록에서 [선정 내용 확정]을 해야  최종확정이 됩니다.</p>
+                </div>
+
+                <nav>
+                    <ul class="pager">
+                        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> 김봉간 <small>company</small></a></li>
+                        <li class="next"><a href="#">김구영 <small>company</small> <span aria-hidden="true">&rarr;</span></a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </div>
+         /layer -->
+        
+    </div>
+    <!-- /rowContent -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="footer-navbar list-inline">
+                <li><a href="#">D.CAMP 소개</a></li>
+                <li><a href="#">멤버쉽 안내</a></li>
+                <li><a href="#">공간공유</a></li>
+                <li><a href="#">서비스약관</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+            </ul>
+            <address>
+                서울시 강남구 역삼동 683-34 새롬빌딩 4~6층 &nbsp;
+                <span><i class="fa fa-phone"></i> (02) 2030-9300</span> &nbsp;
+                <span><i class="fa fa-envelope-o"></i> <a href="mailto:contact@dcamp.kr">contact@dcamp.kr</a></span>
+            </address>
+            <p>Copyright &copy;D.CAMP. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- /footer -->
+</div>
+<!-- /wrapper -->
+ 
+
+</body>
+</html>

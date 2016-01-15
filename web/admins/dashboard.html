@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>D.CAMP - Manage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap-formhelpers.css" >
+<link rel="stylesheet" href="../css/bootstrap-select.min.css" >
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css" >
+<!--[if IE 7]>
+<link rel="stylesheet" href="../font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="../css/admin.css" >
+
+<!-- Javascript  -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/holder.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.language.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.js"></script>
+<script src="../js/bootstrap-formhelpers-timepicker.js"></script>
+<script src="../js/bootstrap-select.min.js"></script>
+<script src="../js/admin.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav class="navbar navbar-inverse" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="../img/logo.png"></a>
+          </div>
+        
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="dashboard.html"><span class="icon-cog"></span></a></li>
+              <li class=""><a href="member-list.html">회원관리</a></li>
+              <li class=""><a href="membership-list.html">멤버십관리</a></li>
+              <li class=""><a href="startup-list.html">스타트업관리</a></li>
+              <li class=""><a href="recruit-list.html">채용정보관리</a></li>
+              <li class=""><a href="floor-reserve-list.html">공간공유관리</a></li>      
+              <li class=""><a href="event-list.html">이벤트관리</a></li>
+              <li class=""><a href="notice-list.html">공지사항관리</a></li>
+              <li class=""><a href="main-list-set.html">메인콘텐츠관리</a></li>
+              <li class=""><a href="contents-list.html">콘텐츠관리 </a></li>
+              <li class=""><a href="competition-list.html">경진대회관리 </a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">기타관리 <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="entrance-dashboard.html">출입관리</a></li>
+                  <li><a href="locker-user-list.html">월간 사물함 배정</a></li>
+                  <li><a href="locker-user-list.html">뉴스레터 목록 </a></li>
+                  <li><a href="faq-list.html">FAQ</a></li>
+                  <li><a href="qna-list.html">Q&A</a></li>
+                </ul>
+              </li>
+              <li class=""><a href="officehours-list.html">Office Hours</a></li>
+              <li class=""><a href="analytics-member.html">통계분석</a></li>
+            </ul>  
+          </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</header>
+
+<!-- jumbotron -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>대시보드</h1>
+    </div>
+</div>
+<!-- /jumbotron --> 
+
+<!-- container -->
+<div class="rowContainer">
+    <div class="container" id="dashboard">
+        <div class="row"> 
+            <!-- Start Page Cotents --> 
+            <div class="col-xs-12 col-sm-3 col-md-3 item current">
+                <div class="inner">
+                    <h3><a href="#"><span class="glyphicon glyphicon-play-circle"></span> 전체회원</a></h3>
+                    <ul class="list-unstyled">
+                        <li><span class="text">승인</span> <span class="badge badge-success">23</span></li>
+                        <li><span class="text">대기</span> <span class="badge badge-primary">23</span></li>
+                        <li><span class="text">반려</span> <span class="badge badge-warning">23</span></li>
+                        <li><span class="text">탈퇴</span> <span class="badge">23</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 item current">
+                <div class="inner">
+                    <h3><a href="#"><span class="glyphicon glyphicon-play-circle"></span> 멤버십 관리</a></h3>
+                    <ul class="list-unstyled">
+                        <li><span class="text">승인</span> <span class="badge badge-success">23</span></li>
+                        <li><span class="text">대기</span> <span class="badge badge-primary">23</span></li>
+                        <li><span class="text">반려</span> <span class="badge badge-warning">23</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 item current">
+                <div class="inner">
+                    <h3><a href="#"><span class="glyphicon glyphicon-play-circle"></span> 스타트업</a></h3>
+                    <ul class="list-unstyled">
+                        <li><span class="text">승인</span> <span class="badge badge-success">23</span></li>
+                        <li><span class="text">대기</span> <span class="badge badge-primary">23</span></li>
+                        <li><span class="text">비공개</span> <span class="badge badge-warning">23</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 item current">
+                <div class="inner">
+                    <h3><a href="#"><span class="glyphicon glyphicon-play-circle"></span> 공간공유</a></h3>
+                    <ul class="list-unstyled">
+                        <li><span class="text">승인</span> <span class="badge badge-success">23</span></li>
+                        <li><span class="text">대기</span> <span class="badge badge-primary">23</span></li>
+                        <li><span class="text">반려</span> <span class="badge badge-warning">23</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 item current">
+                <div class="inner">
+                    <h3><a href="#"><span class="glyphicon glyphicon-play-circle"></span> 이벤트</a></h3>
+                    <ul class="list-unstyled">
+                        <li><span class="text">승인</span> <span class="badge badge-success">23</span></li>
+                        <li><span class="text">대기</span> <span class="badge badge-primary">23</span></li>
+                        <li><span class="text">반려</span> <span class="badge badge-warning">23</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 item current">
+                <div class="inner">
+                    <h3><a href="#"><span class="glyphicon glyphicon-play-circle"></span> 콘텐츠</a></h3>
+                    <ul class="list-unstyled">
+                        <li><span class="text">공개</span> <span class="badge badge-info">23</span></li>
+                        <li><span class="text">비공개</span> <span class="badge badge-warning">23</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 item current">
+                <div class="inner">
+                    <h3><a href="#"><span class="glyphicon glyphicon-play-circle"></span> 경진대회 관리</a></h3>
+                    <ul class="list-unstyled">
+                        <li>진행 중  <span class="badge badge-success">23</span></li>
+                        <li>전체  <span class="badge badge-info">23</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 item current">
+                <div class="inner">
+                    <h3><a href="#"><span class="glyphicon glyphicon-play-circle"></span> Office hours</a></h3>
+                    <ul class="list-unstyled">
+                        <li>진행 중  <span class="badge badge-success">23</span></li>
+                        <li>전체멘토  <span class="badge badge-info">23</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 item">
+                <div class="inner">
+                    <h3><a href="#"><span class="glyphicon glyphicon-play-circle"></span> 메인 콘텐츠 관리</a></h3> 
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 item">
+                <div class="inner">
+                    <h3><a href="#"><span class="glyphicon glyphicon-play-circle"></span> 출입 관리</a></h3> 
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 item">
+                <div class="inner">
+                    <h3><a href="#"><span class="glyphicon glyphicon-play-circle"></span> 월간 사물함 배정 </a></h3> 
+                </div>
+            </div>
+            <!-- /End Page Cotents --> 
+        </div>
+    </div>
+</div>
+<!-- /container --> 
+
+</div>
+<!-- /wrap -->
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <p class="credit">&copy D.CAMP 2013 </p>
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

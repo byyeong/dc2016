@@ -1,0 +1,108 @@
+//
+// D.CAMP Global Navgation bar LESS
+// --------------------------------------------------
+
+/* Use as required framework - bootstrap */
+
+@import "bootstrap/bootstrap"; /* This less file imported bootstarp 3.3.1 */
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+@white : #FFF;
+@porcelain : #ECF0F1; /* background color */
+@outerspace : #30373C; /* font color base */
+@shuttle-gray : #515d6e;
+@gray-chateau : #a0aab2; /* font sub color */
+@vermilion : #FF3F00; /* point color */
+@crusta : #F57035; /* point sub color */
+@burnt-orange :#d35400;
+
+
+@font-family-base : 'Open Sans', 'Nanum Gothic', sans-serif;
+@font-family-title :'Open Sans', sans-serif;
+@font-size-base : 14px;
+@line-height : 1.6;
+@lines-to-show : 2;
+
+@radius-none : 0;
+@radius-base : 4px;
+
+
+
+
+// D.CAMP GNB
+.navbar { background-color: #3b4043; border:0;   margin-bottom:0;
+
+	border-radius: @radius-none;
+	-moz-border-radius: @radius-none;
+	-webkit-border-radius: @radius-none;
+	 
+	.navbar-brand { height: auto;  padding-top:5px; padding-bottom: 5px;
+		img { height: 40px;}
+	}  
+
+	ul.navbar-right { padding-right: 15px;
+		li { 
+			a {  text-align:center; vertical-align: middle; line-height: 3.6;  color: @white; padding: 0 15px;
+				&:hover { background-color: @outerspace; color: @white;}
+			}
+
+			ul.dropdown-menu {
+				li { width: 100%; height: auto; 
+					a { color: #3b4043; text-align:left; padding: 8px 15px; font-size: 12px; line-height: @line-height; height: auto; 
+						&:hover { background-color: @porcelain; color: @outerspace;}
+					} 
+				}
+			}
+		} 
+	}
+
+	#signoff {  
+		.gosignin .fa-stack {
+			font-size: 16px;
+			.fa-circle { color: #3b5998;}
+		}
+	}
+
+	#signon { 			
+		.signUser { img { width:32px;}}
+					
+		a[aria-expanded="true"] {
+			background-color: @white; color: @outerspace;
+		}			
+	}
+}
+
+//--------------------------
+// Media Query
+
+
+@media (max-width: @screen-xs-max) { 
+
+	 .navbar { 
+
+	 	#navbar-collapse { border-top:0;}
+
+		ul.navbar-right { padding-right: 0;
+			li { 
+				a {  text-align: left;  padding: 0 15px; 
+					.sr-only { width: auto; height: auto; position: relative; }
+				}
+
+				ul.dropdown-menu { background-color: @white;
+					li {  
+						a { color: #3b4043;  
+							&:hover { background-color: @porcelain; color: @outerspace;}
+						} 
+					}
+				}
+			} 
+		}  
+	}
+
+}
+
+ 

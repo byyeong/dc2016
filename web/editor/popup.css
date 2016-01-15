@@ -1,0 +1,75 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0; padding:0}
+
+body#popBody {background-color:#fff; font-size:62.5%; font-family:Dotum, Sans-serif;  margin:0; padding:0; }
+
+.popbodyWrap { font-size: 1.2em; 2009-04-29}
+
+hr              { display:none;}
+img             { border:0;}
+h1, h2, h3, h4  { margin:0;  padding:0;}
+h1              { font-size:1.4em; font-weight:bold; color:#000;}
+h2              { font-size:1.3em; letter-spacing: -1px; }
+textarea        { border:1px solid #aaa;}
+
+input {vertical-align: middle; }
+input.text {
+	border-color:#acacac #dcdcdc #dcdcdc #acacac;
+	border-style:solid solid solid solid;
+	border-width:1px;
+	padding: 2px;
+}
+input.wd { width: 250px; font-family: Tahoma, Arial, Sans-serif; }
+
+
+
+#popBody h2 {
+	color:#fff;
+	font-weight:bold;
+	background-color: #333;
+	height:23px;
+	padding:6px 0 0 10px;
+	border-bottom: 5px solid #5674B9;
+}
+
+.popbodyWrap { padding:10px; background-color:#fff;}
+
+/* insert image */
+.insertImage dl { padding:10px; background-color:#f3f3f3; border:1px solid #e6e6e6; margin-top:5px; }
+.insertImage dt { float: left; width: 65px; font-weight:bold; margin-top: 3px; }
+.insertImage dd { height: 25px; }
+.insertImage dd.message {font-size:11px; color:#000; width:300px; background-color:#fff; margin-top:5px; padding:5px;}
+.insertImage dd input.text {vertical-align: middle; }
+
+#popbuttonWrap {padding:10px; text-align:center;}
+
+
+
+
+
+
+
+
+.castingMsg,
+.popbodyWrap,
+.changeMail,
+.changeUrl,
+.castingWrap,
+#popbestgallery .bestgallery {padding:10px; background-color:#fff;}
+
+
+.buttonWrap {clear:both; text-align:center; padding:10px;}
+.buttonWrap input.button { padding:3px 0;}
+
+
+
+
+
+
+
+
+
+

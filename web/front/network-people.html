@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>D.CAMP &#8211; &#039;드림뱅크&#039; 은행권청년창업재단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/site.css" >
+<link rel="stylesheet" href="../css/bootstrap-formhelpers.css" >
+<link rel="stylesheet" href="../css/bootstrap-select.min.css" >
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css" >
+<!--[if IE 7]>
+<link rel="stylesheet" href="../font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--> 
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" > 
+
+<!-- Javascript  -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/holder.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.language.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.js"></script>
+<script src="../js/bootstrap-formhelpers-timepicker.js"></script>
+<script src="../js/bootstrap-select.min.js"></script>
+ 
+</head>
+
+<body>
+<div class="wrap"> 
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">  
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index_new.html"><img src="../images/logo.png" alt="D.CAMP" class="img-responsive"></a> 
+            </div>
+            <!-- /navbar-header -->
+             
+            <div class="collapse navbar-collapse" id="navbar-collapse" > 
+                <ul class="nav navbar-nav navbar-right navbar-sign" id="signoff" style="display:none;">
+                    <li class="gosignin">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span> 
+                            로그인
+                        </a>
+                    </li>
+                    <li class="gosignup">
+                        <a href="#">
+                            회원가입
+                        </a>
+                    </li>
+                </ul> 
+ 
+                <ul class="nav navbar-nav navbar-right navbar-sign" id="signon">
+                    <li class="signUser"> 
+                        <a href="/member/dcamp" data-toggle="tooltip" data-placement="bottom" title="dcamp"> 
+                            <img class="img-circle" src="../images/img_default.png"> <span class="sr-only">사용자이름</span> 
+                        </a> 
+                    </li>
+                    <li class="userbell">
+                        <a href="/member/activity">
+                            <span class="fa fa-fw fa-bell"></span><span class="sr-only"> 액티비티</span> <span class="badge">99+</span> 
+                        </a> 
+                    </li>
+                    <li class="dropdown"> 
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="fa fa-fw fa-cog"></span><span class="sr-only"> 설정 </span> 
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li style="border-bottom: 1px dashed #ddd;">
+                                <a href="contents-edit.html"><span class="fa fa-fw fa-file-text"></span> 컨텐츠 글쓰기</a>
+                            </li>
+                            <li style="border-bottom: 1px dashed #ddd;">
+                                <a href="officehours-manage.html"><span class="fa fa-fw fa-file-text"></span> Office Hours 관리 </a>
+                            </li>
+                            <li><a href="mypage-contents.html"> 콘텐츠관리</a></li>
+                            <li><a href="mypage-event.html"> 이벤트관리</a></li>
+                            <li><a href="mypage-roomsharing.html"> 공간공유 신청내역</a></li>
+                            <li><a href="mypage-competition.html"> 경진대회 관리</a></li>
+                            <li><a href="mypage-officehours.html">Office Hours 신청내 </a></li>
+                            <li><a href="#"> 레퍼런스 내역</a></li>
+                            <li><a href="mypage-profile.html"> 개인정보 수정</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="#"> <span class="fa fa-fw fa-sign-out"></span> 로그아웃</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="../admin/index.html"><span class="fa fa-fw fa-cog"></span> 관리자</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control input-sm" placeholder="Search">
+                    </div>
+                </form> 
+                <ul class="nav navbar-nav navbar-left navbar-site">
+                    <li><a href="event-list.html">Event</a></li>
+                    <li><a href="competition-list.html">Challenge</a></li>
+                    <li><a href="officehours.html">Office Hours</a></li>
+                    <li><a href="recruit-list.html">Recruit</a></li>
+                    <li><a href="benefit-list.html">Benefit</a></li>
+                    <li><a href="contents-list.html">Blog</a></li>
+                    <li><a href="product.html">Showcase</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Network</a>
+                        <ul class="dropdown-menu"> 
+                            <li><a href="network-startup.html">Startup</a></li>
+                            <li><a href="network-people.html">People</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about-dcamp.html">About</a></li>
+                </ul>
+            </div>
+            <!-- /navbar-collapse -->
+        </div> 
+    </nav>
+    <!-- /navbar -->
+    <!-- rowContent -->
+    <div class="rowContent" id="network">
+        <div class="page-header">
+            <div class="container">
+                <h2>People <small> 창업자/공동창업자</small></h2>
+            </div>
+        </div>
+        <!-- page-content -->
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-12 col-md-9 content">
+                        <div class="row">
+                        <div class="vcard card col-xs-12 col-sm-4 col-md-4"> 
+                            <div class="inner"> 
+                                <a href="#">
+                                <div class="vcardimg">
+                                    <div class="logo" style="background-image:url(https://graph.facebook.com/v2.2/864492630311163/picture?redirect=1&type=large);">
+                                        <img src="../img/trans.png">
+                                    </div>
+                                    <div class="bgimg" data-href="https://graph.facebook.com/v2.2/864492630311163/picture?redirect=1&type=large" data-sharpness="80"></div>
+                                </div>
+                                <div class="caption"> 
+                                    <img class="sr-only" src="https://graph.facebook.com/v2.2/864492630311163/picture?redirect=1&type=large" >
+                                    <h3 class="ellipsis">강하다</h3> 
+                                    <p class="mulitple">이것저것 좋아하는 강하다입니다. </p>
+                                </div> 
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /item -->
+
+                        <div class="vcard card col-xs-12 col-sm-4 col-md-4"> 
+                            <div class="inner"> 
+                                <a href="#">
+                                <div class="vcardimg">
+                                    <div class="logo" style="background-image:url(https://graph.facebook.com/v2.2/511590928999397/picture?redirect=1&type=large);">
+                                        <img src="../img/trans.png">
+                                    </div>
+                                    <div class="bgimg" data-href="https://graph.facebook.com/v2.2/511590928999397/picture?redirect=1&type=large" data-sharpness="80"></div>
+                                </div>
+                                <div class="caption"> 
+                                    <img class="sr-only" src="https://graph.facebook.com/v2.2/511590928999397/picture?redirect=1&type=large" >
+                                    <h3 class="ellipsis">Sebastian Greiner-Bär</h3>  
+                                </div> 
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /item -->
+
+                        <div class="vcard card col-xs-12 col-sm-4 col-md-4"> 
+                            <div class="inner"> 
+                                <a href="#">
+                                <div class="vcardimg">
+                                    <div class="logo" style="background-image:url(https://graph.facebook.com/v2.2/10152928405596813/picture?redirect=1&type=large);">
+                                        <img src="../img/trans.png">
+                                    </div>
+                                    <div class="bgimg" data-href="https://graph.facebook.com/v2.2/10152928405596813/picture?redirect=1&type=large" data-sharpness="80"></div>
+                                </div>
+                                <div class="caption"> 
+                                    <img class="sr-only" src="https://graph.facebook.com/v2.2/10152928405596813/picture?redirect=1&type=large" >
+                                    <h3 class="ellipsis">SeungWon Jung</h3> 
+                                    <p class="mulitple">올바르고 존경받는 훌륭한 기업을 만들고 싶은 창업가입니다. 글로벌 시장에서 성공한 B2B 소프트웨어 기업을 만들고 싶습니다. </p>
+                                </div> 
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /item -->
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-12 col-sm-12 col-md-3 sidebar">
+                        <div class="panel category">
+                            <h3 class="panel-title">업무분야별 보기</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="/network/people/1/720">창업자/공동창업자</a> <small>(4046)</small></li>
+                                <li><a href="/network/people/1/721">대표이사/CEO</a> <small>(2207)</small></li>
+                                <li><a href="/network/people/1/722">소프트웨어 엔지니어</a> <small>(1729)</small></li>
+                                <li><a href="/network/people/1/723">하드웨어 엔지니어</a> <small>(245)</small></li>
+                                <li><a href="/network/people/1/724">기획자/프로젝트 매니저</a> <small>(2581)</small></li>
+                                <li><a href="/network/people/1/725">영업</a> <small>(981)</small></li>
+                                <li><a href="/network/people/1/726">마켓팅</a> <small>(1761)</small></li>
+                                <li><a href="/network/people/1/727">법률</a> <small>(168)</small></li>
+                                <li><a href="/network/people/1/728">운영</a> <small>(712)</small></li>
+                                <li><a href="/network/people/1/729">재무/회계</a> <small>(446)</small></li>
+                                <li><a href="/network/people/1/730">인사</a> <small>(405)</small></li>
+                                <li><a href="/network/people/1/731">총무/경영지원</a> <small>(465)</small></li>
+                                <li><a href="/network/people/1/732">디자이너</a> <small>(965)</small></li>
+                                <li><a href="/network/suporter">투자자/창업지원 유관기관</a> <small>(333)</small></li>
+                                <li><a href="/network/people/1/1406">기타</a> <small>(1196)</small></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- /page-content --> 
+    </div>
+    <!-- /rowContent -->
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="footer-navbar list-inline">
+                <li><a href="#">D.CAMP 소개</a></li>
+                <li><a href="#">멤버쉽 안내</a></li>
+                <li><a href="#">공간공유</a></li>
+                <li><a href="#">서비스약관</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+            </ul>
+            <address>
+                서울시 강남구 역삼동 683-34 새롬빌딩 4~6층 &nbsp;
+                <span><i class="fa fa-phone"></i> (02) 2030-9300</span> &nbsp;
+                <span><i class="fa fa-envelope-o"></i> <a href="mailto:contact@dcamp.kr">contact@dcamp.kr</a></span>
+            </address>
+            <p>Copyright &copy;D.CAMP. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- /footer -->
+</div>
+<!-- /wrapper -->
+
+
+<script src="../js/jquery.ellipsis.js"></script> 
+<script src="../js/jquery.blurr.js"></script>
+
+<script>
+    $(document).ready(function() { 
+        $('.ellipsis').ellipsis({
+            row: 1
+        }); 
+        $('.mulitple').ellipsis({
+            row: 2
+        }); 
+
+        $('.bgimg').blurr(); 
+    });      
+</script> 
+
+
+ 
+</body>
+</html>

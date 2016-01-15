@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>D.CAMP &#8211;  은행권청년창업재단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-formhelpers.css" >
+<link rel="stylesheet" href="css/bootstrap-select.min.css" >
+<link rel="stylesheet" href="font-awesome/css/font-awesome.css" >
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="css/style.css" >
+
+<!-- Javascript  -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/holder.js"></script>
+<script src="js/bootstrap-formhelpers-datepicker.language.js"></script>
+<script src="js/bootstrap-formhelpers-datepicker.js"></script>
+<script src="js/bootstrap-formhelpers-timepicker.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body>
+
+<!-- header -->
+<header>
+    <div class="container"> <a href="index.html" id="logo"><img src="img/logo.png" alt="D.CAMP"></a>
+        <div class="sign" id="signon" style=" display:   ;"> <a href="#" id="signUser"><img src="img/yangmal.png" class="img-circle" data-src="holder.js/30x30" style="width:30px; height:30px;"> <strong>흰양말</strong> <small>(dannaeyang)</small> </a> <span class="sep">|</span>
+            <div id="userbell"> <a href="#"><span class="icon icon-bell-alt"></span></a> <span class="badge">5</span> </div>
+            <span class="sep">|</span>
+            <div id="usernav"  class="list-unstyled"> <a href="#" class="set"><span class="icon icon-cog"></span></a>
+                <ul class="list-unstyled">
+                    <li><a href="#">개인정보 수정</a></li>
+                    <li><a href="#">액티비티</a></li>
+                    <li><a href="#">로그아웃</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /sign -->
+        
+        <div class="sign" id="signoff" style=" display: none  ;"> <a href="#"><span class="icon icon-facebook img-circle"></span> 로그인</a> <small>/</small> <a href="#">회원가입</a> </div>
+        <!-- /sign -->
+        
+        <nav id="nav" class="filter" role="navigation"> <a href="#nav" title="Show navigation">Show navigation</a> <a href="#" title="Hide navigation">Hide navigation</a>
+            <ul class="filter-options">
+                <li>
+                    <button class="btn btn-link" data-group="event">Event</button>
+                </li>
+                <li>
+                    <button class="btn btn-link"  data-group="commu">Community</button>
+                </li>
+                <li>
+                    <button class="btn btn-link"  data-group="recruit">Recruit</button>
+                </li>
+                <li>
+                    <button class="btn btn-link"  data-group="news">News</button>
+                </li>
+            </ul>
+        </nav>
+        <!-- /nav -->
+        
+        <div class="search">
+            <form id="search-form">
+                <input type="search" placeholder="Search">
+            </form>
+        </div>
+        <!-- /search --> 
+        
+    </div>
+</header>
+<!-- /header --> 
+
+<!-- rowContent -->
+<div class="rowContent"  id="recruit"> 
+    <!-- page-header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>채용정보 <small>Recruit</small></h1>
+        </div>
+    </div>
+    <!-- /page-header --> 
+    
+    <!-- page-content -->
+    <div class="page-content" id="recruit-edit"> 
+        <!-- container -->
+        <div class="container">
+            <div class="content recruitEditor"> 
+                    <h3>채용공고 작성하기</h3>
+                    <form class="form-horizontal" role="form">
+                        <fieldset>
+                            
+                            <div class="form-group">
+                                <div class="col-sm-3 col-md-3 control-label"> 채용기간 </div>
+                                <div class="col-sm-8 col-md-8"> 
+                                    
+                                    <!-- form-group-date -->
+                                    <div class="form-group-date "> 
+                                        <!-- datepicker -->
+                                        <div class="bfh-datepicker" data-format="y.m.d">
+                                            <div class="input-group bfh-datepicker-toggle" data-toggle="bfh-datepicker"> <span class="input-group-addon"><span class="icon-calendar"></span></span>
+                                                <input type="text" class="form-control datepicker" id="inputProjectStartDate" placeholder="시작일" readonly>
+                                            </div>
+                                            <div class="bfh-datepicker-calendar">
+                                                <table class="calendar table table-bordered">
+                                                    <thead>
+                                                        <tr class="months-header">
+                                                            <th class="month" colspan="4"> <a class="previous" href="#"><span class="icon-chevron-left"></span></a> <span></span> <a class="next" href="#"><span class="icon-chevron-right"></span></a> </th>
+                                                            <th class="year" colspan="3"> <a class="previous" href="#"><span class="icon-chevron-left"></span></a> <span></span> <a class="next" href="#"><span class="icon-chevron-right"></span></a> </th>
+                                                        </tr>
+                                                        <tr class="days-header"> </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- /datepicker --> 
+                                        <span class="date-sim">&sim;</span> 
+                                        <!-- datepicker -->
+                                        <div class="bfh-datepicker" data-format="y.m.d">
+                                            <div class="input-group bfh-datepicker-toggle" data-toggle="bfh-datepicker"> <span class="input-group-addon"><span class="icon-calendar"></span></span>
+                                                <input type="text" class="form-control datepicker" id="inputProjectEndDate" placeholder="종료일" readonly>
+                                            </div>
+                                            <div class="bfh-datepicker-calendar">
+                                                <table class="calendar table table-bordered">
+                                                    <thead>
+                                                        <tr class="months-header">
+                                                            <th class="month" colspan="4"> <a class="previous" href="#"><span class="icon-chevron-left"></span></a> <span></span> <a class="next" href="#"><span class="icon-chevron-right"></span></a> </th>
+                                                            <th class="year" colspan="3"> <a class="previous" href="#"><span class="icon-chevron-left"></span></a> <span></span> <a class="next" href="#"><span class="icon-chevron-right"></span></a> </th>
+                                                        </tr>
+                                                        <tr class="days-header"> </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- /datepicker --> 
+                                    </div>
+                                    <!-- /form-group-date -->                                     
+                                </div>
+                            </div>
+                            <!-- /form-group -->
+                            
+                            <div class="form-group">
+                                <div  class="col-sm-3 col-md-3 control-label">채용제목</div>
+                                <div class="col-sm-8 col-md-8">
+                                    <input type="text" class="form-control" placeholder="제목을 입력하세요" >
+                                </div>
+                            </div>
+                            <!-- /form-group -->
+                            
+                            <div class="form-group">
+                                <div class="col-sm-3 col-md-3 control-label">내용</div>
+                                <div class="col-sm-8 col-md-8"> 
+                                    <textarea class="form-control">에디터가 들어오는 곳입니다. </textarea>
+                                </div>
+                            </div>
+                            <!-- /form-group -->
+                            
+                            <div class="form-group">
+                                <div  class="col-sm-3 col-md-3 control-label">채용분야</div>
+                                <div class="col-sm-8 col-md-8">
+                                    <p class="form-group-tag">
+                                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                                        <input type="text" class="form-control" placeholder=" " >
+                                    </p>                                     
+                                    <button class="btn btn-default btn-sm"><span class="icon-plus"></span> 분야 추가</button>
+                                </div>
+                            </div>
+                            <!-- /form-group -->
+                            
+                            
+                            <div class="form-group">
+                                <div  class="col-sm-3 col-md-3 control-label">지역</div>
+                                <div class="col-sm-8 col-md-8">  
+                                    <label class="checkbox-inline"><input type="checkbox"> 지역명</label>
+                                    <label class="checkbox-inline"><input type="checkbox"> 지역명</label>
+                                    <label class="checkbox-inline"><input type="checkbox"> 지역명</label> 
+                                </div>
+                            </div>
+                            <!-- /form-group -->
+                            
+                            <div class="form-group">
+                                <div  class="col-sm-3 col-md-3 control-label">경력</div>
+                                <div class="col-sm-8 col-md-8">  
+                                    <label class="checkbox-inline"><input type="checkbox"> 신입</label>
+                                    <label class="checkbox-inline"><input type="checkbox"> 경력</label>
+                                    <label class="checkbox-inline"><input type="checkbox"> 인턴</label> 
+                                </div>
+                            </div>
+                            <!-- /form-group -->
+                            
+                            <div class="form-group">
+                                <div  class="col-sm-3 col-md-3 control-label">개발분야</div>
+                                <div class="col-sm-8 col-md-8">  
+                                    <label class="checkbox-inline"><input type="checkbox"> 게임</label>
+                                    <label class="checkbox-inline"><input type="checkbox"> 모바일</label>
+                                    <label class="checkbox-inline"><input type="checkbox"> 웹서비스</label> 
+                                    <label class="checkbox-inline"><input type="checkbox"> LBS </label> 
+                                </div>
+                            </div>
+                            <!-- /form-group -->
+                            
+                            <div class="form-group">
+                                <div  class="col-sm-3 col-md-3 control-label">기간</div>
+                                <div class="col-sm-8 col-md-8">  
+                                    <label class="checkbox-inline"><input type="checkbox"> 단기</label>
+                                    <label class="checkbox-inline"><input type="checkbox"> 1년</label>
+                                    <label class="checkbox-inline"><input type="checkbox"> 정직원</label> 
+                                </div>
+                            </div>
+                            <!-- /form-group -->
+                            
+                            <div class="form-group">
+                                <div  class="col-sm-3 col-md-3 control-label">언어</div>
+                                <div class="col-sm-8 col-md-8">  
+                                    <label class="checkbox-inline"><input type="checkbox"> 영어</label>
+                                    <label class="checkbox-inline"><input type="checkbox"> 일본어</label>
+                                    <label class="checkbox-inline"><input type="checkbox"> 중국어</label> 
+                                    <label class="checkbox-inline"><input type="checkbox"> 기타</label> 
+                                </div>
+                            </div>
+                            <!-- /form-group -->                           
+                            
+                            <div class="action-wrap">
+                                <div class="col-lg-offset-3"> <a href="#"  class="btn btn-default">취소</a> <a href="#"   class="btn btn-primary">확인</a> </div>
+                            </div>
+                        </fieldset>
+                    </form> 
+                
+            </div>
+            <!-- /content -->             
+        </div>
+        <!-- /container --> 
+    </div>
+    <!-- /page-content --> 
+</div>
+<!-- /rowContent --> 
+
+<!--  floating --> 
+<!-- todo : 모든 화면 공통 -->
+<div id="floatdiv">
+    <div class="container">
+        <div class="col-xs-12 col-md-4 col-lg-4 float-about"><a href="#">About D.CAMP</a></div>
+        <div class="col-xs-12 col-md-4 col-lg-4 float-member"><a href="#">Mebership</a></div>
+        <div class="col-xs-12 col-md-4 col-lg-4 float-sharing"><a href="#">Room sharing</a></div>
+    </div>
+</div>
+<!-- floating --> 
+<!-- footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 text-left">
+                <ul class="list-inline">
+                    <li><a href="#">D.camp 소개</a></li>
+                    <li><a href="#">멤버십안내</a></li>
+                    <li><a href="#">공간공유</a></li>
+                    <li><a href="#">서비스약관</a></li>
+                    <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+                </ul>
+            </div>
+            <!-- /col-lg -->
+            
+            <div class="col-lg-7 text-right">
+                <address>
+                서울시 강남구 역삼동 683-34 새롬빌딩 4~6층 <span class="icon-phone"></span><a href="tel:0220309300">(02) 2030-9300 </a> <span class="icon-envelope-alt"></span><a href="mailto:contact@dreamcamp.co">contact@dreamcamp.co</a>
+                </address>
+                <strong>&copy; D.CAMP</strong> </div>
+        </div>
+        <!-- /col-lg --> 
+    </div>
+</footer>
+<!-- /footer --> 
+
+<!-- modal #md-changePassword -->
+<div class="modal fade" id="md-changePassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title"><span class="icon-lock"></span> <span class="break"></span> 비밀번호 수정</h3>
+            </div>
+            <!-- /modal-header -->
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="" class="col-sm-3 col-md-3 control-label">현재 비밀번호</label>
+                        <div class="col-sm-8 col-md-8 control-input">
+                            <input type="password" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+                    <!-- / form-group -->
+                    
+                    <div class="form-group">
+                        <label for="" class="col-sm-3 col-md-3 control-label">새 비밀번호 입력</label>
+                        <div class="col-sm-8 col-md-8 control-input input-group"> <span class="input-group-addon"><span class="icon-lock"></span></span>
+                            <input type="password" placeholder="New Password" class="form-control">
+                        </div>
+                    </div>
+                    <!-- / form-group -->
+                    
+                    <div class="form-group">
+                        <label for="" class="col-sm-3 col-md-3 control-label">새 비밀번호 확인</label>
+                        <div class="col-sm-8 col-md-8 control-input input-group"> <span class="input-group-addon"><span class="icon-lock"></span></span>
+                            <input type="password" placeholder="New Password Check" class="form-control">
+                        </div>
+                    </div>
+                    <!-- / form-group -->
+                </form>
+            </div>
+            <!-- /modal-body -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-primary">확인</button>
+            </div>
+            <!-- /modal-footer --> 
+        </div>
+        <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+</div>
+<!-- /modal #md-changePassword -->
+
+</body>
+</html>

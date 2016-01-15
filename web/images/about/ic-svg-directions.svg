@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="41px" height="37px" viewBox="0 0 41 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-svg-directions</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="dcamp-about-2015" sketch:type="MSArtboardGroup" transform="translate(-783.000000, -1973.000000)">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(252.000000, 1971.000000)">
+                <g id="ic-svg-directions" transform="translate(531.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-path" x="1" y="0" width="40" height="40"></rect>
+                    <path d="M17.582,2.378 L15.8,2.378 C15.364,2.378 15.008,2.734 15.008,3.17 L15.008,10.694 L8.006,10.694 C7.678,10.694 7.274,10.768 6.882,10.888 C6.49,11.008 6.116,11.174 5.85,11.356 L1.146,14.584 C0.88,14.766 0.748,15.006 0.748,15.246 C0.748,15.486 0.88,15.726 1.146,15.91 L5.85,19.138 C6.116,19.32 6.49,19.486 6.882,19.606 C7.274,19.726 7.678,19.8 8.006,19.8 L15.008,19.8 L15.008,37.226 C15.008,37.662 15.364,38.018 15.8,38.018 L17.582,38.018 C18.018,38.018 18.374,37.66 18.374,37.226 L18.374,3.168 C18.374,2.736 18.016,2.378 17.582,2.378 L17.582,2.378 Z M39.956,10.626 L35.252,7.398 C34.986,7.216 34.612,7.05 34.22,6.93 C33.83,6.81 33.424,6.736 33.096,6.736 L19.56,6.736 L21.144,15.844 L33.096,15.844 C33.422,15.844 33.828,15.768 34.22,15.65 C34.61,15.528 34.986,15.364 35.252,15.182 L39.956,11.954 C40.222,11.772 40.354,11.532 40.354,11.29 C40.354,11.05 40.22,10.81 39.956,10.626 L39.956,10.626 Z" id="Shape" fill="#FFCC00"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

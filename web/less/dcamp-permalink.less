@@ -1,0 +1,145 @@
+//
+// D.CAMP Permalink LESS
+// --------------------------------------------------
+
+/* Use as required framework - bootstrap */
+
+@import "dcamp-gnb"; /* This less file imported bootstarp */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+
+@white : #FFF;
+@porcelain : #ECF0F1; /* background color */
+@outerspace : #30373C; /* font color base */
+@shuttle-gray : #515d6e;
+@gray-chateau : #a0aab2; /* font sub color */
+@vermilion : #FF3F00; /* point color */
+@crusta : #F57035; /* point sub color */
+@burnt-orange :#d35400;
+
+
+@font-family-base : 'Open Sans', 'Nanum Gothic', sans-serif;
+@font-family-title :'Open Sans', sans-serif;
+@font-size-base : 14px;
+@line-height : 1.6;
+@lines-to-show : 2;
+
+@radius-none : 0;
+@radius-base : 4px;
+
+
+
+
+// D.CAMP Lounge 
+
+body { font-size: @font-size-base; color: @outerspace; font-family: @font-family-base; line-height: @line-height;  }
+
+.container { max-width: 680px;}
+
+img.avatar { width: 64px; height: 64px; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { line-height: @line-height;}
+
+
+.page-header { 	border-color: @gray-chateau;
+	h3 { font-size: 18px; text-transform: uppercase; font-weight:bold;  margin-bottom: 0;}
+}
+
+
+
+//--------------------------
+// layout
+
+.wrapper { 
+
+	.content-wrapper {
+		margin-top:30px;
+	}
+
+	#footer {
+		border-top: 1px solid #eee; 
+		padding-top: 15px; 
+		padding-bottom: 15px; 
+		margin: 30px 0; 
+		text-align: center; 
+		color: @gray-chateau; 
+		font-size: 12px;
+	}
+}
+
+
+
+//--------------------------
+// #content
+ 
+
+#user-permalink { 
+
+	text-align: center;
+
+	.lead { font-size: @font-size-base; border-bottom: 1px solid #ccc; padding-bottom: 15px;
+
+ 		.label-icon {
+ 			display: block; font-size: 18px; color: @gray-chateau;
+
+ 			&:before { content: " - ";}
+ 			&:after { content: " - ";}
+ 		}
+		a { color: @outerspace;
+			&:hover { color: @crusta; }
+		}
+	}
+
+	.media-caption { 
+
+		padding : 30px;
+
+		background-color: @porcelain;
+		
+		border-radius: @radius-base;
+		-moz-border-radius: @radius-base;
+		-webkit-border-radius: @radius-base;
+
+		img.avatar { width:160px; height:160px; margin:0 auto;}
+
+		.caption { 
+			text-align: center;
+
+			h3 {
+				font-size: 24px;
+				
+				a { color: @outerspace;
+					&:hover { color: @crusta; }
+				}
+
+				small { 
+					display: block; color: @gray-chateau;  font-size: 12px;
+				}
+			}
+
+			p { margin-bottom: 0;}
+		}
+	}
+}
+
+#now-user {
+
+	.lead { font-size: @font-size-base;}
+
+	.list-inline {
+		margin-bottom : 0;
+
+		li { padding-right: 0; padding-bottom: 5px;}
+
+		a { display: block;}
+
+		img.avatar { width: 60px; height: 60px; }
+	}
+}
+
+
+ 
+ 

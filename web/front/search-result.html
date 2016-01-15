@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>D.CAMP &#8211; &#039;드림뱅크&#039; 은행권청년창업재단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap-formhelpers.css" >
+<link rel="stylesheet" href="../css/bootstrap-select.min.css" >
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css" >
+<!--[if IE 7]>
+<link rel="stylesheet" href="../font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="../css/style.css" >
+
+<!-- Javascript  -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/holder.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.language.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.js"></script>
+<script src="../js/bootstrap-formhelpers-timepicker.js"></script>
+<script src="../js/bootstrap-select.min.js"></script>
+<script src="../js/script.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+<!-- header -->
+    <header class="navbar navbar-default  global-nav navbar-fixed-top" role="navigation">
+        <div class="container"> 
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-global-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="main.html"><img src="../img/logo.png" > </a> </div>
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <nav class="collapse navbar-collapse navbar-global-collapse" role="navigation">
+                <ul id="menu" class="nav navbar-nav">
+                    <li> <a class="btn btn-link"  href='about-dcamp.html' >about</a> </li>
+                    <li> <a class="btn btn-link"  href='event-list.html' >Event</a> </li>
+                    <li>
+                        <a class="btn btn-link" class="dropdown-toggle" data-toggle="dropdown">
+                        Network <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="startup-list.html">Startup</a></li>
+                            <li><a href="people-list.html">People</a></li>
+                            <li><a href="people-list.html">Suporter</a></li>
+                        </ul>
+                    </li>
+                    <li> <a class="btn btn-link"  href='recruit-list.html' >Recruit</a> </li>
+                    <li> <a class="btn btn-link" href="notice-list.html">Notice</a> </li>
+                    <li> <a class="btn btn-link"  href='news-list.html'>News</a> </li>
+                    <li> <a class="btn btn-link" class="dropdown-toggle" data-toggle="dropdown"> Contents <b class="caret"></b> </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contents-list.html">카테고리 1</a></li>
+                            <li><a href="contents-list.html">카테고리 2</a></li>
+                        </ul>
+                    </li>
+                    <li> <a class="btn btn-link" href='competition-list.html'>Competition</a> </li>
+                </ul>
+                <form  id="search-form" class="navbar-form navbar-left" role="search">
+                    <input type="search" placeholder="Search">
+                </form>
+                <ul id="signoff" class="nav navbar-nav navbar-right" style="display: none;">
+                    <li class="gosignin"><a href="#"><span class="icon icon-facebook img-circle"></span> 로그인</a></li>
+                    <li class="gosignup"><a href="#">회원가입</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" id="signon">
+                    <li class="signUser"> <a href="community-profile.html"  data-toggle="tooltip" data-placement="bottom" title="흰양말"> <img src="../img/yangmal.png" class="img-circle"> <strong class="sr-only">흰양말 <small>(dannaeyang)</small></strong> </a> </li>
+                    <li class="userbell"> <a href="member-activity.html"><span class="badge pull-right">5</span> <span class="icon-bell-alt"></span><span class="sr-only"> 액티비티</span> </a> </li>
+                    <li class="userset dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-cog"></span><span class="sr-only"> 계정설정 </span> </a>
+                        <ul class="dropdown-menu">
+                            <li style="border-bottom: 1px dashed #ddd;"><a href="contents-edit.html"><span class="icon-file-text"></span> 컨텐츠 글쓰기</a></li>
+                            <li><a href="mypage-contents.html"> 콘텐츠관리</a></li>
+                            <li><a href="mypage-event.html"> 이벤트관리</a></li>
+                            <li><a href="mypage-roomsharing.html"> 공간공유 신청내역</a></li>
+                            <li><a href="mypage-competition.html"> 경진대회 관리</a></li>
+                            <li><a href="mypage-profile.html"> 개인정보 수정</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="#"><span class="icon-signout"></span> 로그아웃</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="../admin/index.html"><span class="icon-cog"></span> 관리자</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.navbar-collapse --> 
+        </div>
+    </header>
+    <!-- /header --> 
+    <!-- rowContent -->
+<div class="rowContent"  id="searching"> 
+    <!-- page-header -->
+    <div class="page-header">
+        <div class="container">
+            <h2>Search</h2>
+        </div>
+    </div>
+    <!-- /page-header --> 
+    
+    <!-- page-content -->
+    <div class="page-content"> 
+        <!-- container -->
+        <div class="container"> 
+            
+            <!-- content -->
+            <div class="full-content">
+                <div class="panel panel-default filter-box">
+                    <div class="panel-body">
+                        <dl class="dl-horizontal filter-form">
+                            <dt>검색 대상 선택</dt>
+                            <dd>
+                                <label>
+                                    <input type="radio">
+                                    개인</label>
+                                <label>
+                                    <input type="radio">
+                                    기업</label>
+                                <label>
+                                    <input type="radio">
+                                    채용정보</label>
+                            </dd>
+                            <dt>검색 항목 선택</dt>
+                            <dd>
+                                <label>
+                                    <input type="checkbox">
+                                    Founder</label>
+                                <label>
+                                    <input type="checkbox">
+                                    Team Member</label>
+                                <label>
+                                    <input type="checkbox">
+                                    Investor</label>
+                                <label>
+                                    <input type="checkbox">
+                                    Incubator</label>
+                                <label>
+                                    <input type="checkbox">
+                                    지역</label>
+                                <label>
+                                    <input type="checkbox">
+                                    관심분야</label>
+                                <label>
+                                    <input type="checkbox">
+                                    업무역량</label>
+                                <label>
+                                    <input type="checkbox">
+                                    교육</label>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="panel-footer search-form">
+                        <form role="form" >
+                            <fieldset>
+                                <div class="input-group col-md-6 col-md-offset-3">
+                                    <input type="text" placeholder=" " class="form-control">
+                                    <span class="input-group-btn">
+                                    <button   class="btn btn-default"><span class="icon-search"></span><span class="sr-only">검색하기</span></button>
+                                    </span> </div>
+                                <!-- /input-group -->
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <!-- / panel -->
+                
+                <!-- todo : 검색결과 없을때 -->
+                <div class="alert alert-danger">
+                    <p><strong>Oops!</strong> 검색결과가 없습니다. 디시 입력해주세요.</p>
+                </div>
+                
+                <!-- todo : 검색결과 있을때 -->
+                <h2 class="result-cnt"><span class="icon-search"></span> <strong>'000'</strong>에 대한 <span class="cnt">00</span>건이 검색되었습니다</h2>
+                
+                <div class="result-box type-profile">
+                    <h3>개인</h3>
+                    
+                    <!-- media-list -->
+                    <ul class="media-list"> 
+                        <li class="media"> <a class="pull-left" href="#"> <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c53.40.500.500/s160x160/1001237_10200918807066092_520821281_n.jpg" class="media-object img-circle" data-src="holder.js/40x40" data-toggle="tooltip" title="단내양"  > </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">이름</a> </h4>
+                                <small>CEO, Founder / 회사이름</small>
+                                <p>자기소개가 출력됩니다. 글자수 체크 필요?</p>
+                                <ul>
+                                    <li>지역 : 서울</li>
+                                    <li>관심분야 : M&A, 기획, 경영</li>
+                                    <li>업무역량 : 경영, 소셜마케팅, 기획</li>
+                                    <li>교육 : 000대학 0000과 졸업</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="media"> <a class="pull-left" href="#"> <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c53.40.500.500/s160x160/1001237_10200918807066092_520821281_n.jpg" class="media-object img-circle" data-src="holder.js/40x40" data-toggle="tooltip" title="단내양"  > </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"> <a href="#">이름</a> </h4>
+                                <small>CEO, Founder / 회사이름</small>
+                                <p>자기소개가 출력됩니다. 글자수 체크 필요?</p>
+                                <ul>
+                                    <li>지역 : 서울</li>
+                                    <li>관심분야 : M&A, 기획, 경영</li>
+                                    <li>업무역량 : 경영, 소셜마케팅, 기획</li>
+                                    <li>교육 : 000대학 0000과 졸업</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- /media-list --> 
+                    
+                </div>
+                <!-- / result-profile --> 
+                
+                <div class="result-box type-company">
+                    <h3>기업</h3>
+                    
+                    <!-- media-list -->
+                    <ul class="media-list"> 
+                        <li class="media"> <a class="pull-left" href="#"> <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c53.40.500.500/s160x160/1001237_10200918807066092_520821281_n.jpg" class="media-object img-circle" data-src="holder.js/40x40" data-toggle="tooltip" title="단내양"  > </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"> <a hre="#">회사이름</a> </h4>  
+                                <p>작성된 문장이 출력됩니다</p>
+                                <ul>
+                                    <li>지역 : 서울</li>
+                                    <li>사업분야 : M&A, 기획, 경영</li>
+                                    <li>핵심기술 : 경영, 소셜마케팅, 기획</li> 
+                                </ul>
+                            </div>
+                        </li>
+                         <li class="media"> <a class="pull-left" href="#"> <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c53.40.500.500/s160x160/1001237_10200918807066092_520821281_n.jpg" class="media-object img-circle" data-src="holder.js/40x40" data-toggle="tooltip" title="단내양"  > </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"> <a hre="#">회사이름</a> </h4>  
+                                <p>작성된 문장이 출력됩니다</p>
+                                <ul>
+                                    <li>지역 : 서울</li>
+                                    <li>사업분야 : M&A, 기획, 경영</li>
+                                    <li>핵심기술 : 경영, 소셜마케팅, 기획</li> 
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- /media-list --> 
+                    
+                </div>
+                <!-- / result-company --> 
+                
+                
+                <div class="result-box type-recruit">
+                    <h3>채용정보</h3>
+                    
+                    <!-- media-list -->
+                    <ul class="media-list"> 
+                        <li class="media"> <a class="pull-left" href="#"> <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c53.40.500.500/s160x160/1001237_10200918807066092_520821281_n.jpg" class="media-object img-circle" data-src="holder.js/40x40" data-toggle="tooltip" title="단내양"  > </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">주식회사 유니온풀에서 ios 클라이언트 개발자를 모십니다. </a></h4> 
+                                <p>내용이 살짝 출력됩니다. 몇글자로 할까낭~?</p>
+                                <ul>
+                                    <li>모집기간 : <span class="icon icon-calendar"></span> 7월 15일 부터~7월 18일까지</li>
+                                    <li>모집분야 : <span class="icon icon-tasks"></span> 개발자, 디자이너</li> 
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="media"> <a class="pull-left" href="#"> <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c53.40.500.500/s160x160/1001237_10200918807066092_520821281_n.jpg" class="media-object img-circle" data-src="holder.js/40x40" data-toggle="tooltip" title="단내양"  > </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">주식회사 유니온풀에서 ios 클라이언트 개발자를 모십니다. </a></h4> 
+                                <p>내용이 살짝 출력됩니다. 몇글자로 할까낭~?</p>
+                                <ul>
+                                    <li>모집기간 : <span class="icon icon-calendar"></span> 7월 15일 부터~7월 18일까지</li>
+                                    <li>모집분야 : <span class="icon icon-tasks"></span> 개발자, 디자이너</li> 
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- /media-list --> 
+                    
+                </div>
+                <!-- / result-recruit --> 
+                
+                
+                
+                
+            </div>
+            <!-- /content --> 
+            
+        </div>
+        <!-- /container --> 
+    </div>
+    <!-- /page-content --> 
+</div>
+<!-- /rowContent --> 
+
+
+</div>
+<!-- /wrap --> 
+
+<!-- footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+        
+            <div class="text-center">
+                <ul class="list-inline">
+                    <li><a href="about-dcamp.html">D.camp 소개</a></li>
+                    <li><a href="membership-apply.html">멤버십안내</a></li>
+                    <li><a href="floor-schedule.html">공간공유</a></li>
+                    <li><a href="policy-service.html">서비스약관</a></li>
+                    <li><a href="policy-privacy.html"><strong>개인정보취급방침</strong></a></li>
+                </ul>
+            </div>
+                        
+            <div class="text-center">
+                <address>
+                    서울시 강남구 역삼동 683-34 새롬빌딩 4~6층 &nbsp;
+                    <span class="icon-phone"></span>  (02) 2030-9300 &nbsp;
+                    <span class="icon-envelope-alt"></span> <a href="mailto:contact@dreamcamp.co">contact@dreamcamp.co</a>
+                </address>
+                <strong>&copy; D.CAMP</strong> </div>
+        </div>
+        
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+
+.eventBox { background: url(../img/event0304/dot_line.gif) 0 805px repeat-x; }
+.eventBox .header { height:740px; background:url(../img/event0304/bg.jpg) black; background-size:cover; background-position:center bottom;    } 
+.eventBox .header h2 { padding: 0; margin:0; background: url(../img/event0304/logo.png); width: 507px; height:0; padding-top: 730px; overflow: hidden; display: block; margin:0 auto; }
+.eventBox .container ul.step { background: url(../img/event0304/step.gif); width: 811px; height: 0; padding:186px 0 0 0; margin:0 auto; overflow: hidden;}
+.eventBox .container .desc { text-align: center; padding-top:40px; padding-bottom: 50px;}
+.eventBox .container .desc span { font-weight: bold; font-size: 1.1em ; color:black; text-decoration: underline;}
+.eventBox .container .date { background:#ee1d62; display: inline-block; padding: 3px 8px; color:white;  font-size: 0.9em; font-weight: bold; margin-top:6px; }
+
+.guide { border-top:1px solid #ddd;  padding-top: 15px;}
+
+.videos500 {  background:url(../img/event0304/500videos_bg_new.gif) 0 50px no-repeat; width:1086px; margin:0 auto; padding-top:30px;}
+
+div.sub { width: 30%; margin-right:5%; float: left; overflow:auto; margin-bottom: 30px;}
+div.sub h5 { background: url(../img/event0304/sub_bg.gif); width: 133px; padding-left: 15px; height: 39px; line-height: 39px; color:black; text-align:left; font-size: 0.9em;}
+div.sub ul { padding-left: 14px;}
+div.sub ul li { list-style: none; font-size: 0.85em; padding: 3dpx 0;}
+div.sub.no01 li span { font-weight: bold; color:black;}
+div.sub.no03 p { font-size: 0.85em;}
+div.sub.no03 { margin-right: 0;}
+div.sub.no03 p a { font-weight: bold;}
+div.sub.no03  img { padding: 0 0 0 10px; margin-right:10px; width: 40px; height: 30px; vertical-align: top; float: left;   }
+
+div.write { clear: both; text-align: center; padding: 40px; background: #fafafa; }
+div.write a {  background: #387eb5; padding:15px 120px; color:white; font-weight: bold; display: inline-block; opacity: 0.8;}
+div.write a:hover  { color:white !important; opacity: 1; }
+
+.modalBox  {  width: 100%; top:0; left:0; position: absolute; z-index: 10000000;  display: none;  }
+.modalBox.move {  }
+.modalBox .content { width: 540px; position: absolute; top:10%; left: 50%; margin-left: -300px; background: url(../img/event0304/modalBg.png) top center no-repeat;  margin-bottom: 10%; padding-top:180px; opacity: 0; }
+.modalBox .content.move { opacity: 1; position: absolute;  margin-top:100px;}
+.modalBox .content .innerBox {box-shadow: 2px 2px 4px #333;display:block; padding:30px;  border-radius: 4px; background: white; }
+.modalBox .form-actions {text-align: center;} 
+.modalBox .control-group { border-top:1px solid #eaeaea; clear: both; padding: 20px 0; }
+.modalBox .control-group:first-child { border: none; padding-top:0;}
+.modalBox .control-group label { width: 80px; float: left; display: block; margin-right: 10px; font-size: 0.85em; line-height: 12px;}
+.modalBox .img.cancel { top:15px; right:30px; position: absolute; z-index: 10000000; width: 50px; height:50px; padding:10px; cursor: pointer}
+.modalBox hr { border: none; height: 100px;} 
+
+.modalBox .required p.desc { text-align: center; font-size: 0.85em; font-weight: bold; color:red;}
+.modalBox .required .info  { text-align: center; padding-bottom: 30px; font-size: 0.85em; font-weight: bold;}
+.modalBox .required .info span{ display: block; font-family:Trebuchet MS, verdana; font-size: 6em;color:#db235b; text-decoration: underline; font-weight: bold;  padding-bottom:10px; line-height: 1;  }
+.modalBox .required h5 { clear: both; border-bottom:1px dotted #ccc; padding-bottom: 5px; color:#333; margin-bottom: 10px;}
+.modalBox .required ul, .modalBox .required li { padding:0;}
+.modalBox .required .company { margin-bottom: 40px; overflow: auto;}
+.modalBox .required .company li {  width: 113px; padding:4px 0; padding-left:20px; font-size: 0.85em; list-style: none; float:left; color:#999;  }
+.modalBox .required .product li  {  padding:4px 40px 4px 20px;  font-size: 0.85em; list-style: none; float:left; color:#999; display: inline-block;  }
+.modalBox .required li { background: url(../img/event0304/icon_checked.png) no-repeat 0 -28px;}
+.modalBox .required li.checked { color:black; font-weight: bold; background: url(../img/event0304/icon_checked.png) no-repeat 0 2px; text-decoration: line-through; }
+.modalBox p.desc  { clear: both; padding-top:40px;}
+
+.modalBox .nologin { text-align: center; font-size: 0.9em; padding-top:135px; background:url(../img/event0304/icon_login.png) top center no-repeat;} 
+.modalBox .alert { font-size: 0.85em; font-weight: bold; color:red; }
+
+.modalBoxBG { background: rgba(0,0,0,0.85);   height: 100%; width: 100%; top:0; left:0; position: fixed; z-index: 1000000; opacity: 0; display: none; }
+.modalBoxBG.move { opacity: 1;}
+
+
+
+
+
+
+

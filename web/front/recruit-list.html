@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>D.CAMP &#8211; &#039;드림뱅크&#039; 은행권청년창업재단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap-formhelpers.css" >
+<link rel="stylesheet" href="../css/bootstrap-select.min.css" >
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css" >
+<link rel="stylesheet" href="../css/bootstrap-select.min.css" >
+
+<!--[if IE 7]>
+<link rel="stylesheet" href="../font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
+<link rel="stylesheet" href="../css/site.css" >
+
+<!-- Javascript  -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/holder.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.language.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.js"></script>
+<script src="../js/bootstrap-formhelpers-timepicker.js"></script>
+<script src="../js/bootstrap-select.min.js"></script> 
+<script src="../js/script.js"></script>
+<script src="../js/bootstrap-select.min.js"></script>
+
+
+<script src="../js/jquery.ellipsis.js"></script> 
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        
+
+            $('.ellipsis').ellipsis({
+                row: 1
+            }); 
+            $('.mulitple').ellipsis({
+                row: 2
+            });  
+
+        });      
+    </script> 
+
+</head>
+
+<body>
+<div class="wrap"> 
+    
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">  
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index_new.html"><img src="../images/logo.png" alt="D.CAMP" class="img-responsive"></a> 
+            </div>
+            <!-- /navbar-header -->
+             
+            <div class="collapse navbar-collapse" id="navbar-collapse" > 
+                <ul class="nav navbar-nav navbar-right navbar-sign" id="signoff" style="display:none;">
+                    <li class="gosignin">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span> 
+                            로그인
+                        </a>
+                    </li>
+                    <li class="gosignup">
+                        <a href="#">
+                            회원가입
+                        </a>
+                    </li>
+                </ul>
+ 
+                <ul class="nav navbar-nav navbar-right navbar-sign" id="signon">
+                    <li class="signUser"> 
+                        <a href="/member/dcamp" data-toggle="tooltip" data-placement="bottom" title="dcamp"> 
+                            <img class="img-circle" src="../images/img_default.png"> <span class="sr-only">사용자이름</span> 
+                        </a> 
+                    </li>
+                    <li class="userbell">
+                        <a href="/member/activity">
+                            <span class="fa fa-fw fa-bell"></span><span class="sr-only"> 액티비티</span> <span class="badge">99+</span> 
+                        </a> 
+                    </li>
+                    <li class="dropdown"> 
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="fa fa-fw fa-cog"></span><span class="sr-only"> 설정 </span> 
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li style="border-bottom: 1px dashed #ddd;">
+                                <a href="/contents/edit"><span class="fa fa-fw fa-file-text"></span> 컨텐츠 글쓰기</a>
+                            </li>
+                            <li style="border-bottom: 1px dashed #ddd;">
+                                <a href="officehours-manage.html"><span class="fa fa-fw fa-file-text"></span> Office Hours 관리 </a>
+                            </li>
+                            <li><a href="../front_old/mypage-contents.html"> 콘텐츠관리</a></li>
+                            <li><a href="../front_old/mypage-event.html"> 이벤트관리</a></li>
+                            <li><a href="../front_old/mypage-roomsharing.html"> 공간공유 신청내역</a></li>
+                            <li><a href="../front_old/mypage-competition.html"> 경진대회 관리</a></li>
+                            <li><a href="mypage-officehours.html">Office Hours 신청내 </a></li>
+                            <li><a href="#"> 레퍼런스 내역</a></li>
+                            <li><a href="../front_old/mypage-profile.html"> 개인정보 수정</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="#"> <span class="fa fa-fw fa-sign-out"></span> 로그아웃</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="../admin/index.html"><span class="fa fa-fw fa-cog"></span> 관리자</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control input-sm" placeholder="Search">
+                    </div>
+                </form> 
+                
+                <ul class="nav navbar-nav navbar-left navbar-site">
+                    <li><a href="../front_old/event-list.html">Event</a></li>
+                    <li><a href="../front_old/competition-list.html">Competition</a></li>
+                    <li><a href="officehours.html">Office Hours</a></li>
+                    <li><a href="contents-list.html">Blog</a></li>
+                    <!--li><a href="#">Notice</a></li-->
+                    <!--li><a href="#">News</a></li-->
+                    <li><a href="../front_old/recruit-list.html">Recruit</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Network</a>
+                        <ul class="dropdown-menu"> 
+                            <li><a href="../front_old/startup-list.html">Startup</a></li>
+                            <li><a href="../front_old/people-list.html">People</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../front_old/about-dcamp.html">About</a></li>
+                </ul>
+            </div>
+            <!-- /navbar-collapse -->
+        </div> 
+    </nav>
+    <!-- /navbar --> 
+
+    <!-- rowContent -->
+    <div id="recruit" class="rowContent"> 
+
+        <div class="page-header">
+            <div class="container">
+                <h2><a href="recruit-list.html">Recruit</a></h2>
+                <div class="pull-right">
+                    <select data-width="auto" class="selectpicker sort-options pull-right" name="status">
+                        <optgroup label="진행상태별 보기">
+                            <option value="all" >전체</option>
+                            <option value="ing"  selected>진행중</option>
+                            <option value="end" >마감</option>
+                        </optgroup>
+                    </select>
+
+                    <button onclick="location.href='/recruit/add'" class="btn btn-primary"> <span class="icon-pencil"></span> 채용정보 작성하기</button>
+                    <div style="margin-top:7px; position:absolute; text-align: right; font-size:11px;"><a href="/support/views/55" style="color:#999;">채용 정보 등록이 어려우신가요?</a></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- page-content -->
+        <div class="page-content"> 
+            <!-- container -->
+            <div class="container"> 
+                <div class="row">
+                    <!-- contentn -->
+                    <div class="col-xs-12 col-sm-12 col-md-9 content">
+                        <!-- media-list -->
+                        <ul class="media-list post-list">
+                            <li class="media"> 
+                                <a class="pull-left media-object"  href="#"> 
+                                    <img src="http://dcamp.kr/media/startup/2038.jpg" class="img-responsive"> 
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="media-heading">
+                                        <a href="#">
+                                            시어스랩
+                                        </a>
+                                    </h3>
+                                    <ul class="list-inline list-tags"> 
+                                        <li>IT</li>
+                                        <li>Mobile</li>
+                                    </ul>
+                                    <p class="lead">우리는 중고차 거래 고객이 느끼는 고통을 시장내부에서 직접 쌓은 경험과 빠른 실행력을 바탕으로 풀어내는 작지만 강한 회사입니다.</p>
+
+                                    <div class="media-field well">
+                                        <a href="recruit-read.html">
+                                            <h4>유저들의 일상을 영화처럼 바꿔줄 디자이너(GUI, 이펙트) 모십니다.</h4>
+                                            <dl class="dl-horizontal">
+                                                <dt>고용형태</dt>
+                                                <dd>정직원</dd>
+                                            </dl>
+                                            <dl class="dl-horizontal">
+                                                <dt>접수기간</dt>
+                                                <dd>2015.01.01 (목) ~ 2015.12.31 (목)</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <div class="media-field well">
+                                        <a href="recruit-read.html">
+                                            <h4>유저들의 일상을 영화처럼 바꿔줄 개발자(서버, 안드로이드) 모십니다.</h4>
+                                            <dl class="dl-horizontal">
+                                                <dt>고용형태</dt>
+                                                <dd>정직원</dd>
+                                            </dl>
+                                            <dl class="dl-horizontal">
+                                                <dt>접수기간</dt>
+                                                <dd>2015.01.01 (목) ~ 2015.12.31 (목)</dd>
+                                            </dl>
+                                        </a>
+                                    </div>
+                                    <div class="media-meta"> 
+                                        <span class="author"><a href="#"><img src="../img/default-img-member.png" class="img-circle"> Author</a></span> , 
+                                        <span class="time"><span class="icon-time"></span> 2014.01.20</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- /media -->
+
+                            <li class="media"> 
+                                <a class="pull-left media-object"  href="#"> 
+                                    <img src="http://dcamp.kr/media/startup/22420.jpg" class="img-responsive"> 
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="media-heading">
+                                        <a href="#">
+                                            아우름플래닛(aurumplanet)
+                                        </a>
+                                    </h3> 
+                                    <p class="lead">우리는 가치 지향적인 반항아입니다.</p>
+
+                                    <div class="media-field well">
+                                        <a href="recruit-read.html">
+                                            <h4>유저들의 일상을 영화처럼 바꿔줄 디자이너(GUI, 이펙트) 모십니다.</h4>
+                                            <dl class="dl-horizontal">
+                                                <dt>고용형태</dt>
+                                                <dd>정직원</dd>
+                                            </dl>
+                                            <dl class="dl-horizontal">
+                                                <dt>접수기간</dt>
+                                                <dd>2015.01.01 (목) ~ 2015.12.31 (목)</dd>
+                                            </dl>
+                                        </a>
+                                    </div> 
+                                    <div class="media-meta"> 
+                                        <span class="author"><a href="#"><img src="../img/default-img-member.png" class="img-circle"> Author</a></span> , 
+                                        <span class="time"><span class="icon-time"></span> 2014.01.20</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- /media -->
+
+                            <li class="media"> 
+                                <a class="pull-left media-object"  href="#"> 
+                                    <img src="http://dcamp.kr/media/startup/2038.jpg" class="img-responsive"> 
+                                </a>
+                                <div class="media-body">
+                                    <h3 class="media-heading">
+                                        <a href="#">
+                                            피알앤디컴퍼니
+                                        </a>
+                                    </h3>  
+                                    <div class="media-field well">
+                                        <a href="recruit-read.html">
+                                            <h4>유저들의 일상을 영화처럼 바꿔줄 디자이너(GUI, 이펙트) 모십니다.</h4>
+                                            <dl class="dl-horizontal">
+                                                <dt>고용형태</dt>
+                                                <dd>정직원</dd>
+                                            </dl>
+                                            <dl class="dl-horizontal">
+                                                <dt>접수기간</dt>
+                                                <dd>2015.01.01 (목) ~ 2015.12.31 (목)</dd>
+                                            </dl>
+                                        </a>
+                                    </div> 
+                                    <div class="media-meta"> 
+                                        <span class="author"><a href="#"><img src="../img/default-img-member.png" class="img-circle"> Author</a></span> , 
+                                        <span class="time"><span class="icon-time"></span> 2014.01.20</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- /media -->
+                        </ul>
+                        <div class="pager"> <a href="#" class="btn btn-default"> &darr;  더보기</a> </div> 
+                        <!-- / media-list --> 
+                    </div>
+                    <!-- /content -->
+                    <!-- sidebar -->
+                    <div class="col-xs-12 col-sm-12 col-md-3 sidebar">
+                        <div class="panel  category">
+                            <h3 class="panel-title">채용중인 직군</h3> 
+                            <ul class="list-unstyled">
+                                <li><b><a href="#">전체</a> <small>(345)</small></b></li>
+                                <li><a href="#">창업자/공동창업자 </a> <small>(61)</small></li>
+                                <li><a href="#">대표이사/CEO</a> <small>(43)</small></li>
+                                <li><a href="#">소프트웨어 엔지니어</a> <small>(10)</small></li>
+                                <li><a href="#">하드웨어 엔지니어</a> <small>(136)</small></li>
+                                <li><a href="#">기획자/프로젝트 매니저</a> <small>(22)</small></li>
+                                <li><a href="#">영업</a> <small>(8)</small></li>
+                                <li><a href="#">마켓팅</a> <small>(32)</small></li>
+                                <li><a href="#">법률</a> <small>(6)</small></li>
+                                <li><a href="#">운영 </a> <small>(10)</small></li>
+                                <li><a href="#">재무/회계</a> <small>(136)</small></li>
+                                <li><a href="#">인사</a> <small>(22)</small></li>
+                                <li><a href="#">총무/경영지원</a> <small>(8)</small></li>
+                                <li><a href="#">디자이너</a> <small>(32)</small></li>
+                                <li><a href="#">기타</a> <small>(6)</small></li>
+                            </ul> 
+                        </div>
+                        <!--/ panel -->
+                    </div>
+                    <!-- /sidebar -->
+
+                </div>
+            </div>
+            <!-- /container --> 
+        </div>
+        <!-- /page-content --> 
+    </div>
+    <!-- /rowContent --> 
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="footer-navbar list-inline">
+                <li><a href="/about">D.CAMP 소개</a></li>
+                <li><a href="/membership">멤버십안내</a></li>
+                <li><a href="/space">공간공유</a></li>
+                <!--li><a href="/support">문의하기</a></li-->
+                <li><a href="/policy_service">서비스약관</a></li>
+                <li><a href="/policy_privacy"><strong>개인정보취급방침</strong></a></li>
+            </ul>
+            <address>
+                서울시 강남구 역삼동 683-34 새롬빌딩 4~6층 &nbsp;
+                <span><i class="fa fa-phone"></i> (02) 2030-9300</span> &nbsp;
+                <span><i class="fa fa-envelope-o"></i> <a href="mailto:contact@dcamp.kr">contact@dcamp.kr</a></span>
+            </address>
+            <ul class="footer-navbar list-inline nav-sns">
+                <li>
+                    <a title="" data-placement="top" data-toggle="tooltip" href="https://www.facebook.com/dcamp.kr?ref=bookmarks" target="_blank" data-original-title="Facebook" id="fn-facebook">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a title="" data-placement="top" data-toggle="tooltip" href="https://twitter.com/Dcamp_kr" target="_blank" data-original-title="Twitter" id="fn-twitter">
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a title="" data-placement="top" data-toggle="tooltip" href="https://www.flickr.com/photos/93969766@N06/" target="_blank" data-original-title="Flickr" id="fn-flickr">
+                        <i class="fa fa-flickr"></i>
+                    </a>
+                </li>
+                <li>
+                    <a title="" data-placement="top" data-toggle="tooltip" href="https://www.youtube.com/channel/UCqsmYLUWkpphW-RgK9GZh7A" target="_blank" data-original-title="Youtube" id="fn-youtube">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a title="" data-placement="top" data-toggle="tooltip" href="http://www.slideshare.net/dreamcamp/" target="_blank" data-original-title="Slideshare" id="fn-slideshare">
+                        <i class="fa fa-slideshare"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>Copyright &copy;D.CAMP. All rights reserved. <a href="http://www.podio.com" target="_blank">Thanks to Podio we keep work simple.</a></p>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</div>
+<!-- /wrap -->  
+
+</body>
+</html>

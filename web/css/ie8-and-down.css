@@ -1,0 +1,16 @@
+/*
+
+D.CAMP-Front CSS for IE8 and Down Browser
+
+*/
+
+.global-nav a.navbar-brand { float:left; dispaly:block; width: 63px;  text-align: center; }
+
+.global-nav ul.nav:after,
+.global-nav ul.nav:before { clear:none !important;}
+
+
+.global-nav #menu { float:left; }
+
+.global-nav #signoff,
+.global-nav #signon { float: right;}

@@ -1,0 +1,181 @@
+//
+// D.CAMP Main-site Style LESS --- 2015/01/29
+// --------------------------------------------------
+
+@import "brand"; 
+
+//------------------------------------
+// Main Content
+//------------------------------------
+
+
+
+#jumbo-header { color:@white; padding:40px 0; text-align:center; 
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: cover; 
+
+	h1 { font-family:@font-family-point; line-height:1; font-weight:bold;}
+	p { font-size: @font-size-base; margin-bottom:0;}
+	.btn { color:@white; font-weight:normal;
+		&:hover { color:@white;}
+	}
+
+	.nav-sns { margin-top:0; margin-bottom:0;  position:relative; bottom:-20px;
+		a { color:@white;}
+		a:hover { text-shadow:0 0 2px rgba(255,255,255,0.6);}
+	}
+}
+
+@media (max-width: @screen-xs) {
+	#jumbo-header {
+		.nav-sns { text-align:center;}
+	}
+}
+
+
+@media (min-width: @screen-md) {
+	#jumbo-header {
+		.nav-sns { text-align:right!important;}
+	}
+} 
+ 
+
+#connect-service { padding-bottom: 30px;
+	
+	div + div { border-left:1px solid @border-color-base;}
+
+	dl { margin-bottom:0; min-height:64px; background-repeat:no-repeat; background-position: left top; background-size: 40px; padding-left: 50px;
+		dt { font-size:@font-size-lg; font-family: @font-family-point; color:@color-point; 
+			.btn {float:right;}
+		}
+		dd { clear:right; font-size:@font-size-xs; margin-top:6px;}
+	}
+
+	.svc-membership { background-image:url(../images/ic_membership.png);}
+	.svc-roomsharing { background-image:url(../images/ic_roomsharing.png);}
+	.svc-lounge { background-image:url(../images/ic_lounge.png);}
+	
+}
+
+#recent-cards { padding-top:15px; padding-bottom:15px; background:@bg-base;
+
+	.lead { margin:15px 0;
+		p { margin:0; padding:40px 0; font-size:@font-size-lg; font-weight:bold; border-top:1px solid @border-color-light; border-bottom:1px solid @border-color-light;}
+	}
+
+	.card { margin-top:15px; margin-bottom:15px;}
+
+	.bind {
+		.inner { padding:15px; height:492px;}
+
+		h3 { text-align:center; font-size:@font-size-xl; font-family:@font-family-point; font-weight:800; color:@color-base; margin-top:15px;
+			i { display:block; padding-bottom:5px; font-size:@font-size-xxl;}
+			&:after { content:""; display:block; border-top:2px solid @border-color-base; width:20px; margin:10px auto 0;}
+		}
+		ul { margin:0;
+			li { padding: 10px 0;
+				+ li { clear:both; border-top:1px solid @border-color-light; } 
+				&:before,
+				&:after { clear:both;}
+				&:last-child { border-bottom:1px solid @border-color-light; }
+			}
+		}
+
+		.featured-img { float:left; width: 40px;
+			span {
+				border-radius: @radius-base;
+				-moz-border-radius: @radius-base;
+				-webkit-border-radius: @radius-base;
+			}
+		}
+		.caption { margin-left:50px; height:40px;
+			h4 { font-size:@font-size-sm; font-weight:normal; margin:0;}
+		}
+
+		.paging { clear:both;  text-align:center; padding-top:15px;}
+	}
+}
+ 
+
+
+
+//------------------------------------
+// Media query Style
+//------------------------------------
+
+
+@media (max-width: @screen-xs) {
+	
+
+	#main { 
+		.card {
+			.caption { height: auto;
+				dl {  
+					dt { float:left;} 
+				}
+			}
+			.footer {
+				.author { 
+					span {max-width:160px;}
+				}
+			}
+		}
+		.lead { 
+			p { font-size:@font-size-base; padding: 30px 0;
+				span.sm { display:block;} 
+			}
+		}
+	}
+
+	#connect-service { 
+		div { min-height:30px !important; border:0;}
+		dl {  padding-left: 50px !important;
+			dt {  padding-left:0 !important;
+				small { display: inline !important;}
+				.btn { float:right !important; margin-left:0}
+			}
+		}
+		div+div { border:0; 
+			dl { border-top:1px solid @border-color-base; padding-top:15px; margin-top: 15px; background-position: left 15px;}
+		}
+	} 
+	#recent-cards {
+		.bind { 
+			.inner {height:auto;}
+		}
+	}  
+
+}
+
+ 
+@media (max-width: @screen-sm) {
+	#main { 
+		.card {
+			.footer {
+				.author { 
+					span {max-width:80px;}
+				}
+			}
+		}
+	}
+	#connect-service {
+		div { min-height: 102px;}
+		dl { background-size: 36px; padding-left:0;
+			dt { padding-left : 50px;
+				small { display: block;}
+				.btn { float:none; margin-left:-5px;}
+			}
+		}
+	}
+
+}
+
+ 
+
+
+
+
+
+
+ 

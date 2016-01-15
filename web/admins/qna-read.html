@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>D.CAMP - Manage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap-formhelpers.css" >
+<link rel="stylesheet" href="../css/bootstrap-select.min.css" >
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css" >
+<!--[if IE 7]>
+<link rel="stylesheet" href="../font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="../css/admin.css" >
+
+<!-- Javascript  -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/holder.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.language.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.js"></script>
+<script src="../js/bootstrap-formhelpers-timepicker.js"></script>
+<script src="../js/bootstrap-select.min.js"></script>
+<script src="../js/admin.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav class="navbar navbar-inverse" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="../img/logo.png"></a>
+          </div>
+        
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#"><span class="icon-cog"></span></a></li>
+              <li class=""><a href="member-list.html">회원관리</a></li>
+              <li class=""><a href="membership-list.html">멤버십관리</a></li>
+              <li class=""><a href="startup-list.html">스타트업관리</a></li>
+              <li class=""><a href="recruit-list.html">채용정보관리</a></li>
+              <li class=""><a href="floor-reserve-list.html">공간공유관리</a></li>      
+              <li class=""><a href="event-list.html">이벤트관리</a></li>
+              <li class=""><a href="notice-list.html">뉴스관리</a></li>
+              <li class=""><a href="main-list-set.html">메인콘텐츠관리</a></li>
+                    <li class=""><a href="contents-list.html">콘텐츠관리 </a></li>
+                    <li class=""><a href="competition-list.html">경진대회관리 </a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">기타관리 <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="entrance-dashboard.html">출입관리</a></li>
+                  <li><a href="locker-user-list.html">월간 사물함 배정</a></li>
+                </ul>
+              </li>
+              <li class=""><a href="analytics-member.html">통계분석</a></li>
+            </ul>  
+          </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</header>
+
+<!-- jumbotron -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>Q&amp;A</h1>
+    </div>
+</div>
+<!-- /jumbotron --> 
+
+<!-- container -->
+<div class="rowContainer">
+    <div class="container">
+        <div class="row"> 
+
+          <!-- Start Page Cotents --> 
+            <!-- sidebar -->
+            <div class="col-md-2 sidebar">
+                <div class="sidebar-nav hidden-print affix">
+                    <ul class="nav list-group">
+                        <li class="list-group-item active"><a href="qna-list.html"> Q&amp;A 목록 </a></li>
+                        <li class="list-group-item"><a href="qna-category.html"> 분류 관리</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <!-- /sidebar --> 
+            
+            <!-- contentwrap -->
+            <div class="col-md-10 contentswrap">
+                <!-- section -->
+                <section> 
+                    
+                    <!-- panel #pane-qna-read -->
+                    <div id="pane-qna-read"class="panel panel-default"> 
+                        <!-- panel-heading -->
+                        <div class="panel-heading">
+                            <h2>
+                                <a href="qna-list.html">
+                                    <span class="glyphicon glyphicon-arrow-left"></span><span class="sr-only">목록</span>
+                                </a>
+                                <span class="break"></span>
+                                질문 제목이 출력됩니다.
+                            </h2>
+                        </div>
+                        <!-- /panel-heading -->
+                            <!-- panel-body -->
+                            <div class="panel-body">
+                                
+
+                                <dl class="dl-horizontal">
+                                    <dt>분류 </dt>
+                                    <dd>분류명이 노출</dd>
+                                    <dt>작성자</dt>
+                                    <dd>작성자이름</dd>
+                                    <dt>전화번호</dt>
+                                    <dd>010-1234-5678</dd>
+                                    <dt>이메일</dt>
+                                    <dd>userid@yourcompany.com</dd>
+                                    <dt>작성일</dt>
+                                    <dd>2015.03.03</dd>
+                                </dl>
+                                <article>
+                                    질문내용을 출력합니다.
+                                </article>
+                            </div>
+                            <!-- /panel-body -->
+                            <!-- panel-footer -->
+                            <div class="panel-footer">
+                              <form class="form-horizontal">
+                                <fieldset>
+                                    <div class="form-group"> 
+                                        <span class="col-lg-2 control-label"> 담당자 </span>
+                                        <div class="col-lg-10"> 
+                                          <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- /form-group --> 
+
+                                    <div class="form-group"> 
+                                        <span class="col-lg-2 control-label"> 전화번호 </span>
+                                        <div class="col-lg-10"> 
+                                          <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- /form-group --> 
+
+                                    <div class="form-group"> 
+                                        <span class="col-lg-2 control-label"> 전화번호  </span>
+                                        <div class="col-lg-10"> 
+                                          <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <!-- /form-group --> 
+
+                                    <div class="form-group"> 
+                                        <span class="col-lg-2 control-label"> 답변하기</span>
+                                        <div class="col-lg-10"> 
+                                          <textarea rows="6" class="form-control">내용을 입력해 주세요</textarea>
+                                        </div>
+                                    </div>
+                                    <!-- /form-group --> 
+
+                                    <div class="form-group form-submit"> 
+                                        <div class="col-lg-offset-2">
+                                            <button type="button" class="btn btn-default">취소</button>
+                                            <button type="submit" class="btn btn-primary">저장</button>
+                                        </div>
+                                    </div>
+
+                                  </fieldset>
+                                </form>
+                            </div>
+                            <!-- /panel-footer -->
+                    </div>
+                    <!-- /panel #pane-qna-read--> 
+                    
+                </section>
+                <!-- /section -->
+            </div>
+            <!-- /contentwrap -->             
+            <!-- /End Page Cotents --> 
+        </div>
+    </div>
+</div>
+<!-- /container --> 
+
+</div>
+<!-- /wrap -->
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <p class="credit">&copy D.CAMP 2013 </p>
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

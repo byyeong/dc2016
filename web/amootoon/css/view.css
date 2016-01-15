@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/*-------------------------
+    Simple reset
+--------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: '굴림',Gulim,Helvetica,sans-serif;
+	font-size: 11px;
+	cursor:default;
+}
+
+body {
+	margin	: 0px;
+	padding	: 0px;
+}
+
+ul {
+	list-style: none;
+}
+
+
+/*-------------------------
+    General Styles
+--------------------------*/
+.header {
+	position: fixed;
+	left:0;
+	right:0;
+	top:0;
+	height: 40px;
+	background: #333;
+	color: white;
+	z-index: 100;
+	display:block;
+}
+
+.header .headercon {
+	position: relative;
+	min-width: 700px;
+	max-width: 1400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+
+.header .viewer {
+	width: 1000px;
+	height: 40px;
+}
+
+.header .viewer .button {
+	cursor:pointer;
+	display:inline-block;
+	vertical-align:bottom;
+	width:40px;
+	height:40px;
+	background:url(../images/icon_40.png);
+} 
+.header .viewer .button:hover {
+	background-color: #f47323;
+}
+
+.header .viewer .beforeWebtoon {
+	background-position:-40px 0;
+}.header .viewer .afterWebtoon {
+	background-position:-80px 0;
+}
+
+.header .viewer .logo {
+	background-position:0 0;
+}
+.header .viewer .play {
+	background-position:-40px -40px;
+}
+.header .viewer .play.pause {
+	background-position:0 -40px;
+}
+
+.header .viewer div.title {
+	display:inline-block;
+	vertical-align:bottom;  
+	padding:12px;
+	color:white;
+	max-width: 600px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align:left;
+}
+.header .viewer div.title a.title {
+	font-size:14px;
+	font-weight:bold;
+}
+
+.header .viewer div.title a.subtitle {
+	font-size:12px;
+}
+
+
+/**
+ * Canvas Style
+ */
+#viewCanvas {
+ 	position : absolute;
+	width:100%;
+	height:100%;
+	z-index: 1;
+}
+
+/**
+ * Scroll Bar Style
+ */
+ .scrollBar_container {
+	position : absolute;
+	width: 15px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index:200;
+	background-color: rgba(255,255,255,.7);
+ }
+ 
+ .scrollBar_container .scrollBar_item {
+	position: absolute;
+	left: 2px;
+	top: 1px;
+	width: 9px;
+	height: 50px;
+	border: 1px solid #AAA;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #EEE;
+ }
+ 
+ .scrollBar_container .scrollBar_item:hover {
+	border-color: #777;
+ 	background-color : #F7F7F7;
+ }
+ 
+ .scrollBar_container .scrollBar_item:active {
+	border-color: #999; 
+ 	background-color : #DDD;
+ }

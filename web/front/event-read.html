@@ -1,0 +1,891 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>D.CAMP &#8211; &#039;드림뱅크&#039; 은행권청년창업재단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/site.css" >
+<link rel="stylesheet" href="../css/bootstrap-formhelpers.css" >
+<link rel="stylesheet" href="../css/bootstrap-select.min.css" >
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css" >
+<!--[if IE 7]>
+<link rel="stylesheet" href="../font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--> 
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" > 
+
+<!-- Javascript  -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/holder.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.language.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.js"></script>
+<script src="../js/bootstrap-formhelpers-timepicker.js"></script>
+<script src="../js/bootstrap-select.min.js"></script> 
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]--> 
+
+<script src="../js/jquery.ellipsis.js"></script> 
+<script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        
+
+            $('.ellipsis').ellipsis({
+                row: 1
+            }); 
+            $('.mulitple').ellipsis({
+                row: 2
+            });  
+
+        });      
+    </script> 
+
+</head>
+
+<body>
+<div class="wrap"> 
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">  
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index_new.html"><img src="../images/logo.png" alt="D.CAMP" class="img-responsive"></a> 
+            </div>
+            <!-- /navbar-header -->
+             
+            <div class="collapse navbar-collapse" id="navbar-collapse" > 
+                <ul class="nav navbar-nav navbar-right navbar-sign" id="signoff" style="display:none;">
+                    <li class="gosignin">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span> 
+                            로그인
+                        </a>
+                    </li>
+                    <li class="gosignup">
+                        <a href="#">
+                            회원가입
+                        </a>
+                    </li>
+                </ul> 
+ 
+                <ul class="nav navbar-nav navbar-right navbar-sign" id="signon">
+                    <li class="signUser"> 
+                        <a href="/member/dcamp" data-toggle="tooltip" data-placement="bottom" title="dcamp"> 
+                            <img class="img-circle" src="../images/img_default.png"> <span class="sr-only">사용자이름</span> 
+                        </a> 
+                    </li>
+                    <li class="userbell">
+                        <a href="/member/activity">
+                            <span class="fa fa-fw fa-bell"></span><span class="sr-only"> 액티비티</span> <span class="badge">99+</span> 
+                        </a> 
+                    </li>
+                    <li class="dropdown"> 
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="fa fa-fw fa-cog"></span><span class="sr-only"> 설정 </span> 
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li style="border-bottom: 1px dashed #ddd;">
+                                <a href="contents-edit.html"><span class="fa fa-fw fa-file-text"></span> 컨텐츠 글쓰기</a>
+                            </li>
+                            <li style="border-bottom: 1px dashed #ddd;">
+                                <a href="officehours-manage.html"><span class="fa fa-fw fa-file-text"></span> Office Hours 관리 </a>
+                            </li>
+                            <li><a href="mypage-contents.html"> 콘텐츠관리</a></li>
+                            <li><a href="mypage-event.html"> 이벤트관리</a></li>
+                            <li><a href="mypage-roomsharing.html"> 공간공유 신청내역</a></li>
+                            <li><a href="mypage-competition.html"> 경진대회 관리</a></li>
+                            <li><a href="mypage-officehours.html">Office Hours 신청내 </a></li>
+                            <li><a href="#"> 레퍼런스 내역</a></li>
+                            <li><a href="mypage-profile.html"> 개인정보 수정</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="#"> <span class="fa fa-fw fa-sign-out"></span> 로그아웃</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="../admin/index.html"><span class="fa fa-fw fa-cog"></span> 관리자</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control input-sm" placeholder="Search">
+                    </div>
+                </form> 
+                <ul class="nav navbar-nav navbar-left navbar-site">
+                    <li><a href="event-list.html">Event</a></li>
+                    <li><a href="competition-list.html">Challenge</a></li>
+                    <li><a href="officehours.html">Office Hours</a></li>
+                    <li><a href="recruit-list.html">Recruit</a></li>
+                    <li><a href="benefit-list.html">Benefit</a></li>
+                    <li><a href="contents-list.html">Blog</a></li>
+                    <li><a href="product.html">Showcase</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Network</a>
+                        <ul class="dropdown-menu"> 
+                            <li><a href="network-startup.html">Startup</a></li>
+                            <li><a href="network-people.html">People</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about-dcamp.html">About</a></li>
+                </ul>
+            </div>
+            <!-- /navbar-collapse -->
+        </div> 
+    </nav>
+    <!-- /navbar -->
+    
+    <!-- rowContent -->
+    <div class="rowContent" id="event">
+        <div class="page-header">
+            <div class="container">
+                <h2><a href="event-list.html">Event</a></h2>
+                <button  class="btn btn-primary pull-right" onclick=location.href='event-edit.html'><span class="icon-pencil"></span> 이벤트 만들기</button>
+                <select data-width="auto" class="selectpicker sort-options pull-right" >
+                    <option value="ing">진행중인 이벤트</option>
+                    <option value="end">종료된 이벤트</option>
+                </select>
+            </div>
+        </div>
+        <!-- /page-header --> 
+        
+        <!-- page-content -->
+        <div class="page-content"> 
+            <!-- container -->
+            <div class="container" >
+                <div  class="row"> 
+                    
+                    <!-- content -->
+                    <div class="col-xs-12 col-sm-12 col-md-9 content" >
+                        <div class="article">
+                            <div class="article-header">
+                                <h3>HTML5 웹앱 개발을 주제로 개발자 포럼(9/26, SK T타워)과 공모전 (~11/22)을 진행합니다.</h3>
+                                <div class="meta">
+                                    <span class="author"><a href="/member/jinny">김윤진</a></span>,
+                                    <span class="time"><span class="icon-time"></span>  2015.02.23 오후 6:34</span> 
+                                    <span class="pull-right">
+                                        <a href="#" class="btn btn-default btn-xs">
+                                            <i class="fa fa-calendar"></i> 구글캘린더에 등록하기
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="article-body">
+                                <dl class="dl-horizontal  item-status">
+                                    <dt>장소</dt>
+                                    <dd> D.CAMP 6층 다목적홀</dd>
+                                    <dt>일시</dt>
+                                    <dd> 9월 26일 금요일 저녁 7시</dd>
+                                    <dt>신청기간</dt>
+                                    <dd> 7월 15일 부터~7월 18일까지</dd>
+                                    <dt>신청현황</dt>
+                                    <dd> 정원 <span class="badge">15</span> / 신청자 <span class="badge">30</span></dd>
+                                </dl>
+                                <p>영화 '화이: 괴물을 삼킨 아이' 언론시사회가 9월 24일 오후 2시 서울 중구 을지로 메가박스 동대문에서 열렸다.
+                                    
+                                    이날 언론시사회에는 장준환 감독을 비롯해 배우 김윤석, 여진구, 조진웅, 장현성, 김성균, 박해준 등이 참석했다.
+                                    
+                                    ‘화이: 괴물을 삼킨 아이’는 5명의 범죄자 아버지를 둔 소년 화이(여진구)와 그의 인생을 송두리째 바꿔 놓은 범죄 집단의 냉혹한 리더 석태(김윤석), 한 발의 총성 이후 모든 것이 바뀌어 버린 이들의 끝을 향해 치닫는 갈등과 복수를 그린 작품이다.오는 10월 9일 개봉한다.</p>
+                            </div>
+                        </div>
+                        <!-- / article --> 
+                        
+                        <!-- todo : 외부 행사일 경우 -->
+                        <div class="formApply"> 
+                            <a id="golounge" class="btn btn-default btn-sm pull-right" href="/lounge/event/647"><i class="fa fa-users"></i>&nbsp; 이벤트 라운지 가기 &nbsp;<i class="fa fa-long-arrow-right"></i></a> 
+
+                            <h3><span class="icon-edit"></span> 이벤트 참가 신청하기</h3>
+                            <!-- todo : 외부 신청일때 -->
+                            <div class="well text-center">
+                                <p>이 이벤트는 외부에서 진행되는 이벤트입니다. 참가 신청하려면 아래의 버튼을 클릭하세요</p>
+                                <button class="btn btn-primary">&nbsp; &nbsp; &nbsp; &nbsp; <span class="icon-hand-right"></span>&nbsp; 참가 신청하기 &nbsp; &nbsp; &nbsp; &nbsp; </button>
+                            </div>
+                        </div>
+                        <!-- / formApply --> 
+                        
+                        <!-- todo : 내부 행사일 경우 -->
+                        <div class="formApply">
+                            <h3><span class="icon-edit"></span> 이벤트 참가 신청하기</h3>
+                            
+                            <!-- todo : 신청기간이 종료됏을 때  -->
+                            <div class="well">
+                                <div class=" text-center"> <span class="icon-warning-sign"></span> 신청기간이 종료되었습니다. </div>
+                            </div>
+                            
+                            <!-- todo : 신청기간이 아닐때   -->
+                            <div class="well warning">
+                                <h4 class="text-center">아직 신청기간이 아닙니다. 기다려주세요. ^^ </h4>
+                                <div class="text-center"> 참가 신청 기간 :  2013년 10월 10일 9시 부터 ~ 2013년 10월 10일 6시 까지 </div>
+                            </div>
+                            
+                            <!-- todo : 신청했을때   -->
+                            <div class="well complete">
+                                <h4 class="text-center"><span class="icon icon-smile icon-large"></span>&nbsp;  신청완료!!</h4>
+                                <p class="text-center">이벤트 참가 신청이 완료되었습니다. 개인 액티비티에서 상태 확인 가능합니다.</p>
+                                <div class="text-center"><a href="#" class="btn btn-default btn-sm">홈으로</a></div>
+                            </div>
+                            
+                            <!-- todo :  로그인 안했을 경우 -->
+                            <div class="well warning">
+                                <h4 class="text-center">D.CAMP 회원이시면 누구나 신청 가능 합니다. 로그인 해주세요. ^^</h4>
+                                <div class="text-center"><a href="#" class="btn btn-default btn-sm">로그인하기</a></div>
+                            </div>
+                            
+                            <!-- todo :  참가신청 가능한 경우  -->
+                            <form class="form-horizontal well" role="form">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-2 col-md-2 control-label">이름</div>
+                                        <div class="col-xs-12 col-sm-8 col-md-8">
+                                            <p class="form-control-static"><strong>단내양</strong></p>
+                                        </div>
+                                    </div>
+                                    <!-- /form-group -->
+                                    
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-2 col-md-2 control-label">이메일</div>
+                                        <div class="col-xs-12 col-sm-8 col-md-8">
+                                            <p class="form-control-static">dannaeyang@userstorylab.com</p>
+                                        </div>
+                                    </div>
+                                    <!-- /form-group -->
+                                    
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-2 col-md-2 control-label">소속</div>
+                                        <div class="col-xs-12 col-sm-8 col-md-8">
+                                            <div class="input-group"> <span class="input-group-addon"><span class="icon-building"></span></span>
+                                                <input type="text" class="form-control" value="유저스토리랩" placeholder="소속된 회사명을 입력해주세요">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /form-group -->
+                                    
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-2 col-md-2 control-label">홈페이지</div>
+                                        <div class="col-xs-12 col-sm-8 col-md-8">
+                                            <div class="input-group"> <span class="input-group-addon"><span class="icon-home"></span></span>
+                                                <input type="text" class="form-control" value="http://" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /form-group -->
+                                    
+                                    <div class="form-group">
+                                        <div class="col-xs-12 col-sm-2 col-md-2 control-label">연락처</div>
+                                        <div class="col-xs-12 col-sm-8 col-md-8">
+                                            <div class="input-group"> <span class="input-group-addon"><span class="icon-phone"></span></span>
+                                                <input type="tel" class="form-control" value="010-1234-5678" placeholder="연락가능한 전화번호를 입력해주세요">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /form-group -->
+                                    
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-md-offset-2">
+                                            <button type="submit" class="btn btn-primary">신청하기</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <div class="applicant">
+                                <h4><span class="icon-ok"></span> 이벤트 참가 신청자</h4>
+                                <span class="pull-right">
+                                <button class="btn btn-default btn-xs"><span class="icon-download-alt"></span> Excel</button>
+                                </span>
+                                <ul class="list-unstyled list-inline list-applicant">
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                    <li><a href="#"><img src="../img/yangmal.png" class="img-circle" title="양말" data-toggle="tooltip" data-src="holder.js/40x40"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- / formApply --> 
+                        
+                        <!-- comment -->
+                        <div id="comment">
+                            <a href="#" class="btn btn-default btn-sm pull-right btn-gallery"><span class="icon-picture"></span> 댓글사진 보기</a>
+                            <h3><span class="icon-edit"></span> 댓글 <small>20</small></h3>
+                            
+                            
+                            <div class="media media-form rounded">
+                                <a href="#" class="pull-left media-object"> <img title="userName" data-toggle="tooltip" class="img-circle" src="../img/default-img-member.png"> </a>
+                                <div class="media-body">
+                                    <form>
+                                        <fieldset>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-2 col-md-2 right form-group">
+                                                    <label for="inputPic" title="이미지 업로드" data-toggle="tooltip">
+                                                        <img src="../img/default-img-pic.png" class="img-thumbnail img-responsive">
+                                                        <input type="file" id="inputPic"  style="display: none;">
+                                                    </label>
+                                                </div> 
+                                                <div class="col-xs-12 col-sm-10 col-md-10 left form-group"> 
+                                                    <textarea placeholder="" class="form-control" row="2"></textarea> 
+                                                </div>  
+                                            </div> 
+                                            <!--/row -->
+                                            <button class="btn btn-primary btn-sm">저장하기</button>
+                                            &nbsp;
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">
+                                                비밀글</label>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- /media-form -->
+                            
+                            <div class="media-point">
+                                <div class="point-star pull-right">
+                                    <dl class="dl-horizontal">
+                                        <dt>행사별점</dt>
+                                        <dd>
+                                            <div class="rating">
+                                                <span class="selected"><i class="fa fa-star"></i></span>
+                                                <span class="selected"><i class="fa fa-star"></i></span>
+                                                <span class="selected"><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                            </div>
+                                            <span class="sr-only">평점 : 3</span>
+                                            <small>(230명 참여)</small>
+                                            <button class="btn btn-default btn-sm rateToggle">별점주기</button>
+                                        </dd>
+                                    </dl>
+                                    <script type="text/javascript">
+                                        $(document).ready(function(){  
+                                            $('.rateToggle').click(function(){  
+                                                var state = $('.ratinglayer').css('display');  
+                                                if(state == 'none'){  
+                                                    $('.ratinglayer').show();  
+                                                }else{  
+                                                    $('.ratinglayer').hide();       
+                                                }
+                                            });
+                                        });
+                                    </script> 
+                                    <div class="ratinglayer" style="display:none;">
+                                        <form role="form">
+                                            <fieldset>
+                                                <button type="button" class="close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    <span class="sr-only">Close</span>
+                                                </button>
+
+                                                <h4>행사 별점주기 </h4>
+                                                <div class="input select rating-f">
+                                                    <select id="star-rating" name="rating">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                    <script src="../js/jquery.barrating.js"></script>
+                                                    <script type="text/javascript">
+                                                        $(function () {
+                                                            $('#star-rating').barrating({ showSelectedRating:false });
+                                                            $('.rating-enable').trigger('click');
+                                                        });
+                                                    </script>  
+                                                </div>
+                                                <button class="btn btn-default">확인</button>                                                                                            
+                                            </fieldset>
+                                        </form> 
+                                    </div>
+                                </div>
+                                <!-- /point-star --> 
+                            </div>
+
+
+
+                            <ul class="media-list feed-list">
+                                <li class="media">
+                                    <button aria-hidden="true" class="close" type="button">×</button>
+                                    <a href="#" class="pull-left"> <img title="" data-toggle="tooltip" class="media-object img-circle" src="../img/default-img-member.png" data-original-title="userName"> </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">작성자</a></h4>
+                                        <div class="media-content"> 
+                                            <div class="ellipsis">몹시 출출하여 무언가 뜨끈하고 얼큰한 것이 먹고 싶은 추운 가을 저녁, 옷깃을 여미고 중국집에 들어가 앉아 짬뽕을 주문한다. http://media.daum.net/life/food/cooking/newsview?newsId=20131129091508042</div>
+                                        </div>
+                                        <!-- /media-content -->
+                                        <div class="media-meta"> <span class="time"><span class="fontawesome icon-time"></span>&nbsp; 3분전</span>
+                                            <button class="btn btn-default btn-xs">댓글쓰기</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- /media -->
+                                
+                                <li class="media">
+                                    <button aria-hidden="true" class="close" type="button">×</button>
+                                    <a href="#" class="pull-left"> <img title="userName" data-toggle="tooltip" class="media-object img-circle" src="../img/default-img-member.png"> </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">작성자</a></h4>
+                                        <div class="media-content"> 
+                                            <div class="pull-right">
+                                                <a href="#" class="img-thumbnail"  style="background:url(http://netdna.webdesignerdepot.com/uploads/2013/11/picjumbo.com_IMG_9998.jpg) center center no-repeat #000; background-size: 180px auto;"><img src="../img/trans.png"></a>
+                                            </div>
+                                            <div class="ellipsis">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</div>
+                                            
+                                            <div class="clearfix"></div>
+                                            
+                                        </div>
+                                        <div class="media-meta"> <span class="time"><span class="fontawesome icon-time"></span>&nbsp; 3분전</span>
+                                            <button class="btn btn-default btn-xs">댓글쓰기</button>
+                                        </div>
+                                        
+                                        <!-- sub media-list -->
+                                        <ul class="media-list feed-list">
+                                            <li class="media">
+                                                <button aria-hidden="true" class="close" type="button">×</button>
+                                                <a href="#" class="pull-left"> <img title="userName" data-toggle="tooltip" class="media-object img-circle" src="../img/default-img-member.png"> </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading"><a href="#">Media heading</a></h4>
+                                                    <div class="media-content">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
+                                                    <div class="media-meta"> <span class="time"><span class="fontawesome icon-time"></span>&nbsp; 3분전</span> </div>
+                                                </div>
+                                            </li>
+                                            <li class="media">
+                                                <button aria-hidden="true" class="close" type="button">×</button>
+                                                <a href="#" class="pull-left"> <img title="userName" data-toggle="tooltip" class="media-object img-circle" src="../img/default-img-member.png"> </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading"><a href="#">Media heading</a></h4>
+                                                    <div class="media-content">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
+                                                    <div class="media-meta"> <span class="time"><span class="fontawesome icon-time"></span>&nbsp; 3분전</span> </div>
+                                                </div>
+                                            </li>
+                                            <li class="media media-form rounded"> <a href="#" class="pull-left"> <img title="userName" data-toggle="tooltip" class="media-object img-circle" src="../img/default-img-member.png"> </a>
+                                                <div class="media-body">
+                                                    <form>
+                                                        <fieldset>
+                                                            <div class="form-group">
+                                                                <textarea placeholder="" class="form-control" row="3"></textarea>
+                                                            </div>
+                                                            <!-- /form-group -->
+                                                            <button class="btn btn-primary btn-sm">저장하기</button>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                                <!-- /sub media form --> 
+                                            </li>
+                                        </ul>
+                                        <!-- /sub media-list --> 
+                                    </div>
+                                </li>
+                                <!-- /media -->
+                            </ul>
+                            <!-- / comment-list --> 
+                            
+                        </div>
+                        <!-- / comment --> 
+                        
+                    </div>
+                    <!-- / content -->
+                    
+                    <div class="col-xs-12 col-sm-12 col-md-3 sidebar "> 
+                        <!-- panel -->
+                        <div class="panel">
+                            <h3 class="panel-title">최신 이벤트</h3>
+                            <ul class="media-list post-list">
+                                <li class="media"> <a class="pull-left media-object" href="event-read.html"> <img src="../img/default-img-pic.png" class="img-responsive" > </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="contents-post.html">직업 : 블로거</a></h4>
+                                        <div class="media-meta"> <span class="category"><a  href="contents-list.html">Category title</a></span> <span class="author"><a  href="mypage-profile.html">author</a></span> <span class="time"><span class="icon-time"></span>&nbsp; 3분전</span> </div>
+                                    </div>
+                                    <!-- /media-content --> 
+                                </li>
+                                <li class="media"><a class="pull-left media-object" href="event-read.html"> <img src="../img/default-img-pic.png" class="img-responsive" > </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="contents-post.html">화성에서 온 UX기획자, 금성에서 온 개발자, 그리고 기획자</a></h4>
+                                        <div class="media-meta"> <span class="category"><a  href="contents-list.html">Category title</a></span> <span class="author"><a  href="mypage-profile.html">author</a></span> <span class="time"><span class="icon-time"></span>&nbsp; 3분전</span> </div>
+                                    </div>
+                                    <!-- /media-content --> 
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /panel--> 
+
+                        <!-- panel -->
+                        <div class="panel">
+                            <h3 class="panel-title">최신 챌린지</h3>
+                            <ul class="media-list post-list">
+                                <li class="media"> <a class="pull-left media-object" href="event-read.html"> <img src="../img/default-img-pic.png" class="img-responsive" > </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="contents-post.html">직업 : 블로거</a></h4>
+                                        <div class="media-meta"> <span class="category"><a  href="contents-list.html">Category title</a></span> <span class="author"><a  href="mypage-profile.html">author</a></span> <span class="time"><span class="icon-time"></span>&nbsp; 3분전</span> </div>
+                                    </div>
+                                    <!-- /media-content --> 
+                                </li>
+                                <li class="media"><a class="pull-left media-object" href="event-read.html"> <img src="../img/default-img-pic.png" class="img-responsive" > </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="contents-post.html">화성에서 온 UX기획자, 금성에서 온 개발자, 그리고 기획자</a></h4>
+                                        <div class="media-meta"> <span class="category"><a  href="contents-list.html">Category title</a></span> <span class="author"><a  href="mypage-profile.html">author</a></span> <span class="time"><span class="icon-time"></span>&nbsp; 3분전</span> </div>
+                                    </div>
+                                    <!-- /media-content --> 
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /panel--> 
+
+                        <div id="loungebox" class="panel panel-default ">
+                            <div class="panel-header">
+                                <div class="cover">
+                                    <h3 class="panel-title">D.CAMP Lounge</h3>
+                                    <p>지금 D.CAMP에 60+명이 함께하고 있습니다</p>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <!-- media -->
+                                <ul class="media-list">
+                                    <li class="media" id="com3397">
+                                        <a class="media-left" href="/member/altjs445">
+                                            <img src="https://graph.facebook.com/v2.2/150913531910136/picture?redirect=1&type=large" alt="Beautysun Bang" class="avatar img-circle">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">
+                                                <a href="/member/altjs445">Beautysun Bang</a> 
+                                            </h4>
+                                            <div class="media-content"> 
+                                                <p>참가신청 했는데, 정원은 60인데 신청인원이 100명이 넘네요?
+    <br />그냥 가면 되는건지, 아니면 따로 선정기준이 있는건지 궁금합니다~</p>
+                                            </div>
+                                            
+                                            <div class="media-footer">
+                                                <small>
+                                                <a href="/lounge/event/663">[D.TALKS] #66 스타트업을 위한 작은 마케팅 클리닉 : 돈 없는 작은 회사들도 대기업 이길 수 있다! </a>
+                                                </small>
+                                            </div>
+                                            <div class="media-meta">
+                                                <a class="date" href="/lounge/comment/3397">2015-08-19 09:19</a>
+                                                <span class="like">
+                                                    <span class="glyphicon glyphicon-heart"></span> 
+                                                    <span class="sr-only">좋아요 </span> 
+                                                    <span class="cnt">3</span>
+                                                </span>
+                                                <span class="comment">
+                                                    <span class="glyphicon glyphicon-comment"></span> 
+                                                    <span class="sr-only">댓글 </span>  
+                                                    <span class="cnt">5</span> 
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="media" id="com3397">
+                                        <a class="media-left" href="/member/altjs445">
+                                            <img src="https://graph.facebook.com/v2.2/150913531910136/picture?redirect=1&type=large" alt="Beautysun Bang" class="avatar img-circle">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">
+                                                <a href="/member/altjs445">Beautysun Bang</a> 
+                                            </h4>
+                                            <div class="media-content"> 
+                                                <p>참가신청 했는데, 정원은 60인데 신청인원이 100명이 넘네요? </p>
+                                            </div> 
+                                            <div class="media-meta">
+                                                <a class="date" href="/lounge/comment/3397">2015-08-19 09:19</a>
+                                                <span class="like">
+                                                    <span class="glyphicon glyphicon-heart"></span> 
+                                                    <span class="sr-only">좋아요 </span> 
+                                                    <span class="cnt">3</span>
+                                                </span>
+                                                <span class="comment">
+                                                    <span class="glyphicon glyphicon-comment"></span> 
+                                                    <span class="sr-only">댓글 </span>  
+                                                    <span class="cnt">5</span> 
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="media" id="com3397">
+                                        <a class="media-left" href="/member/altjs445">
+                                            <img src="https://graph.facebook.com/v2.2/150913531910136/picture?redirect=1&type=large" alt="Beautysun Bang" class="avatar img-circle">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">
+                                                <a href="/member/altjs445">Beautysun Bang</a> 
+                                            </h4>
+                                            <div class="media-content"> 
+                                                <p>참가신청 했는데, 정원은 60인데 신청인원이 100명이 넘네요? </p>
+                                            </div> 
+                                            <div class="media-meta">
+                                                <a class="date" href="/lounge/comment/3397">2015-08-19 09:19</a>
+                                                <span class="like">
+                                                    <span class="glyphicon glyphicon-heart"></span> 
+                                                    <span class="sr-only">좋아요 </span> 
+                                                    <span class="cnt">3</span>
+                                                </span>
+                                                <span class="comment">
+                                                    <span class="glyphicon glyphicon-comment"></span> 
+                                                    <span class="sr-only">댓글 </span>  
+                                                    <span class="cnt">5</span> 
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="media" id="com3397">
+                                        <a class="media-left" href="/member/altjs445">
+                                            <img src="https://graph.facebook.com/v2.2/150913531910136/picture?redirect=1&type=large" alt="Beautysun Bang" class="avatar img-circle">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">
+                                                <a href="/member/altjs445">Beautysun Bang</a> 
+                                            </h4>
+                                            <div class="media-content"> 
+                                                <p>참가신청 했는데, 정원은 60인데 신청인원이 100명이 넘네요? </p>
+                                            </div> 
+                                            <div class="media-meta">
+                                                <a class="date" href="/lounge/comment/3397">2015-08-19 09:19</a>
+                                                <span class="like">
+                                                    <span class="glyphicon glyphicon-heart"></span> 
+                                                    <span class="sr-only">좋아요 </span> 
+                                                    <span class="cnt">3</span>
+                                                </span>
+                                                <span class="comment">
+                                                    <span class="glyphicon glyphicon-comment"></span> 
+                                                    <span class="sr-only">댓글 </span>  
+                                                    <span class="cnt">5</span> 
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="media" id="com3397">
+                                        <a class="media-left" href="/member/altjs445">
+                                            <img src="https://graph.facebook.com/v2.2/150913531910136/picture?redirect=1&type=large" alt="Beautysun Bang" class="avatar img-circle">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">
+                                                <a href="/member/altjs445">Beautysun Bang</a> 
+                                            </h4>
+                                            <div class="media-content"> 
+                                                <p>참가신청 했는데, 정원은 60인데 신청인원이 100명이 넘네요? </p>
+                                            </div> 
+                                            <div class="media-meta">
+                                                <a class="date" href="/lounge/comment/3397">2015-08-19 09:19</a>
+                                                <div class="meta-actions">
+                                                    <div class="btn-group btn-like">
+                                                        <button type="button" class="btn btn-default  btn-sm">
+                                                            <span class="glyphicon glyphicon-heart"></span> <span class="sr-only">좋아요 </span>12 
+                                                        </button>
+                                                        <button type="button" class="btn btn-default btn-sm" data-toggle="collapse" data-target="#like-media" aria-expanded="true" aria-controls="like-media">
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                    </div>
+                                                    <button type="button" class="btn btn-default btn-sm" data-toggle="collapse" data-target="#re-media" aria-expanded="true" aria-controls="re-media">
+                                                        <span class="glyphicon glyphicon-comment"></span> <span class="sr-only">댓글 </span>  12 
+                                                    </button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> 
+                            </div>
+                            <div class="panel-footer">
+                                <a href="#">라운지 가기</a>
+                            </div>
+                        </div>
+                        
+                        <div class="panel">
+                        페이스북 좋아요 
+                        </div>
+                        
+                    </div>
+                    <!-- / sidebar --> 
+                    
+                </div>
+                <!-- row --> 
+            </div>
+            <!-- /container --> 
+        </div>
+        <!-- /page-content --> 
+
+        <!-- todo : 외부 리퍼러를 통해 퍼머링크로 직접 유입된 경우 노출 -->
+        <!-- recent-cards -->
+        <div id="recent-cards">
+            <div class="container">
+            <div class="row">
+                <div class="item card col-xs-12 col-sm-4 col-md-3"> <!-- event -->
+                    <div class="inner">
+                        <a href="#" class="featured-img">
+                            <span style="background-image:url(http://dcamp.kr/media/editor_temp/31920_EC8898ECA095.jpg);">
+                                <img class="img-responsive" src="../images/img_trans.png" >
+                            </span>
+                            <img class="sr-only" src="http://dcamp.kr/media/editor_temp/31920_EC8898ECA095.jpg" >
+                        </a> 
+                        <div class="caption">
+                            <span class="category">Event</span> 
+                            <h3>
+                                <a href="#" class="mulitple">
+                                Office Hours with K Cube Ventures 정신아 이사 @ D.CAMP (1월 30일)Office Hours with K Cube Ventures 
+                                </a>
+                            </h3>
+                            <dl class="dl-horizontal">
+                                <dt>행사장소</dt>
+                                <dd class="ellipsis">Spain Barcelona</dd>
+                                <dt>행사일자</dt>
+                                <dd>2015.01.19</dd>
+                            </dl>
+                        </div>
+                        <div class="footer">
+                            <span class="author">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Sihoon Choi(최시훈)">
+                                    <img src="../images/img_default.png" class="img-circle"> <span class="ellipsis">Sihoon Choi(최시훈)</span>
+                                </a>
+                            </span>
+                            <span class="date">2015.01.19</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /item -->
+
+                <div class="item card col-xs-12 col-sm-4 col-md-3"> <!-- competition -->
+                    <div class="inner"> 
+                        <a href="#" class="featured-img">
+                            <span style="background-image:url(http://dcamp.kr/media/event/395.jpg);">
+                                <img class="img-responsive" src="../images/img_trans.png" >
+                            </span>
+                            <img class="sr-only" src="http://dcamp.kr/media/event/395.jpg" >
+                        </a> 
+                        <div class="caption">
+                            <span class="category">Competition</span>
+                            <h3>
+                                <a href="#" class="mulitple">Go Seoul Meetup</a>
+                            </h3>
+                            <dl class="dl-horizontal">
+                                <dt>주최&middot;주관</dt>
+                                <dd class="ellipsis">D.CAMP & K Cube Ventures</dd>
+                                <dt>참가기간</dt>
+                                <dd>2015.01.19 ~ 2015.01.28</dd>
+                            </dl>
+                        </div>
+                        <div class="footer">
+                            <span class="author">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Sihoon Choi(최시훈)">
+                                    <img src="../images/img_default.png" class="img-circle"> <span class="ellipsis">Sihoon Choi(최시훈)</span>
+                                </a>
+                            </span>
+                            <span class="date">2015.01.19</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /item -->
+
+                <div class="item card col-xs-12 col-sm-4 col-md-3"> <!-- news -->
+                    <div class="inner"> 
+                        <a href="#" class="featured-img">
+                            <span style="background-image:url(http://dcamp.kr/media/event/364.jpg);">
+                                <img class="img-responsive" src="../images/img_trans.png" >
+                            </span>
+                            <img class="sr-only" src="http://dcamp.kr/media/event/364.jpg" >
+                        </a> 
+                        <div class="caption">
+                            <span class="category">News</span>
+                            <h3>
+                                <a href="#" class="mulitple">4YFN- 4 Years From Now</a>
+                            </h3>
+                            <p class="summary">
+                                <span class="mulitple">
+                                    4월 한 달간 진행되어 온 "스타트업 선배 창업자, 멘토들이 선정한 창업자 필독서 30선" 증정 이벤트!! 마지막 당첨자들이 선정되었습니다. :) 
+                                </span>
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span class="author">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Sihoon Choi(최시훈)">
+                                    <img src="../images/img_default.png" class="img-circle"> <span class="ellipsis">Sihoon Choi(최시훈)</span>
+                                </a>
+                            </span>
+                            <span class="date">2015.01.19</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /item -->
+
+
+                <div class="item card col-xs-12 col-sm-4 col-md-3"> <!-- content -->
+                    <div class="inner"> 
+                        <a href="#" class="featured-img">
+                            <span style="background-image:url(http://dcamp.kr/media/editor_temp/11IMG_0968.jpg);">
+                                <img class="img-responsive" src="../images/img_trans.png" >
+                            </span>
+                            <img class="sr-only" src="http://dcamp.kr/media/editor_temp/11IMG_0968.jpg" >
+                        </a> 
+                        <div class="caption">
+                            <span class="category">Content</span>
+                            <h3>
+                                <a href="#" class="mulitple">
+                                    SNS 2014 Conference] 11.25 Track: THE AVENGERS: Founder's story: from humble beginnings come great things
+                                </a>
+                            </h3>
+                            <p class="summary">
+                                <span class="mulitple">
+                                    We are going to introduce main themes that were discussesd in 'Startup Nations Submit 2014'.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span class="author">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Sihoon Choi(최시훈)">
+                                    <img src="../images/img_default.png" class="img-circle"> <span class="ellipsis">Sihoon Choi(최시훈)</span>
+                                </a>
+                            </span>
+                            <span class="date">2015.01.19</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /item -->
+            </div>
+        </div>
+        <!-- /recent-cards -->
+
+
+        
+    </div>
+    <!-- /rowContent -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="footer-navbar list-inline">
+                <li><a href="#">D.CAMP 소개</a></li>
+                <li><a href="#">멤버쉽 안내</a></li>
+                <li><a href="#">공간공유</a></li>
+                <li><a href="#">서비스약관</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+            </ul>
+            <address>
+                서울시 강남구 역삼동 683-34 새롬빌딩 4~6층 &nbsp;
+                <span><i class="fa fa-phone"></i> (02) 2030-9300</span> &nbsp;
+                <span><i class="fa fa-envelope-o"></i> <a href="mailto:contact@dcamp.kr">contact@dcamp.kr</a></span>
+            </address>
+            <p>Copyright &copy;D.CAMP. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- /footer -->
+</div>
+<!-- /wrapper -->
+
+</body>
+</html>

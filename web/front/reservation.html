@@ -1,0 +1,749 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>D.CAMP &#8211; &#039;드림뱅크&#039; 은행권청년창업재단</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/site.css" >
+<link rel="stylesheet" href="../css/bootstrap-formhelpers.css" >
+<link rel="stylesheet" href="../css/bootstrap-select.min.css" >
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css" >
+<!--[if IE 7]>
+<link rel="stylesheet" href="../font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--> 
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" > 
+
+<!-- Javascript  -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/holder.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.language.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.js"></script>
+<script src="../js/bootstrap-formhelpers-timepicker.js"></script>
+<script src="../js/bootstrap-select.min.js"></script>
+<script src="../js/script.js"></script>
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]--> 
+</head>
+
+<body>
+<div class="wrap"> 
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">  
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../front/index_new.html"><img src="../images/logo.png" alt="D.CAMP" class="img-responsive"></a> 
+            </div>
+            <!-- /navbar-header -->
+             
+            <div class="collapse navbar-collapse" id="navbar-collapse" > 
+                <ul class="nav navbar-nav navbar-right navbar-sign" id="signoff" style="display:none;">
+                    <li class="gosignin">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span> 
+                            로그인
+                        </a>
+                    </li>
+                    <li class="gosignup">
+                        <a href="#">
+                            회원가입
+                        </a>
+                    </li>
+                </ul> 
+ 
+                <ul class="nav navbar-nav navbar-right navbar-sign" id="signon">
+                    <li class="signUser"> 
+                        <a href="/member/dcamp" data-toggle="tooltip" data-placement="bottom" title="dcamp"> 
+                            <img class="img-circle" src="../images/img_default.png"> <span class="sr-only">사용자이름</span> 
+                        </a> 
+                    </li>
+                    <li class="userbell">
+                        <a href="/member/activity">
+                            <span class="fa fa-fw fa-bell"></span><span class="sr-only"> 액티비티</span> <span class="badge">99+</span> 
+                        </a> 
+                    </li>
+                    <li class="dropdown"> 
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="fa fa-fw fa-cog"></span><span class="sr-only"> 설정 </span> 
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li style="border-bottom: 1px dashed #ddd;">
+                                <a href="contents-edit.html"><span class="fa fa-fw fa-file-text"></span> 컨텐츠 글쓰기</a>
+                            </li>
+                            <li style="border-bottom: 1px dashed #ddd;">
+                                <a href="../front/officehours-manage.html"><span class="fa fa-fw fa-file-text"></span> Office Hours 관리 </a>
+                            </li>
+                            <li><a href="mypage-contents.html"> 콘텐츠관리</a></li>
+                            <li><a href="mypage-event.html"> 이벤트관리</a></li>
+                            <li><a href="mypage-roomsharing.html"> 공간공유 신청내역</a></li>
+                            <li><a href="mypage-competition.html"> 경진대회 관리</a></li>
+                            <li><a href="../front/mypage-officehours.html">Office Hours 신청내 </a></li>
+                            <li><a href="#"> 레퍼런스 내역</a></li>
+                            <li><a href="mypage-profile.html"> 개인정보 수정</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="#"> <span class="fa fa-fw fa-sign-out"></span> 로그아웃</a></li>
+                            <li style="border-top: 1px dashed #ddd;"><a href="../admin/index.html"><span class="fa fa-fw fa-cog"></span> 관리자</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control input-sm" placeholder="Search">
+                    </div>
+                </form> 
+                
+                <ul class="nav navbar-nav navbar-left navbar-site">
+                    <li><a href="event-list.html">Event</a></li>
+                    <li><a href="competition-list.html">Competition</a></li>
+                    <li><a href="../front/officehours.html">Office Hours</a></li>
+                    <li><a href="contents-list.html">Blog</a></li>
+                    <!--li><a href="#">Notice</a></li-->
+                    <!--li><a href="#">News</a></li-->
+                    <li><a href="recruit-list.html">Recruit</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Network</a>
+                        <ul class="dropdown-menu"> 
+                            <li><a href="startup-list.html">Startup</a></li>
+                            <li><a href="people-list.html">People</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about-dcamp.html">About</a></li>
+                </ul>
+            </div>
+            <!-- /navbar-collapse -->
+        </div> 
+    </nav>
+    <!-- /navbar -->
+    <!-- rowContent -->
+    <div class="rowContent" id="reservation">
+        <div class="page-header">
+            <div class="container">
+                <h2><a href="#">Room Sharing</a></h2>
+                <div class="pull-right">
+                    <button class="btn btn-default btn-primary" onclick="javascript:location.href='#floor-formApply'">공간공유 신청하기</button>
+                </div>
+            </div>
+        </div>
+        <!-- /page-header --> 
+        
+        <!-- page-content -->
+        <div class="page-content"> 
+            <!-- container -->
+            <div class="container" >
+             
+                <div class="floor-desc">
+                    <div class="carousel-wrap">
+                        <div class="carousel slide" id="carousel-example-generic">
+                            <ol class="carousel-indicators">
+                                <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
+                                <li data-slide-to="1" data-target="#carousel-example-generic"></li>
+                                <li data-slide-to="2" data-target="#carousel-example-generic"></li>
+                            </ol>
+                            <div class="carousel-inner ">
+                                <div class="item active row">
+                                    <div class="col-sm-12 col-md-4"><img  src="../img/4f.jpg" class="img-responsive"></div>
+                                    <div class="col-sm-12 col-md-8 caption"> <strong>4F: Solo, but not alone</strong>
+                                        <p>여럿이 함께 모여 내일을 준비하는 공간입니다. 선정릉이 창 밖으로 펼쳐지며, 열정 가득한 이들의 에너지를 피부로 느낄 수 있습니다. 열심히 작업한 뒤 커피 한 잔의 여유를 만끽 하세요. 회의 공간도 있습니다. D.CAMP의 Co-working space로 여러분을 초대합니다.</p>
+                                    </div>
+                                </div>
+                                <!--/item -->
+                                <div class="item row">
+                                    <div class="col-sm-12 col-md-4"><img  src="../img/5f.jpg" class="img-responsive"></div>
+                                    <div class="col-sm-12 col-md-8 caption"> <strong>5F : Stay Hungry, Stay Foolish</strong>
+                                        <p>남다른 열정과 아이디어, 가능성을 지닌 스타트업들이 내일을 준비하는 공간입니다. Kstartup, 그리고 청년창업사관학교 우수 졸업자들이 이미 터를 잡았습니다. 짧은 기간 동안 현재의 제품과 서비스를 업그레이드하기 위해 가속도를 냅니다. 필요한 경험과 지식을 나눌 수 있는 D.CAMP 교육 프로그램도 여기서 진행됩니다.</p>
+                                    </div>
+                                </div>
+                                <!--/item -->
+                                <div class="item row">
+                                    <div class="col-sm-12 col-md-4"><img src="../img/6f.jpg" class="img-responsive"></div>
+                                    <div class="col-sm-12 col-md-8 caption"> <strong>6F : We Are All Connected</strong>
+                                        <p>다양하고 풍부한 관계 속에서 새로운 가치가 탄생합니다. 대한민국 창업 생태계를 꽃 피우기 위해 D.CAMP가 준비한 200석 규모의 다목적 홀입니다. 선정릉의 환상적 풍경이 내려다 뵈는 멋진 테라스도 있습니다.</p>
+                                    </div>
+                                </div>
+                                <!--/item --> 
+                            </div>
+                        </div>
+                        <!-- /carousel --> 
+                    </div>
+                </div> 
+                <!-- / floor-desc -->
+                
+                <div class="well help-bizmember">
+                    <h5><span class="icon-briefcase"></span> &nbsp;  비즈니스센터 입주기업 회원 혜택</h5>
+                    <ul>
+                        <li>비즈니스센터 입주기업은 공간 예약 신청시, 매달 10시간까지는 별도의 승인 절차 없이 예약이 가능합니다.</li>
+                        <li>48시간 이내의 신청은 다른 신청자들과 마찬가지로 승인 과정을 통해서 사용해야 합니다. 이 경우에는 공간 예약 잔여 시간이 차감되지 않습니다.</li>
+                    </ul>
+                    <div class="text-center text-primary"><strong><span class="icon-time"></span> &nbsp;  2014년 1월, 공간 예약 잔여 시간은 10시간 남았습니다.</strong></div>
+                </div>
+                
+                <!-- status -->
+                <div class="floor-status"> 
+                    <h3><span class="icon-reorder "></span> 공간공유 현황</h3>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="floor" width="60">&nbsp;</th>
+                                    <th width="14%">MON <small>09.23</small></th>
+                                    <th width="14%">TUE <small>09.23</small></th>
+                                    <th width="14%">WED <small>09.23</small></th>
+                                    <th width="14%">THU <small>09.23</small></th>
+                                    <th width="14%">FRI <small>09.23</small></th>
+                                    <th class="sat" width="14%">SAT <small>09.23</small></th>
+                                    <th class="sun" width="14%">SUN <small>09.23</small></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>4F</th>
+                                    <td><ul class="list-unstyled">
+                                            <li class="head">
+                                                <다목적홀>
+                                            </li>
+                                            <li> <strong  data-toggle="popover" data-placement="top">디캠프 9월 D.DAY 행사</strong> <span class="time"><span class="icon icon-time"></span> 14:00~16:00</span></li>
+                                            <li class="divider"></li>
+                                            <li class="head">
+                                                <소회의실>
+                                            </li>
+                                            <li> <strong  data-toggle="popover" data-placement="top">디캠프 9월 D.DAY 행사</strong> <span class="time"><span class="icon icon-time"></span> 14:00~16:00</span></li>
+                                            <li> <strong>동그라미 재단 로컬 챌린지 프로젝트를 모집합니다.</strong> <span class="time"><span class="icon icon-time"></span> 14:00~16:00</span> </li>
+                                        </ul></td>
+                                    <td><div class="none"><span class="icon icon-ellipsis-horizontal "></span></div></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><div class="none"><span class="icon icon-ellipsis-horizontal "></span></div></td>
+                                    <td><div class="none"><span class="icon icon-ellipsis-horizontal "></span></div></td>
+                                </tr>
+                                <tr>
+                                    <th>5F</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>6F</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /table -->
+                    <ul class="pager">
+                        <li><a href="#"><span class="icon-chevron-left"></span></a></li>
+                        <li><a href="#"><span class="icon-chevron-right"></span></a></li>
+                    </ul>
+                </div>
+                <!-- / --> 
+              
+            
+            <!-- editor -->
+            <div id="floor-formApply" class="editor">
+                <div class="edit-header">
+                    <h3><span class="icon-edit"></span> 공간공유 신청하기</h3>
+                    <p>D.CAMP는 미팅, 회의, 행사 등 여러 목적으로 사용되는 공간을 공유하고 있습니다. <br>
+                    아래의 목적을 선택후 해당 내용을 입력해주세요. </p>
+                </div>
+                <div class="edit-body">
+                    <form class="form-horizontal">
+
+                        <div id="form-reserve-use" class="well">
+                            <fieldset>
+                            <h4>공간공유 예약 목적을 선택해주세요.</h4>
+                            <div class="form-group">
+                                <div class="col-xs-12 col-sm-2 col-md-2 control-label"><span class="text-danger">*</span> 신청목적</div>
+                                <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                    <select class="form-control" data-width="auto">
+                                        <option>공간공유</option>
+                                        <option>디자인 라운지 좌석 이용</option>
+                                    </select> 
+                                </div>
+                            </div>
+                            <!-- / form-group -->
+                            <div class="form-group form-submit"> 
+                                <div class="col-xs-12 col-sm-offset-2 col-sm-10 col-md-offset-2 col-md-10 "> 
+                                    <button class="btn btn-default" type="button"> 예약하기 </button>
+                                </div>
+                            </div>
+                            <!-- / form-group -->   
+                            </fieldset>
+                        </div>
+                        <!-- /form-reserve-use -->
+
+
+                        <div id="form-reserve-sharing" class="form-group-wrap well">
+                            <fieldset>
+                                <h4>'공간공유' 예약하기</h4> 
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">공간 선택</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <select class="form-control">
+                                            <option>5층 교육장 (최대 30명 수용)</option>
+                                            <option>6층 다목적홀 (최대 100명 수용)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">신청 일자</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 "> 
+                                        <!-- datepicker -->
+                                        <div class="bfh-datepicker" data-format="y.m.d">
+                                            <div class="input-group bfh-datepicker-toggle" data-toggle="bfh-datepicker"> <span class="input-group-addon"><span class="icon-calendar"></span></span>
+                                                <input type="text" class="form-control datepicker" id="inputStartDate" >
+                                            </div>
+                                            <div class="bfh-datepicker-calendar">
+                                                <table class="calendar table table-bordered">
+                                                    <thead>
+                                                        <tr class="months-header">
+                                                            <th class="month" colspan="4"> <a class="previous" href="#"><span class="icon-chevron-left"></span></a> <span></span> <a class="next" href="#"><span class="icon-chevron-right"></span></a> </th>
+                                                            <th class="year" colspan="3"> <a class="previous" href="#"><span class="icon-chevron-left"></span></a> <span></span> <a class="next" href="#"><span class="icon-chevron-right"></span></a> </th>
+                                                        </tr>
+                                                        <tr class="days-header"> </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- /datepicker --> 
+                                        <span class="help-block">공휴일은 휴무입니다. 신청일자 선택시 유의 하시기 바랍니다. (토요일은 6시까지만 공간공유가 가능합니다.)</span> 
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">이용 시간</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <div class="form-group-time"> 
+                                            <!-- timepicker -->
+                                            <div class="bfh-timepicker" data-time="10:00" >
+                                                <div class="input-group bfh-timepicker-toggle" data-toggle="bfh-timepicker"> <span class="input-group-addon"><span class="icon-time"></span></span>
+                                                    <input type="text" class="form-control timepicker" id="inputStartTime" placeholder="시작시간" readonly>
+                                                </div>
+                                                <div class="bfh-timepicker-popover">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="hour"><a class="next" href="#"><span class="icon-chevron-up"></span></a>
+                                                                    <input type="text" class="form-control">
+                                                                    <a class="previous" href="#"><span class="icon-chevron-down"></span></a></td>
+                                                                <td class="separator">:</td>
+                                                                <td class="minute"><a class="next" href="#"><span class="icon-chevron-up"></span></a>
+                                                                    <input type="text" class="form-control">
+                                                                    <a class="previous" href="#"><span class="icon-chevron-down"></span></a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /timepicker --> 
+                                            <span class="sim">&sim;</span> 
+                                            <!-- timepicker -->
+                                            <div class="bfh-timepicker" data-time="10:00" >
+                                                <div class="input-group bfh-timepicker-toggle" data-toggle="bfh-timepicker"> <span class="input-group-addon"><span class="icon-time"></span></span>
+                                                    <input type="text" class="form-control timepicker" id="inputStartTime" placeholder="시작시간" readonly>
+                                                </div>
+                                                <div class="bfh-timepicker-popover">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="hour"><a class="next" href="#"><span class="icon-chevron-up"></span></a>
+                                                                    <input type="text" class="form-control">
+                                                                    <a class="previous" href="#"><span class="icon-chevron-down"></span></a></td>
+                                                                <td class="separator">:</td>
+                                                                <td class="minute"><a class="next" href="#"><span class="icon-chevron-up"></span></a>
+                                                                    <input type="text" class="form-control">
+                                                                    <a class="previous" href="#"><span class="icon-chevron-down"></span></a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /timepicker -->
+                                            <button class="btn btn-default " type="button" data-toggle="tooltip" title="예약체크"><span class="icon-ok"></span><span class="sr-only">예약가능 체크</span></button>
+                                        </div>
+                                        <!-- /form-group-time --> 
+                                        <span class="help-block">이용시간을 입력한 후 예약이 가능 한지 체크해주세요 </span> </div>
+                                </div>
+                                <!-- / form-group -->
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">신청자 소개</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <select class="form-control">
+                                            <option>개인</option>
+                                            <option>단체</option>
+                                        </select>
+                                        
+                                        <!-- todo : 개인일때 노출 됨 -->
+                                        <div class="form-group-sub">
+                                            <p>
+                                                <label>개인에 대한 간단한 소개를 써주세요.</label>
+                                                <textarea class="form-control" rows="3"></textarea>
+                                            </p>
+                                        </div>
+                                        <!-- /form-group-sub --> 
+                                        
+                                        <!-- todo : 단체일때 노출 됨 -->
+                                        <div class="form-group-sub">
+                                            <p>
+                                                <label>단체에 대한 간단한 소개를 써주세요.</label>
+                                                <textarea class="form-control" rows="3"></textarea>
+                                            </p>
+                                            <p>
+                                                <label>홈페이지 주소를 입력해주세요</label>
+                                                <input type="text" class="form-control" placeholder="http://">
+                                                </input>
+                                            </p>
+                                        </div>
+                                        <!-- /form-group-sub --> 
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">행사명</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">관련 행사 주소</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <div class="input-group"> <span class="input-group-addon"><span class="icon-fixed-width icon-link"></span></span>
+                                            <input type="text" class="form-control" placeholder="http://">
+                                        </div>
+                                        <!-- /input-group -->
+                                        <span class="help-block">D.CAMP에서 진행되는 관련된 행사가 있으면 주소를 입력해주세요.</span> 
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">행사 소개</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <textarea class="form-control" rows="3"></textarea>
+                                        <span class="help-block">행사제목, 행사의 취지, 주요 프로그램 등을 자세히 알려 주세요</span> </div>
+                                </div>
+                                <!-- / form-group -->
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">참여자</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <textarea class="form-control" rows="3"></textarea>
+                                        <span class="help-block">예상 인원수와 어떤 분들이 주로 참여하는 알려주세요</span> </div>
+                                </div>
+                                <!-- / form-group -->
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">참가비 여부</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <label class="form-control-static">참가자들에게 비용을 받는 행사입니까?</label>
+                                        <br>
+                                        <select class="form-control">
+                                            <option>아니오</option>
+                                            <option>네</option>
+                                        </select>
+                                        
+                                        <!-- todo : "네"일때 노출 됨 -->
+                                        <div class="form-group-sub">
+                                            <p>
+                                                <label>참가비와 이를 받는 취지는 무엇입니까? </label>
+                                                <textarea class="form-control" ></textarea>
+                                            </p>
+                                        </div>
+                                        <!-- /form-group-sub --> 
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">식사 여부</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <label class="form-control-static">참가자들이 식사를 하는 행사입니까?</label>
+                                        <br>
+                                        <select class="form-control">
+                                            <option>아니오</option>
+                                            <option>네</option>
+                                        </select>
+                                        <span class="help-block">핑거푸드나 도시락, 샌드위치와 같은 간단한 음식만 가능합니다.</span> </div>
+                                </div>
+                                <!-- / form-group -->
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">무료 초대여부</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <label class="form-control-static">유료 행사인 경우 D.CAMP 회원의 무료 초대가 행사입니까? </label>
+                                        <br>
+                                        <select class="form-control">
+                                            <option>아니오</option>
+                                            <option>네</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">연락처</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <div class="input-group"> <span class="input-group-addon"><span class="icon-fixed-width icon-phone"></span></span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <!-- /input-group -->
+                                        
+                                        <div class="input-group"> <span class="input-group-addon"><span class=" icon-fixed-width icon-envelope-alt"></span></span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <!-- /input-group --> 
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">개인정보 활용 동의</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="selectUseAgree"checked>
+                                                동의합니다</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="selectUseAgree">
+                                                동의하지 않습니다.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+                                 
+                                    <div class="form-group form-submit">
+                                        <div class="col-xs-12 col-sm-offset-2 col-md-offset-2 col-sm-10 col-md-10">
+                                            <button class="btn btn-default" type="button">취소</button>
+                                            <button class="btn btn-primary" type="submit" onclick="location.href='membership-complete.html'">예약하기</button>
+                                        </div>
+                                    </div> 
+                            </fieldset>
+                        </div>
+                        <!-- /form-reserve-sharing -->
+
+                        <div id="form-reserve-design" class="form-group-wrap well">
+                            <fieldset>
+                                <h4>'디자인 라운지 좌석 이용' 예약하기</h4>
+
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">공간 선택</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <select class="form-control">
+                                            <option>원더우먼(iMac)</option>
+                                            <option>배트맨 (PC)</option>
+                                            <option>슈퍼걸 (iMac)</option>
+                                            <option>조커(PC)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">신청 일자</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 "> 
+                                        <!-- datepicker -->
+                                        <div class="bfh-datepicker" data-format="y.m.d">
+                                            <div class="input-group bfh-datepicker-toggle" data-toggle="bfh-datepicker"> <span class="input-group-addon"><span class="icon-calendar"></span></span>
+                                                <input type="text" class="form-control datepicker" id="inputStartDate" >
+                                            </div>
+                                            <div class="bfh-datepicker-calendar">
+                                                <table class="calendar table table-bordered">
+                                                    <thead>
+                                                        <tr class="months-header">
+                                                            <th class="month" colspan="4"> <a class="previous" href="#"><span class="icon-chevron-left"></span></a> <span></span> <a class="next" href="#"><span class="icon-chevron-right"></span></a> </th>
+                                                            <th class="year" colspan="3"> <a class="previous" href="#"><span class="icon-chevron-left"></span></a> <span></span> <a class="next" href="#"><span class="icon-chevron-right"></span></a> </th>
+                                                        </tr>
+                                                        <tr class="days-header"> </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- /datepicker --> 
+                                        <span class="help-block">공휴일은 휴무입니다. 신청일자 선택시 유의 하시기 바랍니다. (토요일은 6시까지만 공간공유가 가능합니다.)</span> 
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+                                
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">이용 시간</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <div class="form-group-time"> 
+                                            <!-- timepicker -->
+                                            <div class="bfh-timepicker" data-time="10:00" >
+                                                <div class="input-group bfh-timepicker-toggle" data-toggle="bfh-timepicker"> <span class="input-group-addon"><span class="icon-time"></span></span>
+                                                    <input type="text" class="form-control timepicker" id="inputStartTime" placeholder="시작시간" readonly>
+                                                </div>
+                                                <div class="bfh-timepicker-popover">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="hour"><a class="next" href="#"><span class="icon-chevron-up"></span></a>
+                                                                    <input type="text" class="form-control">
+                                                                    <a class="previous" href="#"><span class="icon-chevron-down"></span></a></td>
+                                                                <td class="separator">:</td>
+                                                                <td class="minute"><a class="next" href="#"><span class="icon-chevron-up"></span></a>
+                                                                    <input type="text" class="form-control">
+                                                                    <a class="previous" href="#"><span class="icon-chevron-down"></span></a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /timepicker --> 
+                                            <span class="sim">&sim;</span> 
+                                            <!-- timepicker -->
+                                            <div class="bfh-timepicker" data-time="10:00" >
+                                                <div class="input-group bfh-timepicker-toggle" data-toggle="bfh-timepicker"> <span class="input-group-addon"><span class="icon-time"></span></span>
+                                                    <input type="text" class="form-control timepicker" id="inputStartTime" placeholder="시작시간" readonly>
+                                                </div>
+                                                <div class="bfh-timepicker-popover">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="hour"><a class="next" href="#"><span class="icon-chevron-up"></span></a>
+                                                                    <input type="text" class="form-control">
+                                                                    <a class="previous" href="#"><span class="icon-chevron-down"></span></a></td>
+                                                                <td class="separator">:</td>
+                                                                <td class="minute"><a class="next" href="#"><span class="icon-chevron-up"></span></a>
+                                                                    <input type="text" class="form-control">
+                                                                    <a class="previous" href="#"><span class="icon-chevron-down"></span></a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /timepicker -->
+                                            <button class="btn btn-default " type="button" data-toggle="tooltip" title="예약체크"><span class="icon-ok"></span><span class="sr-only">예약가능 체크</span></button>
+                                        </div>
+                                        <!-- /form-group-time --> 
+                                        <span class="help-block">이용시간을 입력한 후 예약이 가능 한지 체크해주세요 </span> 
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">작업 내용</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+
+
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 control-label">연락처</div>
+                                    <div class="col-xs-12 col-sm-10 col-md-10 ">
+                                        <div class="input-group"> <span class="input-group-addon"><span class="icon-fixed-width icon-phone"></span></span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <!-- /input-group -->
+                                        
+                                        <div class="input-group"> <span class="input-group-addon"><span class=" icon-fixed-width icon-envelope-alt"></span></span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <!-- /input-group --> 
+                                    </div>
+                                </div>
+                                <!-- / form-group -->
+
+                                <div class="form-group form-submit">
+                                    <div class="col-xs-12 col-sm-offset-2 col-md-offset-2 col-sm-10 col-md-10">
+                                        <button class="btn btn-default" type="button">취소</button>
+                                        <button class="btn btn-primary" type="submit" onclick="location.href='membership-complete.html'">예약하기</button>
+                                    </div>
+                                </div> 
+
+                            </fieldset>
+                        </div>
+                        <!-- /form-reserve-design -->    
+                         
+                    </form>
+                </div>
+                <!-- /  -->
+                
+                <div class="edit-body">
+                    <div class="complete">
+                        <h4 class="text-center"><span class="icon icon-smile icon-large"></span>&nbsp;  신청완료!!</h4>
+                        <div class="well text-center">공간공유 신청이 완료되었습니다. <br>
+                            신청한 공간공유는 승인대기 중이며, 승인완료되면 안내 메일을 보내드립니다.</div>
+                        <div class="text-center"><a href="#" class="btn btn-default">홈으로</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- /editor --> 
+            
+        </div>
+        <!-- /container --> 
+    </div>
+    <!-- /page-content --> 
+</div>
+<!-- /rowContent -->
+</div>
+<!-- /wrap --> 
+
+<!-- footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+                <ul class="list-inline">
+                    <li><a href="about-dcamp.html">D.camp 소개</a></li>
+                    <li><a href="membership-apply.html">멤버십안내</a></li>
+                    <li><a href="floor-schedule.html">공간공유</a></li>
+                    <li><a href="policy-service.html">서비스약관</a></li>
+                    <li><a href="policy-privacy.html"><strong>개인정보취급방침</strong></a></li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <address>
+                서울시 강남구 역삼동 683-34 새롬빌딩 4~6층 &nbsp; <span class="icon-phone"></span> (02) 2030-9300 &nbsp; <span class="icon-envelope-alt"></span> <a href="mailto:contact@dreamcamp.co">contact@dreamcamp.co</a>
+                </address>
+                <strong>&copy; D.CAMP</strong> </div>
+        </div>
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

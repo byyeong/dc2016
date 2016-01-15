@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-svg-clock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="dcamp-about-2015" sketch:type="MSArtboardGroup" transform="translate(-955.000000, -1971.000000)">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(252.000000, 1971.000000)">
+                <g id="ic-svg-clock" transform="translate(702.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-path" x="0" y="0" width="40" height="40"></rect>
+                    <g id="Group" transform="translate(1.000000, 0.000000)" fill="#FFCC00">
+                        <path d="M18.966,0.814 C8.906,0.814 0.75,8.972 0.75,19.032 C0.75,29.092 8.906,37.248 18.966,37.248 C29.028,37.248 37.184,29.092 37.184,19.032 C37.184,8.972 29.028,0.814 18.966,0.814 L18.966,0.814 Z M18.966,33.29 C11.092,33.29 4.71,26.906 4.71,19.034 C4.71,11.158 11.094,4.776 18.966,4.776 C26.842,4.776 33.224,11.158 33.224,19.034 C33.224,26.906 26.842,33.29 18.966,33.29 L18.966,33.29 Z" id="Shape"></path>
+                        <path d="M20.354,8.736 L17.58,8.736 L17.58,19.608 L24.324,26.35 L26.284,24.39 L20.354,18.458 L20.354,8.736 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

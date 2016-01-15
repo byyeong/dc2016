@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>D.CAMP - Manage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap-formhelpers.css" >
+<link rel="stylesheet" href="../css/bootstrap-select.min.css" >
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css" >
+<!--[if IE 7]>
+<link rel="stylesheet" href="../font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="../css/admin.css" >
+
+<!-- Javascript  -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/holder.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.language.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.js"></script>
+<script src="../js/bootstrap-formhelpers-timepicker.js"></script>
+<script src="../js/bootstrap-select.min.js"></script>
+<script src="../js/admin.js"></script>
+
+<script src="../js/jquery-sortable.js"></script> 
+
+<link href="../css/bootstrap-tagsinput.css" rel="stylesheet"> 
+<script src="../js/bootstrap-tagsinput.min.js"></script>
+<script src="../js/bootstrap-tagsinput-angular.min.js"></script> 
+
+<script>
+    $(function() {
+        $(".form-tags").tagsinput('items'); 
+        
+        $("#sortable").sortable({
+            cancel: '.form-control',
+            handle: 'i.icon-move',
+            onDragStart: function (item, container, _super) {
+            // Duplicate items of the no drop area
+            if(!container.options.drop)
+            item.clone().insertAfter(item)
+            _super(item)
+            }
+        });
+    });
+</script>
+
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-inverse" role="navigation"> 
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="index.html"><img src="../img/logo.png"></a> </div>
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><span class="icon-cog"></span></a></li>
+                    <li class=""><a href="member-list.html">회원관리</a></li>
+                    <li class=""><a href="membership-list.html">멤버십관리</a></li>
+                    <li class=""><a href="startup-list.html">스타트업관리</a></li>
+                    <li class=""><a href="recruit-list.html">채용정보관리</a></li>
+                    <li class=""><a href="floor-reserve-list.html">공간공유관리</a></li>
+                    <li class=""><a href="event-list.html">이벤트관리</a></li>
+                    <li class=""><a href="notice-list.html">뉴스관리</a></li>
+                    <li class=""><a href="main-list-set.html">메인콘텐츠관리</a></li>
+                    <li class=""><a href="contents-list.html">콘텐츠관리 </a></li>
+                    <li class=""><a href="competition-list.html">경진대회관리 </a></li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">기타관리 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="entrance-dashboard.html">출입관리</a></li>
+                            <li><a href="locker-user-list.html">월간 사물함 배정</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="analytics-member.html">통계분석</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse --> 
+        </nav>
+    </div>
+</header>
+
+<!-- jumbotron -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>뉴스레터 관리</h1>
+    </div>
+</div>
+<!-- /jumbotron --> 
+
+<!-- container -->
+<div class="rowContainer">
+    <div class="container">
+        <div class="row"> 
+            
+            <!-- Start Page Cotents --> 
+            <!-- sidebar -->
+            <div class="col-md-2 sidebar">
+                <div class="sidebar-nav hidden-print affix">
+                    <ul class="nav list-group">
+                        <li class="list-group-item active"><a href="newsletter-list.html"> 뉴스레터 목록</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <!-- /sidebar --> 
+            
+            <!-- contentwrap -->
+            <div class="col-md-10 contentswrap"> 
+                <!-- section -->
+                <section>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2><span class="icon-edit"></span><span class="break"></span>뉴스레터 작성하기</h2>
+                            <div class="actions"> <span class="break"></span> <a title="뉴스레터 목록" data-toggle="tooltip" href="newsletter-list.html"><span class="icon-align-justify"></span></a> </div>
+                        </div>
+                        <!-- /panel-heading -->
+                        
+                        <form class="form-horizontal">
+                            <div class="panel-body">
+                                <fieldset>
+                                    <legend>뉴스레터 정보입력</legend>
+                                    <div class="form-group">
+                                        <span class="col-xs-12 col-sm-2 col-md-2 control-label">글 제목</span>
+                                        <div class="col-xs-12 col-sm-10 col-md-10">
+                                            <input type="text"  class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="col-xs-12 col-sm-2 col-md-2 control-label">발송일</span>
+                                        <div class="col-xs-12 col-sm-10 col-md-10"> 
+                                            <!-- datepicker -->
+                                            <div class="bfh-datepicker" data-format="y-m-d">
+                                                <div class="input-group bfh-datepicker-toggle" data-toggle="bfh-datepicker"> <span class="input-group-addon"><span class="icon-calendar"></span></span>
+                                                    <input type="text" class="form-control datepicker" readonly>
+                                                </div>
+                                                <div class="bfh-datepicker-calendar">
+                                                    <table class="calendar table table-bordered">
+                                                        <thead>
+                                                            <tr class="months-header">
+                                                                <th class="month" colspan="4"> 
+                                                                    <a class="previous" href="#"><span class="icon-chevron-left"></span></a> 
+                                                                    <span></span> 
+                                                                    <a class="next" href="#"><span class="icon-chevron-right"></span></a>
+                                                                 </th>
+                                                                <th class="year" colspan="3"> 
+                                                                    <a class="previous" href="#"><span class="icon-chevron-left"></span></a> 
+                                                                    <span></span> 
+                                                                    <a class="next" href="#"><span class="icon-chevron-right"></span></a> 
+                                                                </th>
+                                                            </tr>
+                                                            <tr class="days-header"> </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /datepicker -->
+                                        </div>
+                                    </div> 
+                                    <div class="form-group">
+                                        <span class="col-xs-12 col-sm-2 col-md-2 control-label">내용</span>
+                                        <div class="col-xs-12 col-sm-10 col-md-10">
+                                            
+                                            <!-- mainEditor -->
+                                            <div id="mailEditor" >
+                                                <div class="mail-header">Newsletter Header (fixed)</div>
+
+                                                <textarea class="form-control" rows="20">여기에 에디터가 나와요</textarea> 
+                                                
+                                                <!-- select-content-edit -->
+                                                <div class="select-content-edit"> 
+                                                    <ol id="sortable">
+                                                        <li class="ui-state-default entry-item"> 
+                                                            <i class="icon-move  pull-left"></i>
+                                                            <div class="set-wrap pull-right">
+                                                                <button type="button" class="btn btn-default btn-xs delete" ><span class="icon-trash"></span></button> 
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <span class="col-xs-12 col-sm-3 col-md-3 control-label">컨텐츠 선택 </span>
+                                                                <div class="col-xs-12 col-sm-9 col-md-9 form-inline">
+                                                                    <select class="form-control">
+                                                                        <option>이벤트</option>
+                                                                    </select>
+                                                                    <input type="text"  class="form-control" placeholder="컨텐츠 아이디 번호입력">
+                                                                </div>
+                                                           </div>   
+                                                        </li>
+                                                        <!-- /ui-state-default  -->
+                                                    </ol> 
+                                                    <button class="btn btn-default btn-xs"><span class="icon-plus"></span>&nbsp;컨텐츠 추가</button>
+                                                </div>
+                                                <!-- /select-content-edit -->
+
+                                                <!-- select-recruit-edit -->
+                                                <div class="select-recruit-edit"> 
+                                                    <div class="form-group">
+                                                        <span class="col-xs-12 col-sm-3 col-md-3 control-label">리쿠르트 선택</span>
+                                                        <div class="col-xs-12 col-sm-9 col-md-9">
+                                                            <input type="text" class="form-control form-tags" value="" data-role="tagsinput" placeholder="콤마(,)로 구분해서 아이디 번호를 입력해주세요">
+                                                        </div>
+                                                   </div>  
+                                                </div>
+                                                <!-- /select-recruit-edit -->
+
+                                                <div class="mail-footer">Newsletter Footer (fixed)</div>
+                                            </div>
+                                            <!-- /mainEditor -->
+                                            
+
+                                            <div class="temp-priview">
+                                                <p>
+                                                    <button type="button" class="btn btn-default btn-sm">뉴스레터 HTML 보기</button>
+                                                    <button type="button" class="btn btn-default btn-sm">뉴스레터 미리 보기</button>
+                                                </p>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="메일주소는 콤마(,)로 구분해서 여러개 입력할 수 있습니다.">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button">테스트 발송하기</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <!--/panel-body -->
+                            
+                            <div class="panel-footer">
+                                <div class="col-lg-offset-2">
+                                    <button type="button" class="btn btn-default">취소</button>
+                                    <button type="submit" class="btn btn-primary">저장</button>
+                                </div>
+                            </div>
+                            <!-- /panel-footer -->
+                        </form>
+                    </div>
+                    <!-- /panel --> 
+                    
+                </section>
+                <!-- /section --> 
+            </div>
+            <!-- /contentwrap --> 
+            <!-- /End Page Cotents --> 
+            
+        </div>
+    </div>
+</div>
+<!-- /container -->
+
+</div>
+<!-- /wrap --> 
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <p class="credit">&copy D.CAMP 2013 </p>
+    </div>
+</footer>
+<!-- /footer -->
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>D.CAMP - Manage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap-formhelpers.css" >
+<link rel="stylesheet" href="../css/bootstrap-select.min.css" >
+<link rel="stylesheet" href="../font-awesome/css/font-awesome.css" >
+<!--[if IE 7]>
+<link rel="stylesheet" href="../font-awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link rel="stylesheet" href="../css/admin.css" >
+
+<!-- Javascript  -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/holder.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.language.js"></script>
+<script src="../js/bootstrap-formhelpers-datepicker.js"></script>
+<script src="../js/bootstrap-formhelpers-timepicker.js"></script>
+<script src="../js/bootstrap-select.min.js"></script>
+<script src="../js/admin.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-inverse" role="navigation"> 
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="index.html"><img src="../img/logo.png"></a> </div>
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><span class="icon-cog"></span></a></li>
+                    <li class=""><a href="member-list.html">회원관리</a></li>
+                    <li class=""><a href="membership-list.html">멤버십관리</a></li>
+                    <li class=""><a href="startup-list.html">스타트업관리</a></li>
+                    <li class=""><a href="recruit-list.html">채용정보관리</a></li>
+                    <li class=""><a href="floor-reserve-list.html">공간공유관리</a></li>
+                    <li class=""><a href="event-list.html">이벤트관리</a></li>
+                    <li class=""><a href="notice-list.html">뉴스관리</a></li>
+                    <li class=""><a href="main-list-set.html">메인콘텐츠관리</a></li>
+                    <li class=""><a href="contents-list.html">콘텐츠관리 </a></li>
+                    <li class=""><a href="competition-list.html">경진대회관리 </a></li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">기타관리 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="entrance-dashboard.html">출입관리</a></li>
+                            <li><a href="locker-user-list.html">월간 사물함 배정</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="analytics-member.html">통계분석</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse --> 
+        </nav>
+    </div>
+</header>
+
+<!-- jumbotron -->
+<div class="jumbotron">
+    <div class="container">
+        <h1>Q&amp;A</h1>
+    </div>
+</div>
+<!-- /jumbotron --> 
+
+<!-- container -->
+<div class="rowContainer">
+    <div class="container">
+        <div class="row"> 
+            
+            <!-- Start Page Cotents --> 
+            <!-- sidebar -->
+            <div class="col-md-2 sidebar">
+                <div class="sidebar-nav hidden-print affix">
+                    <ul class="nav list-group">
+                        <li class="list-group-item"><a href="qna-list.html"> Q&amp;A 목록</a></li>
+                        <li class="list-group-item active"><a href="qna-category.html"> 분류 관리</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <!-- /sidebar --> 
+            
+            <!-- contentwrap -->
+            <div class="col-md-10 contentswrap"> 
+                <!-- section -->
+                <section>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2><span class="icon-align-justify"></span><span class="break"></span>분류 관리 </h2>
+                            <div class="actions"> 
+                                <span class="break"></span> 
+                                <a title="추가하기" data-toggle="tooltip" href="qna-category-edit.html">
+                                    <span class="icon-plus"></span>
+                                </a> 
+                            </div>
+                        </div>
+                        <!-- /panel-heading -->
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th width="60" class="td-num">번호</th>
+                                    <th class="td-category">분류명</th>
+                                    <th class="td-name">담당자 </th>   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="td-num">2</td>
+                                    <td class="td-category"><a href="qna-category-edit.html">분류 이름출력</a></td> 
+                                    <td class="td-name">담당자 </td> 
+                                </tr>
+                                <tr>
+                                    <td class="td-num">1</td>
+                                    <td class="td-category"><a href="qna-category-edit.html">분류 이름출력</a></td> 
+                                    <td class="td-name">담당자 </td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="panel-footer">
+                            <div class="paging">
+                                <ul class="pagination">
+                                    <li class="disabled"><a href="#">&laquo;</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li class=""><a href="#">2</a></li>
+                                    <li class=""><a href="#">3</a></li>
+                                    <li class=""><a href="#">4</a></li>
+                                    <li class=""><a href="#">5</a></li>
+                                    <li class=""><a href="#">&raquo;</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /panel-footer --> 
+                    </div>
+                    <!-- /panel --> 
+                    
+                </section>
+                <!-- /section --> 
+            </div>
+            <!-- /contentwrap --> 
+            <!-- /End Page Cotents --> 
+            
+        </div>
+    </div>
+</div>
+<!-- /container -->
+
+</div>
+<!-- /wrap --> 
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <p class="credit">&copy D.CAMP 2013 </p>
+    </div>
+</footer>
+<!-- /footer -->
+</body>
+</html>

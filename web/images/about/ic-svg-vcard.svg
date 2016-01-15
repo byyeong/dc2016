@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="33px" viewBox="0 0 40 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-svg-vcard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="dcamp-about-2015" sketch:type="MSArtboardGroup" transform="translate(-441.000000, -1974.000000)">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(252.000000, 1971.000000)">
+                <g id="ic-svg-vcard" transform="translate(189.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-path" x="1" y="0" width="40" height="40"></rect>
+                    <path d="M35.976,3.568 L4.294,3.568 C2.116,3.568 0.334,5.35 0.334,7.528 L0.334,31.29 C0.334,33.468 2.116,35.25 4.294,35.25 L35.976,35.25 C38.154,35.25 39.936,33.468 39.936,31.29 L39.936,7.528 C39.938,5.35 38.156,3.568 35.976,3.568 L35.976,3.568 Z M35.976,31.29 L4.294,31.29 L4.294,7.528 L35.976,7.528 L35.976,31.29 L35.976,31.29 Z M18.156,23.568 L8.254,23.568 L8.254,27.132 L18.156,27.132 L18.156,23.568 L18.156,23.568 Z M18.156,17.626 L8.254,17.626 L8.254,21.19 L18.156,21.19 L18.156,17.626 L18.156,17.626 Z M18.156,11.686 L8.254,11.686 L8.254,15.25 L18.156,15.25 L18.156,11.686 L18.156,11.686 Z M31.818,24.36 C31.818,24.36 28.452,23.48 28.452,21.75 C28.452,20.102 30.63,19.408 30.63,16.042 C30.63,13.308 29.798,11.684 27.066,11.684 C24.332,11.684 23.502,13.308 23.502,16.042 C23.502,19.408 25.68,20.1 25.68,21.75 C25.68,23.478 22.314,24.36 22.314,24.36 C22.116,24.36 22.116,27.132 22.116,27.132 L32.018,27.132 C32.016,27.132 32.016,24.36 31.818,24.36 L31.818,24.36 Z" id="Shape" fill="#FFCC00"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
