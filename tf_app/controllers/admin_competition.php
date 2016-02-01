@@ -58,6 +58,39 @@ class Admin_competition extends Controller
         $this->assigns["pagesize"] = $pagesize;
         $this->assigns["order"] = $_REQUEST["order"];
     }
+
+	public function index2($_page = 1)
+    {
+        $this->assigns_layout["gnb_left"] = "competition";
+        $pagesize = 10;
+        if (array_key_exists("order", $_REQUEST)) {
+            if ($_REQUEST['order'] == 99) 
+                $where = '';
+            else if ($_REQUEST['order'] == 0)
+                $where = "CONCAT(date_s, time_s) <= '".date('Y.m.dH:i')."' && CONCAT(date_e, time_e) > '".date('Y.m.dH:i')."'";
+            else if ($_REQUEST['order'] == 1)
+                $where = "CONCAT(date_s, time_s) > '".date('Y.m.dH:i')."'";
+            else if ($_REQUEST['order'] == 2)
+                $where = "CONCAT(date_e, time_e) < '".date('Y.m.dH:i')."'";
+        }
+        else {
+            $_REQUEST["order"] = 99;
+        }
+
+        $res = $this->Competitions->get_list($_page, $pagesize, $where);
+        $len_res = sizeof($res);
+        for ($i=0; $i<$len_res; $i++) { 
+            $res[$i]["cnt"] = $this->Competitions_apply->cnt('ca.competition_id = '.$res[$i]["id"]);
+        }
+        $res_cnt = $this->Competitions->cnt($where);
+        
+        $this->assigns["res"] = $res;
+        $this->assigns["paging"] = get_paging_dot2($_page, $res_cnt, $pagesize);
+        $this->assigns["res_cnt"] = $res_cnt;
+        $this->assigns["page"] = $_page;
+        $this->assigns["pagesize"] = $pagesize;
+        $this->assigns["order"] = $_REQUEST["order"];
+    }
         
 //    public function views($_id)
 //    {
