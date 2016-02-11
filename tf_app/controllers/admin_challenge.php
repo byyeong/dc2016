@@ -62,6 +62,7 @@ class Admin_challenge extends Controller
 
 	public function index_master($_page = 1)
     {
+        // master
         $this->assigns_layout["gnb_left"] = "competition";
         $pagesize = 10;
         if (array_key_exists("order", $_REQUEST)) {
