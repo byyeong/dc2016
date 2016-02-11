@@ -60,7 +60,11 @@ class Admin_challenge extends Controller
         $this->assigns["order"] = $_REQUEST["order"];
     }
 
+<<<<<<< HEAD
 	public function index2($_page = 1)
+=======
+	public function index_master($_page = 1)
+>>>>>>> master
     {
         $this->assigns_layout["gnb_left"] = "competition";
         $pagesize = 10;
